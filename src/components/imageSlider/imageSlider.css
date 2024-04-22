@@ -1,0 +1,46 @@
+.slider{
+  background-image: url("../../assets/HOMEPAGE/sevice-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-item { 
+  width: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.slider-item>img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+@media screen and (max-width: 600px){
+  .slider-item{
+    height: 20rem !important;
+  }
+  .slider-item>img{
+    object-fit: contain;
+  }
+  .slider{
+    margin-top: 12rem;
+  }
+}

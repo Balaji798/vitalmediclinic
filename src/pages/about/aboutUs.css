@@ -1,0 +1,13 @@
+.backgroundImage{
+    background: no-repeat center center; 
+    background-size: content;
+    width: 1600px;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage1{
+
+}
