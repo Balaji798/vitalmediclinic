@@ -46,6 +46,8 @@ const WellnessProgram = lazy(async ()=> await import("./pages/wellnessProgram/We
 const ConditionAddress = lazy(async ()=> await import("./pages/conditionAddress/ConditionAddress"))
 const HerbalMedicean = lazy(async ()=> await import("./pages/herbalMedicean/HerbalMedicean"))
 const KartomTherapies = lazy(async ()=> await import("./pages/kartomTherapies/KartomTherapies"))
+const PrenatalMassage = lazy(async()=> await import("./pages/service/PrenatalMassage"))
+const Wellness = lazy(async()=> await import("./pages/service/Wellness"))
 
 function App() {
   return (
@@ -109,6 +111,8 @@ function App() {
             <Route path="/package/promotion" element={<Promotion/>}/>
             <Route path="/service/herbal-medicean" element={<HerbalMedicean/>}/>
             <Route path="/service/cannabis-and-kartom-therapies" element={<KartomTherapies/>}/>
+            <Route path="/service/prenatal-massage" element={<PrenatalMassage/>}/>
+            <Route path="/service/body-works-wellness" element={<Wellness/>}/>
           </Routes>
         </div>
         <Footer />

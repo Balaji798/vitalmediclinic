@@ -7,7 +7,7 @@ const Service = () => {
       link:"/service/health-check-up",
       options: [
         {
-          title: "MEN'S AND WOMEN'S HEALTH CHECK UP",
+          title: "HEALTH CHECK MEN & WOMEN",
           link: "/health-check-up/health-check-up",
         },
         {
@@ -53,11 +53,11 @@ const Service = () => {
           link: "/wellness/placenta-therapy",
         },
         {
-          title: "MEN'S HEALTH THERAPY",
+          title: "HEALTH THERAPY FOR MEN",
           link: "/wellness/men-health-therapy",
         },
         {
-          title: "WOMEN'S HEALTH THERAPY",
+          title: "HEALTH THERAPY FOR WOMEN",
           link: "/wellness/women-health-therapy",
         },
         {
@@ -76,6 +76,14 @@ const Service = () => {
           title: "NK CELL THERAPY",
           link: "/wellness/nk-cell-therapy",
         },
+        {
+          title:"PRENATAL MASSAGE",
+          link:"/prenatal-massage"
+        },
+        {
+          title:"BODY WORKS & WELLNESS",
+          link:"/body-works-wellness"
+        }
       ],
     },
     {

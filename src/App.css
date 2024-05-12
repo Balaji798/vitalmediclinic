@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap");
 @font-face {
   font-family: Avenir;
-  src: url("../fonts/Avenir.ttc");
+  src: url("./assets/fonts/Avenir.ttc");
   font-weight: bold;
 }
 html {
@@ -47,7 +47,9 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
+p>span{
+  font-weight: bold !important;
+}
 .center {
   display: flex;
   align-items: center;
