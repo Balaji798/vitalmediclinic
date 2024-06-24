@@ -83,7 +83,7 @@ const OzoneTherapy = () => {
           <span>• Circulation Support:</span> May improve blood flow and oxygen
           delivery to tissues.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Potential against Infections:</span> {"Ozone's"} antimicrobial
           properties suggest potential uses in addressing various infections.

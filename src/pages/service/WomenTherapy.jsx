@@ -61,21 +61,21 @@ const WomenTherapy = () => {
           <span>• Fertility and Reproductive Health:</span> Enhance fertility
           potential and promote healthy reproductive function.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Hormonal Balance:</span> Regulate menstruation, boost sex
           drive, and ease menopausal symptoms for greater comfort and
           well-being.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Stronger Immunity:</span> Build a resilient immune system to
           fight off infections and maintain optimal health.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Pain and Inflammation Relief:</span> Alleviate chronic pain
           and inflammation for greater mobility and comfort.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Cardiovascular Health:</span> Manage cholesterol,
           triglycerides, and blood circulation for a healthier heart.
         </p>

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap");
-@font-face {
+/* @font-face {
   font-family: Avenir;
   src: url("./assets/fonts/Avenir.ttc");
   font-weight: bold;
-}
+} */
 html {
   height: 100%;
 }
@@ -47,9 +47,7 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-p>span{
-  font-weight: bold !important;
-}
+
 .center {
   display: flex;
   align-items: center;
@@ -64,13 +62,14 @@ p>span{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 2rem 0
 }
-p{font-family: Avenir;}
+/* p{font-family: Avenir;} */
 .banner {
   background-image: url("./assets/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
+  width: 100%;
   object-fit: cover;
   height: 38rem;
   display: flex;
@@ -79,21 +78,27 @@ p{font-family: Avenir;}
   align-items: center;
   text-align: center;
 }
+.banner_home {
+  background-image: url("./assets/HOMEPAGE/doctor-check.jpg");
+}
 h1 {
   font-size: 4rem;
 }
 .banner_second {
-  background-image: url("./assets/second_banner.jpg");
+  background-image: url("./assets/about-us.jpg");
   background-size: contain;
   justify-content: flex-start;
   padding: 2rem 0 0;
-  height: 45rem;
+  height: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .banner_second > div > h2 {
   font-size: 2.5rem;
 }
 .banner_second > div > p {
-  font-family: Avenir;
   font-size: 1.2rem;
 }
 
@@ -122,9 +127,10 @@ h2 {
 
 .our-service {
   width: 100%;
-  padding: 2rem 0 0;
-  position: absolute;
-  bottom: -50rem;
+  padding: 2rem 0 4rem;
+  /* position: absolute;
+  bottom: -100rem; */
+  margin-top: 7.8rem;
   left: 0;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
@@ -165,12 +171,72 @@ h2 {
   transition: all 1s ease-out;
 }
 
-span{
-  font-weight: bold;
+span {
+  font-weight: bold !important;
 }
 
-@media screen and (max-width: 600px){
-  h1{
+.our-service > div {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content{
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content > p {
+  max-width: 1030px;
+  text-align: center;
+}
+.PROMOTION {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
     font-size: 1.2rem;
+  }
+  .our-service {
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+  }
+  .our-service > div {
+    justify-content: center;
+  }
+  .banner_second,
+  .banner {
+    height: 25rem;
+  }
+  .banner_second {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content > p {
+    padding: 0 2rem;
+    font-size: 12px !important;
+  }
+  .PROMOTION {
+    margin-top: 30rem;
+  }
+  .contact-tag{
+    font-size: 14px;
+  }
+  .between{
+    padding: 1rem 2rem
   }
 }

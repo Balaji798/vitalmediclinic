@@ -31,11 +31,11 @@ const WellnessProgram = () => {
             TARGETED WELLNESS
             <br /> PROGRAMS
           </h1>
-          <p>
+          {/*<p>
             Our clinic offers Placenta Therapy, IV Nutrition, Ozone Therapy, and
             Stem Cell Therapy programs designed to enhance cellular
             regeneration, promote rejuvenation, and support overall well-being.
-          </p>
+          </p>*/}
           <p>
             Targeted Wellness Programs: Harnessing Advanced Regeneration and
             Rejuvenation Therapies
@@ -193,7 +193,7 @@ const WellnessProgram = () => {
           <p style={{ fontSize: "0.9rem" }}>
             Consult with our specialists to discover the power of these
             innovative therapies and personalize a program for your unique
-            goals
+            goals.
           </p>
         </div>
       </div>

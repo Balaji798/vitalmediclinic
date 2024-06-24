@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import doctor1 from "../../assets/HOMEPAGE/S__14426151_0.jpg";
+import doctor1 from "../../assets/doctor/doctor-3.jpg";
 import doctor2 from "../../assets/doctor/chawapon.jpg";
 import doctor3 from "../../assets/doctor/kantapong.jpg";
 import doctor4 from "../../assets/doctor/nithiwat.jpg";
@@ -11,7 +11,7 @@ const doctorData = [
     name: "NITHIWAT SRIKANCHANAWAT",
     degree: "M.D., M.SC., MBA, ABAARM, CNW, DIP., THAI BOARD OF INTERN MED",
     work: "Internal Medicine & Anti-Aging Doctor",
-    image: doctor4,
+    image: doctor2,
   },
   {
     name: "PHONGPHAKORN SONTANARAT",
@@ -23,7 +23,7 @@ const doctorData = [
     name: "CHAWAPON KIDHIRUNKUL",
     degree: "MO, PRMPH, ABAARM, MSC",
     work: "Internal Medicine & Anti-Aging Doctor",
-    image: doctor2,
+    image: doctor4,
   },
   {
     name: "KANTAPONG NUNCHAI",

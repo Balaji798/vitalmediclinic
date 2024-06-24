@@ -170,7 +170,7 @@ const PrenatalMassage = () => {
             The therapist may use pillows or bolsters to support the {"woman's"}{" "}
             back, belly, and legs.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>•</span> The massage should be shorter than a regular massage.
             Most pregnancy massages last about 30 minutes.

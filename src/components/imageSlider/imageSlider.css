@@ -2,6 +2,10 @@
   background-image: url("../../assets/HOMEPAGE/sevice-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-container {
@@ -32,15 +36,15 @@
   width: 100%;
   object-fit:cover;
 }
-
+.prev,.next{
+  font-size: 75px;
+}
 @media screen and (max-width: 600px){
-  .slider-item{
-    height: 20rem !important;
-  }
-  .slider-item>img{
-    object-fit: contain;
+  .prev,.next{
+    font-size: 45px;
   }
   .slider{
-    margin-top: 12rem;
+    margin-top: 1rem;
+    height: auto;
   }
 }

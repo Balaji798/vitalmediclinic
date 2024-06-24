@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Service = () => {
   const naveData = [
     {
-      title: "1. HEALTH CHECKUP",
+      title: "1. HEALTH CHECKUPS",
       link:"/service/health-check-up",
       options: [
         {
@@ -45,7 +45,7 @@ const Service = () => {
       ],
     },
     {
-      title: "2. WELLNESS PROGRAM",
+      title: "2. WELLNESS PROGRAMS",
       link:"/service/wellness-program",
       options: [
         {

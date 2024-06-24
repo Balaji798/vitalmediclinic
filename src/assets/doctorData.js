@@ -1,11 +1,11 @@
-import doctor1 from "./HOMEPAGE/S__14426151_0.jpg";
+import doctor1 from "./doctor/doctor-3.jpg";
 import doctor2 from "./doctor/chawapon.jpg";
 import doctor3 from "./doctor/kantapong.jpg";
 import doctor4 from "./doctor/nithiwat.jpg";
 
 export const doctorData = [
   {
-    image:doctor4,
+    image:doctor2,
     name: "NITHIWAT SRIKANCHANAWAT",
     degree: "M.D., M.SC., MBA, ABAARM, CNW, DIP., THAI BOARD OF INTERN MED",
     expert: "INTERNAL MEDICINE & ANTI-AGING DOCTOR",
@@ -74,7 +74,7 @@ export const doctorData = [
     ],
   },
   {
-    image:doctor2,
+    image:doctor4,
     name: "CHAWAPON KIDHIRUNKUL",
     expert:"INTERNAL MEDICINE & ANTI-AGING DOCTOR",
     degree:

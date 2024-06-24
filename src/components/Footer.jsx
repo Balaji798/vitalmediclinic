@@ -27,14 +27,14 @@ const Footer = () => {
         alignItems: "center",
         padding: "2rem 0", }}
       >
-        <h1 style={{color: "#fff",}}>ARE YOU READY FOR OPTIMUM HEALTH</h1>
+        <h1 className="contact-tag" style={{color: "#fff",}}>ARE YOU READY FOR OPTIMUM HEALTH</h1>
         <Link to="/appointments" style={{background:"#fff",borderRadius:"10px",padding:"10px 2rem",marginTop:"2rem",color:"#0a3c57",fontWeight:"bold",fontSize:"1.2rem"}}>START NOW</Link>
       </div>
-      <div className="between" style={{ maxWidth: "1300px", width: "100%",padding: "2rem 0", }}>
+      <div className="between" style={{ maxWidth: "1300px", width: "100%" }}>
         <div style={{ maxWidth: "450px" }}>
           <img
             src={logo}
-            style={{ objectFit: "contain", maxWidth: "26rem" }}
+            style={{ objectFit: "contain", maxWidth: "26rem",width:"100%" }}
             alt="logo"
           />
           <p>
@@ -83,16 +83,18 @@ const Footer = () => {
             alt="qr-code"
           />
           <div>
-            <p
+            <a
+            href="https://www.facebook.com/realvitalmediclinic"
               style={{
                 display: "flex",
                 alignItems: "center",
                 marginBottom: "0.5rem",
+                color:"#000"
               }}
             >
               <img src={fb} style={{ width: "1.6rem" }} alt="faceBook" /> Vital
               Medi Clinic
-            </p>
+            </a>
             <p
               style={{
                 display: "flex",
@@ -103,16 +105,18 @@ const Footer = () => {
               <img src={line} style={{ width: "1.6rem" }} alt="line" />{" "}
               @vitalmediclinic
             </p>
-            <p
+            <a
+             href="https://www.instagram.com/vitalmediclinicofficial"
               style={{
                 display: "flex",
                 alignItems: "center",
                 marginBottom: "0.5rem",
+                color:"#000"
               }}
             >
               <img src={insta} style={{ width: "1.6rem" }} alt="line" /> Vital
               Medi Clinic
-            </p>
+            </a>
             <p
               style={{
                 display: "flex",

@@ -8,6 +8,7 @@ const HealthCheckUp = () => {
       style={{
         display: "flex",
         justifyContent: "space-between",
+        flexWrap:"wrap",
         padding: "2rem 0",
         minHeight: "50rem",
         height: "100%",
@@ -36,7 +37,7 @@ const HealthCheckUp = () => {
           SPECIALIST TESTING
         </h2>
         <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-          HEAVY METAL TOXICITY TESTING
+          TAILORED HEALTH ASSESSMENTS
         </h2>
         <p style={{ padding: "1rem 0" }}>
           <span>Heavy Metal Toxicity Testing:</span> Detect exposure levels to
@@ -65,7 +66,7 @@ const HealthCheckUp = () => {
           <span>• Organ Protection:</span> Safeguard your long-term health by
           identifying heavy metal exposure.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Personalized Detoxification:</span> Our experts use your test
           results to tailor a detoxification plan that restores your health and

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { doctorData } from "../../assets/doctorData";
 import "./doctorSlider.css";
+import { Link } from "react-router-dom";
 
 const DoctorSlider = () => {
   const PreviousBtn = ({ onClick }) => {
@@ -61,9 +62,9 @@ const DoctorSlider = () => {
         padding:"2rem 0"
       }}
     >
-      <h2>PROFESSIONALS DOCTOR</h2>
-      <h3>Meet Our Expert Team</h3>
-      <p style={{ paddingBottom: "2rem" }}>
+      <h2>Medical professionals</h2>
+      <h3 style={{color:"black"}}>Meet Our Expert Team</h3>
+      <p style={{ paddingBottom: "2rem",color:"black" }}>
         Our expert team consist of certified practitioners, doctors, nurses with
         skill and knowledge, we provide an accurate
         <br /> results and best solutions to our customers
@@ -71,19 +72,22 @@ const DoctorSlider = () => {
       <div className="center">
         <Slider {...settings} className="slider-container">
           {doctorData.map((item, i) => (
-            <div
+            <Link to={`/doctor/${item.name
+              .split(" ")
+              .join("-")
+              .toLocaleLowerCase()}`}
               className="doctor-slider-item"
               key={i}
-              style={{ maxWidth: "10rem", backgroundColor: "#fff" }}
+              style={{backgroundColor: "#fff" }}
             >
               <img
                 src={item.image}
                 alt="/"
-                style={{ width: "100%", height: "15rem" }}
+                style={{ width: "100%", height: "20rem",marginBottom:"0.5rem" }}
               />
-              <h4>{item.name}</h4>
-              <p style={{fontSize:"12px"}}>{item.expert}</p>
-            </div>
+              <h4 style={{color:"black"}}>{item.name}</h4>
+              <p style={{fontSize:"12px",color:"black"}}>{item.expert}</p>
+            </Link>
           ))}
         </Slider>
       </div>

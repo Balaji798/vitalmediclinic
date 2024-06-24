@@ -60,24 +60,25 @@ const MensTherapy = () => {
           <span>• Metabolic Regulation:</span> Manage diabetes, hypertension,
           cholesterol, and triglycerides for improved cardiovascular health.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Pain Reduction:</span> Alleviate chronic pain and inflammation
           to enhance mobility and well-being.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Accelerated Recovery:</span> Speed up healing after injury or
           surgery, promoting tissue regeneration.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Stronger Immunity:</span> Bolster your {"body's"} defenses against
-          illness and infection. Boosted Energy and Focus: Combat fatigue,
+          illness and infection. </p>
+          <p><span>• Boosted Energy and Focus:</span> Combat fatigue,
           improve mental alertness, and enhance productivity.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Improved Sleep:</span> Experience deeper, more restorative sleep for better overall health.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Optimized Body Composition:</span> Increase lean muscle mass and reduce body fat for a healthier physique.
         </p>
         <p style={{ fontWeight: "bold" }}>

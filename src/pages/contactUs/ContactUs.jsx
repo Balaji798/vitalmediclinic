@@ -75,7 +75,7 @@ const ContactUs = () => {
               >
                 <TfiEmail size={65} />
               </div>
-              info@drcbdgroup.com
+              vitalmediclinic@drcbdgroup.com
             </div>
             <div style={{display:"flex",
             alignItems:"center",flexDirection:"column",textAlign:"center"}}>

@@ -6,10 +6,10 @@
   }
   
   .doctor-slider-item { 
-    width: 20rem;
+    width: 20rem !important;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 21rem !important;
+    height: 25rem !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

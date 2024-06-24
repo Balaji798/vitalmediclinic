@@ -43,7 +43,7 @@ const Neurological = () => {
             Understanding Causes and Our Multifaceted Treatment Approach for
             Neurological Disorders.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             Neurological disorders affect the brain, spinal cord, and nerves,
             resulting in various challenges. Common examples include:
           </p>
@@ -59,16 +59,16 @@ const Neurological = () => {
             <span>• Headaches and Migraines:</span> Chronic or debilitating
             headaches.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>• Epilepsy:</span> Recurrent seizures.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>• Neuropathy:</span> Nerve damage causing numbness, tingling,
             or pain.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>• Stroke-Related Impairments:</span> Weakness, speech
             difficulties, cognitive changes.
@@ -83,7 +83,7 @@ const Neurological = () => {
             <span>• Neuropathy:</span> Nerve damage causing numbness, tingling,
             or pain.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>• Stroke-Related Impairments:</span> Weakness, speech
             difficulties, cognitive changes.
@@ -104,7 +104,7 @@ const Neurological = () => {
             <span>• Injuries:</span> Traumatic brain injury (TBI) or spinal cord
             injuries can have long-lasting effects.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
             <span>• Infections or Autoimmune Conditions:</span>These can
             sometimes affect the nervous system.
@@ -142,7 +142,7 @@ const Neurological = () => {
             may be considered to support tissue repair and potentially slow
             disease progression.
           </p>
-          <p style={{ paddingBottom: "1rem", marginLeft: "0.5rem" }}>
+          <p style={{ paddingBottom: "0.5rem", marginLeft: "0.5rem" }}>
             <span>o Rehabilitation:</span> Physical, occupational, or speech
             therapy to regain function and maximize independence.
           </p>

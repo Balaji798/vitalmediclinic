@@ -48,18 +48,18 @@ const SkinDisorder = () => {
             by overactive skin cell production, leading to thick, scaly patches
             that can be red, itchy, and sometimes painful
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             <span>Rosacea:</span> common inflammatory skin condition causing
             facial redness, flushing, visible blood vessels, and sometimes
             acne-like bumps.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             <span>Lupus:</span> An autoimmune disease impacting multiple body
             systems, including the skin. Cutaneous (skin) lupus can manifest as
             rashes, including a distinctive butterfly-shaped rash across the
             nose and cheeks, sensitivity to sunlight, and hair loss.
           </p>
-          <p style={{ paddingBottom: "1rem" }}>
+          <p style={{ paddingBottom: "0.5rem" }}>
             <span>Our Regenerative Approach to Skin Disorders:</span>
             <br /> We focus on addressing the underlying Imbalances contributing
             to skin conditions rather than just suppressing symptoms. Our aim is
@@ -155,7 +155,7 @@ const SkinDisorder = () => {
                 <span>o Lifestyle Recommendations:</span> We address stress
                 management, sleep, and other factors that impact skin health.
               </p>
-              <p style={{ paddingBottom: "1rem" }}>
+              <p style={{ paddingBottom: "0.5rem" }}>
                 {" "}
                 <span>o Traditional and Modern Therapies:</span> Where appropriate, we may integrate proven or medications within a broader regenerative approach.
               </p>

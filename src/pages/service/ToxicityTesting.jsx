@@ -40,7 +40,7 @@ const ToxicityTesting = () => {
         </h2>
         <p style={{ padding: "1rem 0" }}>
           <span>Heavy Metal Toxicity Testing:</span> Detect exposure levels to
-          harmful heavy metals, allowing for proactive detoxification strategies
+          harmful heavy metals, allowing for proactive detoxification strategies.
         </p>
         <p style={{ fontWeight: "bold", padding: "0.5rem 0" }}>
           Heavy Metal Toxicity Testing: Safeguard your health and optimize
@@ -65,7 +65,7 @@ const ToxicityTesting = () => {
           <span>• Organ Protection:</span> Safeguard your long-term health by
           identifying heavy metal exposure.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Personalized Detoxification:</span> Our experts use your test
           results to tailor a detoxification plan that restores your health and
@@ -73,7 +73,7 @@ const ToxicityTesting = () => {
         </p>
         <p style={{ fontWeight: "bold" }}>
           Contact us to learn more about Heavy Metal Toxicity Testing and take
-          proactive steps towards a healthier future
+          proactive steps towards a healthier future.
         </p>
       </div>
       <div style={{ maxWidth: "500px", width: "100%" }}>

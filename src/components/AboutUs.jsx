@@ -63,13 +63,6 @@ const AboutUs = () => {
                 PHILOSOPHY
               </Link>
               <Link
-                to="/vision-mission"
-                style={{ cursor: "pointer" }}
-                className="sub-menu"
-              >
-                VISION & MISSION
-              </Link>
-              <Link
                 to="/core-value"
                 style={{ cursor: "pointer" }}
                 className="sub-menu"

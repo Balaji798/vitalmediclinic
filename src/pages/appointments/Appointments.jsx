@@ -1,7 +1,7 @@
 import { FormControl, FormLabel, MenuItem, Select } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+//import emailjs from "@emailjs/browser";
 
 const Appointments = () => {
   const form = useRef();
@@ -32,18 +32,18 @@ const Appointments = () => {
     e.preventDefault();
     try {
       console.log("hi");
-      emailjs
-        .sendForm("service_5zbiyek", "template_m0qxpvc", form.current, {
-          publicKey: "jNpIVgCvRtarkbPtE",
-        })
-        .then(
-          () => {
-            console.log("SUCCESS!");
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-          }
-        );
+      // emailjs
+      //   .sendForm("service_5zbiyek", "template_m0qxpvc", form.current, {
+      //     publicKey: "jNpIVgCvRtarkbPtE",
+      //   })
+      //   .then(
+      //     () => {
+      //       console.log("SUCCESS!");
+      //     },
+      //     (error) => {
+      //       console.log("FAILED...", error.text);
+      //     }
+      //   );
     } catch (err) {
       alert(err);
     }

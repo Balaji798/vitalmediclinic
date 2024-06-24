@@ -55,7 +55,7 @@ const LengthAnalysis = () => {
         <p>
           <span>• Lifestyle Impact:</span> Assess how lifestyle factors such as diet, exercise, and stress management may influence your telomere length.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Personalized Strategies:</span> Develop targeted interventions to potentially slow telomere shortening and support healthier aging.
         </p>

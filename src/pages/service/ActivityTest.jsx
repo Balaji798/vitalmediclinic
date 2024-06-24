@@ -57,7 +57,7 @@ const ActivityTest = () => {
         <p>
           <span>• Personalized Strategies:</span> Results inform targeted support protocols for enhancing NK cell function and overall immune resilience.
         </p>
-        <p style={{ paddingBottom: "1rem" }}>
+        <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>• Monitoring Progress:</span> Track changes in NK cell activity over time, especially if you are undergoing immune-boosting therapies.
         </p>
