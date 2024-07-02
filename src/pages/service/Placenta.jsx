@@ -172,16 +172,15 @@ const Placenta = () => {
           </p>
           <p style={{ paddingBottom: "0.5rem" }}>
             <span>•Faster Postpartum Recovery:</span> Could aid in wound healing
-            and tissue regeneration Schedule a consultation to explore of
-            Placenta Therapy aligns with yo supplementation needs.
+            and tissue regeneration Schedule a consultation with us to explore of
+            Placenta Therapy aligns with your supplementation needs.
           </p>
           <p style={{ paddingBottom: "0.5rem" }}>
           {" "}
           <span>Important Note:</span>
           While there is anecdotal evidence and some supporting research, more
           studies are needed to fully understand the extent of these benefits
-          and potential risks associated with placenta therapy. Consult with a
-          qualified healthcare professional before considering this therapy.
+          and potential risks associated with placenta therapy. Consult with our doctors before considering this therapy.
         </p>
         </div>
       </div>

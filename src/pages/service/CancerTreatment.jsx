@@ -13,7 +13,6 @@ const CancerTreatment = () => {
           display: "flex",
           justifyContent: "space-between",
           padding: "2rem 0",
-          minHeight: "50rem",
           height: "100%",
         }}
       >
@@ -125,18 +124,18 @@ const CancerTreatment = () => {
             </span>
             <p style={{ paddingBottom: "0.5rem" }}>
               <span>• Pre/Post Surgery:</span> Strategies to support wound
-              healing, redure inflammation, and optimice preparation for or
+              healing, reduce inflammation, and optimize preparation for
               recovery from surgical procedures.
             </p>
             <p style={{ paddingBottom: "0.5rem" }}>
               <span>• During Chemotherapy/Radiation:</span> Supporting immune
               function, potentially mitigating side affects, and improving
-              squality of Ide.
+              quality of Ide.
             </p>
             <p style={{ paddingBottom: "0.5rem" }}>
               <span>• Advanced Therapies (Case-Dependant):</span> Options the NE
               Cell Therapy or Therapy might be considered for their potential
-              immune-boosting and regenerates effect.
+              immune-boosting and regenerative effect.
             </p>
             <p>
               <span>Important Notes:</span> Communication with your oncologist
@@ -148,13 +147,13 @@ const CancerTreatment = () => {
         </div>
         <div>
           <p style={{ padding: "1rem 0" }}>
-            <span>Our Goal:</span>Enhancing Well-being Throughout Tour Jourmey
-            While conventional therapies are the mainstay off cancer treatment,
+            <span>Our Goal:</span>Enhancing Well-being Throughout Your Jourmey
+            While conventional therapies are the mainstay of cancer treatment,
             our aim is to support your {"body's"} natural healing abilities,
-            manage symptoms, and optimize your quality of is challenging time.
+            manage symptoms, and optimize your quality of life during this challenging time.
           </p>
           <span>
-            Schedule a consultation to explore how aur integrative approach can
+            Schedule a consultation to explore how our integrative approach can
             complement your cancer treatment plan and promote your overall
             well-being.
           </span>

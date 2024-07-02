@@ -69,7 +69,7 @@ const Service = () => {
           link: "/wellness/ozone-therapy",
         },
         {
-          title: "STEMCELL THERAPY",
+          title: "STEM CELL THERAPY",
           link: "/wellness/stem-therapy",
         },
         {
@@ -111,7 +111,7 @@ const Service = () => {
           link: "/medical-condition/immune-disorder",
         },
         {
-          title: "RHEUMATAD ARTHRITIS",
+          title: "RHEUMATIOD ARTHRITIS",
           link: "/medical-condition/rheumatad-arthritis",
         },
         {

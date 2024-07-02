@@ -127,7 +127,7 @@ export const doctorData = [
   {
     image:doctor3,
     name: "DR. ΚΑΝΤΑΡΟNG NUNCHAI",
-    expert:"APPILY THAI TRADITIONAL MEDICINE",
+    expert:"APPLIED THAI TRADITIONAL MEDICINE",
     degree:
       "M.D.",
     eduction: [

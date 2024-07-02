@@ -53,7 +53,7 @@ const PrenatalMassage = () => {
           <span>Can pregnant women get massages? Is it safe?</span>
           <p style={{ padding: "1rem 0" }}>
             Many pregnant women experience aches and pains due to their changing
-            bodies and t weight of their growing baby. This can lead to back
+            bodies and the weight of their growing baby. This can lead to back
             pain, leg pain, swelling, and headaches. Massage can be a safe and
             effective way to relieve these symptoms and improve overall
             well-being.

@@ -71,7 +71,7 @@ const SleepDisorder = () => {
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
           <span>• Lifestyle Factors:</span> Irregular schedules, poor sleep
-          environment, and excessive cafeine or alcohol can worsen sleep
+          environment, and excessive caffeine or alcohol can worsen sleep
           quality.
         </p>
         <span>Our Integrative Approach to Sleep Disorder Treatment:</span>
@@ -96,7 +96,7 @@ const SleepDisorder = () => {
         <p style={{ paddingBottom: "0.5rem", marginLeft: "10px" }}>
           <span>o Cannabis Under Guidance:</span> * Carefully exploring the
           potential role of cannabis in addressing certain sleep
-          disordersymptoms.
+          disorder symptoms.
         </p>
         <p style={{ paddingBottom: "0.5rem", marginLeft: "10px" }}>
           <span>o Relaxation Techniques:</span> Thai massage techniques might be recommended.

@@ -27,7 +27,7 @@ const NCDDisease = () => {
     {
       title: "Genetics",
       icon: service1,
-      para: "Family history can play a ro;e in some conditions.",
+      para: "Family history can play a role in some conditions.",
     },
   ];
   return (
@@ -98,9 +98,15 @@ const NCDDisease = () => {
       </div>
       <div
         className="center"
-        style={{ flexDirection: "column", backgroundColor: "#e9e9e7",padding:"1.5rem" }}
+        style={{
+          flexDirection: "column",
+          backgroundColor: "#e9e9e7",
+          padding: "1.5rem",
+        }}
       >
-        <h2 style={{ textAlign: "center",paddingBottom:"0.5rem" }}>RISK FACTORS FOR {"NCD'S"}</h2>
+        <h2 style={{ textAlign: "center", paddingBottom: "0.5rem" }}>
+          RISK FACTORS FOR {"NCD'S"}
+        </h2>
         <div
           style={{
             maxWidth: "700px",
@@ -202,8 +208,11 @@ const NCDDisease = () => {
           <p style={{ marginLeft: "0.5rem" }}>
             <span>o Thal Herbal Medicine:</span> Specific herbs may be
             recommended for their potential supportive effects on various NCDs.
-            o Cannabis and Kratom Therapies (Under Guidance): Responsibly
-            exploring their potential benefits in specific NCD circumstances.
+          </p>
+          <p>
+            <span>o Cannabis and Kratom Therapies (Under Guidance):</span>{" "}
+            Responsibly exploring their potential benefits in specific NCD
+            circumstances.
           </p>
           <p style={{ marginLeft: "0.5rem" }}>
             <span>o Lifestyle Optimization:</span> Guidance on exercise, stress

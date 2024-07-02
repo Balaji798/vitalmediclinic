@@ -64,7 +64,7 @@ const SkinDisorder = () => {
             <br /> We focus on addressing the underlying Imbalances contributing
             to skin conditions rather than just suppressing symptoms. Our aim is
             to support your {"body's"} natural healing abilities, decrease
-            inflammation, and and promote healthy skin regeneration.
+            inflammation, and promote healthy skin regeneration.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -137,7 +137,7 @@ const SkinDisorder = () => {
           </p>
           <p>
             <span>• Custom Tailored Program:</span> Your treatment plan may
-            incorporate a combination of
+            incorporate a combination or
           </p>
           <div className="center" style={{ flexDirection: "column" }}>
             <div style={{ maxWidth: "580px" }}>

@@ -150,10 +150,10 @@ const Arthritis = () => {
           for pain management and inflammation reduction.
         </p>
         <p style={{ paddingBottom: "0.5rem", marginLeft: "0.5rem" }}>
-          <span>o Lifestyle Optimization:</span> Stress muragement techniques, gentle axercise recommendations, and support for restful sleep.
+          <span>o Lifestyle Optimization:</span> Stress management techniques, gentle exercise recommendations, and support for restful sleep.
         </p>
         <p style={{ paddingBottom: "0.5rem"}}><span>Beyond Symptom Management:</span> Supporting Long term Health</p>
-        <p>Our goal is not just temporary relief but to address the the underlying imbalances contributing to RA, potentially slowing disease progression and improving your oves all quality of life</p>
+        <p>Our goal is not just temporary relief but to address the the underlying imbalances contributing to RA, potentially slowing disease progression and improving your overall quality of life</p>
         </div>
         <div
           style={{

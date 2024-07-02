@@ -53,9 +53,9 @@ const AboutUs = () => {
                 style={{ cursor: "pointer" }}
                 className="sub-menu"
               >
-                VISION & MISSION
+                ABOUT US
               </Link>
-              <Link
+             {/*<Link
                 to="/philosophy"
                 style={{ cursor: "pointer" }}
                 className="sub-menu"
@@ -75,7 +75,7 @@ const AboutUs = () => {
                 className="sub-menu"
               >
                 KEY POINTS OF DIFFERENTIATION
-              </Link>
+              </Link>*/}
             </div>
           </div>
           <img src={navBanner} style={{ width: "50%" }} alt="/" />

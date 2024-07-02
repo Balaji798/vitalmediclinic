@@ -26,9 +26,9 @@ const doctorData = [
     image: doctor4,
   },
   {
-    name: "DR .KANTAPONG NUNCHAI",
+    name: "DR. KANTAPONG NUNCHAI",
     degree: "MD",
-    work: "Apply Thu Traditional Medicine",
+    work: "Applied Thai Traditional Medicine",
     image: doctor3,
   },
 ];

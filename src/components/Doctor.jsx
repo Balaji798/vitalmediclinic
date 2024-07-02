@@ -16,11 +16,11 @@ const Doctor = () => {
     {
       name: "DR. NITHIWAT SRIKANCHANAWAT",
       expert: "INTERNAL MEDICINE",
-      expert1: "ANTI-AGIN MEDICINE",
+      expert1: "ANTI-AGING MEDICINE",
     },
     {
       name: "DR. ΚΑΝΤΑΡΟNG NUNCHAI",
-      expert: "APPILY THI TRADITIONAL MEDICINE",
+      expert: "APPLIED THAI TRADITIONAL MEDICINE",
       expert1: "",
     },
   ];

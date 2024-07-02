@@ -85,7 +85,7 @@ const Home = () => {
       <div className="banner_second">
         <div className="content">
           <h2>ABOUT US</h2>
-          <p>
+          <p style={{fontWeight:"bold"}}>
             Vital Medi Clinic is an Integrative Medical clinic which combines
             Preventive Medical, Applied Thai Traditional Medical (ATTM) and
             Traditional Chinese Medicine (TCM) altogether. We believe every
