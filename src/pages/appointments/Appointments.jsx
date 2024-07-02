@@ -1,7 +1,7 @@
 import { FormControl, FormLabel, MenuItem, Select } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { useRef, useState } from "react";
-//import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Appointments = () => {
   const form = useRef();
@@ -17,7 +17,6 @@ const Appointments = () => {
     medicalNeedType: "",
     cancerNeedType: "",
     easternNeedType: "",
-    termAgree: false,
   });
 
   const handelSocial = (e) => {
@@ -31,26 +30,25 @@ const Appointments = () => {
   const handelSubmit = (e) => {
     e.preventDefault();
     try {
-      console.log("hi");
-      // emailjs
-      //   .sendForm("service_5zbiyek", "template_m0qxpvc", form.current, {
-      //     publicKey: "jNpIVgCvRtarkbPtE",
-      //   })
-      //   .then(
-      //     () => {
-      //       console.log("SUCCESS!");
-      //     },
-      //     (error) => {
-      //       console.log("FAILED...", error.text);
-      //     }
-      //   );
+      emailjs
+        .sendForm("service_b2jwjoh", "template_uf8y0s4", form.current, {
+          publicKey: "WlO2gyXeybyR-sGeA",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
     } catch (err) {
       alert(err);
     }
   };
   return (
-    <form style={{ width: "100%" }} ref={form}>
-      <h1 style={{ textAlign: "center", padding: "2rem 0" }}>Appointments</h1>
+    <div>
+      <h1 style={{ textAlign: "center", padding: "2rem 0" }}>APPOINTMENTS</h1>
       <div
         className="center"
         style={{ background: "#e6e8e7", color: "#000", padding: "4rem 0 2rem" }}
@@ -63,19 +61,19 @@ const Appointments = () => {
             justifyContent: "center",
           }}
         >
-          <div style={{ maxWidth: "600px", width: "100%" }}>
+          <div style={{ maxWidth: "440px", width: "100%",paddingRight:"0.5rem" }}>
             <h2>
               If You Are Interested In Optimal Your Health, Pleas Send Us A
               Message
             </h2>
-            <p>
+            <p style={{paddingTop:"0.5rem"}}>
               {"You're"} welcome to get in touch withe us should you wish to
               make an enquiry, arrange an appointment or give us feedback about
               our website and/or products and services.
               <br /> {"We'd"} love to hear from you
             </p>
           </div>
-          <div
+          <form ref={form}
             style={{
               maxWidth: "600px",
               width: "100%",
@@ -95,36 +93,35 @@ const Appointments = () => {
                 id="outlined-basic"
                 label="First Name"
                 variant="outlined"
-                onChange={(e) => {
-                  setUser({ ...user, firstName: e.target.value });
-                }}
+                name="firstName"
+                style={{width:"49%"}}
+                required
               />
               <TextField
                 id="outlined-basic"
                 label="Last Name"
                 variant="outlined"
-                onChange={(e) => {
-                  setUser({ ...user, lastName: e.target.value });
-                }}
+                name="lastName"
+                style={{width:"49%"}}
+                required
               />
             </div>
             <TextField
               id="outlined-basic"
               label="Email"
+              type="email"
               variant="outlined"
+              name="email"
               style={{ margin: "1rem 0" }}
-              onChange={(e) => {
-                setUser({ ...user, email: e.target.value });
-              }}
+              required
             />{" "}
             <TextField
               id="outlined-basic"
               label="On which number we can reach you"
               variant="outlined"
+              name="contactNumber"
               style={{ marginBottom: "1rem" }}
-              onChange={(e) => {
-                setUser({ ...user, contactNumber: e.target.value });
-              }}
+              required
             />
             <h4>How did you know about us?</h4>
             <div
@@ -174,6 +171,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, healthNeedType: e.target.value });
                 }}
+                name="healthNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -205,6 +203,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, wellnessNeedType: e.target.value });
                 }}
+                name="wellnessNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -231,6 +230,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, painNeedType: e.target.value });
                 }}
+                name="painNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -256,6 +256,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, medicalNeedType: e.target.value });
                 }}
+                name="medicalNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -280,6 +281,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, cancerNeedType: e.target.value });
                 }}
+                name="cancerNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -298,6 +300,7 @@ const Appointments = () => {
                 onChange={(e) => {
                   setUser({ ...user, easternNeedType: e.target.value });
                 }}
+                name="easternNeedType"
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
                 style={{ width: "100%" }}
@@ -328,7 +331,7 @@ const Appointments = () => {
                 By sending this email you accept us to contact you back
               </p>
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <div
@@ -343,7 +346,7 @@ const Appointments = () => {
       >
         <button onClick={handelSubmit}>Send</button>
       </div>
-    </form>
+    </div>
   );
 };
 

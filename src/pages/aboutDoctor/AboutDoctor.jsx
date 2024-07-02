@@ -8,7 +8,7 @@ const AboutDoctor = () => {
   const { doctorName } = useParams();
   const doctor = doctorData.filter(
     (item) =>
-      item?.name?.toLocaleLowerCase() === doctorName.split("-").join(" ")
+      item?.name?.toLocaleLowerCase() === doctorName?.split("-").join(" ")
   );
 
   console.log(doctor);
@@ -16,7 +16,7 @@ const AboutDoctor = () => {
     <div className="center" style={{ marginBottom: "2rem",paddingTop:"1rem" }}>
       <div className="container">
         <p>
-          Home {">"} Doctor {">"} {doctor[0].name}
+          Home {">"} Doctor {">"} {doctor[0]?.name}
         </p>
         <div style={{ width: "100%" }}>
           <div
@@ -93,7 +93,7 @@ const AboutDoctor = () => {
             </div>
             <div style={{ maxWidth: "580px", width: "100%" }}>
               <h4>WORK EXPERTISE</h4>
-              {doctor[0].experience.map((item, index) => (
+              {doctor[0]?.experience.map((item, index) => (
                 <p key={index}>{item}</p>
               ))}
             </div>

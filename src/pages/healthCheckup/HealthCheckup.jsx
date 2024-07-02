@@ -28,7 +28,7 @@ const HealthCheckup = () => {
           margin: "0.5rem 0 1rem",
         }}
       ></div>
-      <p style={{ fontSize: "12px" }}>
+      <p style={{ fontSize: "16px" }}>
         We provide in-depth health assessments for men and women, including
         specialized testing like food allergy/intolerance analysis,
         micronutrient evaluation, NK cell activity, cancer biomarker

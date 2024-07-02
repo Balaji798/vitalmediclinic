@@ -61,7 +61,7 @@ const ImageSlider = () => {
       <Slider {...settings} className="slider-container">
         {data.map((image, i) => (
           <div className="slider-item" key={i} style={{ maxWidth: "10rem" }}>
-            <img src={image} alt="/"/>
+            <img src={image} alt="/" />
           </div>
         ))}
       </Slider>

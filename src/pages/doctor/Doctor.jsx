@@ -8,41 +8,62 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 
 const doctorData = [
   {
-    name: "NITHIWAT SRIKANCHANAWAT",
-    degree: "M.D., M.SC., MBA, ABAARM, CNW, DIP., THAI BOARD OF INTERN MED",
+    name: "DR. CHAWAPON KIDHIRUNKUL",
+    degree: "MO, PRMPH, ABAARM, MSC",
     work: "Internal Medicine & Anti-Aging Doctor",
     image: doctor2,
   },
   {
-    name: "PHONGPHAKORN SONTANARAT",
+    name: "DR. PHONGPHAKORN SONTANARAT",
     degree: "MD, MBA, ABAARM, FAAMFM",
     work: "Anti-Aging Medicine & Regenerative Medicine",
     image: doctor1,
   },
   {
-    name: "CHAWAPON KIDHIRUNKUL",
-    degree: "MO, PRMPH, ABAARM, MSC",
+    name: "DR. NITHIWAT SRIKANCHANAWAT",
+    degree: "M.D., M.SC., MBA, ABAARM, CNW, DIP., THAI BOARD OF INTERN MED",
     work: "Internal Medicine & Anti-Aging Doctor",
     image: doctor4,
   },
   {
-    name: "KANTAPONG NUNCHAI",
+    name: "DR .KANTAPONG NUNCHAI",
     degree: "MD",
-    work: "Apply Thu Tational",
+    work: "Apply Thu Traditional Medicine",
     image: doctor3,
   },
 ];
 
 const Doctor = () => {
   return (
-    <div className="center" style={{paddingBottom:"4rem"}}>
-      <div className="container">
-        <p>Home {">"} Doctor</p>
-        <h1 style={{padding:"2rem 0",textAlign:"center"}}>OUR MEDICAL TEAM</h1>
+    <div className="center" style={{ paddingBottom: "4rem" }}>
+      <div className="container center" style={{flexDirection:"column"}}>
+        <p style={{width:"100%",paddingTop:"0.5rem"}}>Home {">"} Doctor</p>
+        <h1 style={{ padding: "2rem 0", textAlign: "center" }}>
+          OUR MEDICAL TEAM
+        </h1>
+        <p style={{ color: "#000", marginBottom: "1rem", maxWidth: "1100px" }}>
+          <span>At Vital Medi Clinic,</span>we believe in a holistic approach to
+          healthcare that combines the best of At Vital Medi Clinic, we are
+          proud of our team of experienced physicians who share a passion for
+          integrative medicine, longevity, and a commitment to providing
+          personalized care. Our doctors have extensive experience in preventive
+          medicine, anti-aging, and regenerative therapies, combining the best
+          of Eastern and Western approaches to optimize your health and
+          well-being.
+        </p>
+        <p style={{ color: "#000", maxWidth: "1100px",marginBottom: "1rem", }}>
+          With a deep understanding of both traditional and alternative
+          therapies, our certified practitioners are skilled in integrating
+          these modalities to create customized treatment plans that address
+          your unique needs and goals. We take the time to listen to your
+          concerns, thoroughly assess your health history, and explore
+          innovative longevity strategies, ensuring that every aspect of your
+          well-being is considered.
+        </p>
         <div
           className="wrap"
           style={{
-            width:"100%",
+            width: "100%",
             alignItems: "center",
             justifyContent: "center",
           }}
@@ -54,7 +75,7 @@ const Doctor = () => {
               style={{
                 maxWidth: "400px",
                 width: "100%",
-                marginBottom: "6rem",
+                marginBottom: "2rem",
                 flexDirection: "column",
                 justifyContent: "flex-start",
               }}
@@ -101,73 +122,84 @@ const Doctor = () => {
                   justifyContent: "flex-end",
                 }}
               >
-                <Link to={`/doctor/${item.name.toLocaleLowerCase().split(" ").join("-")}`}>SHOW MORE {">>"}</Link>
+                <Link
+                  to={`/doctor/${item.name
+                    .toLocaleLowerCase()
+                    .split(" ")
+                    .join("-")}`}
+                >
+                  SHOW MORE {">>"}
+                </Link>
               </div>
             </div>
           ))}
         </div>
         <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center",
-        }}
-      >
-        <div
           style={{
-            maxWidth: "800px",
-            width: "100%",
             display: "flex",
-            flexDirection: "column",
             justifyContent: "flex-end",
-            alignItems: "flex-end",
-            borderRight: "10px solid",
+            alignItems: "center",
           }}
         >
           <div
             style={{
-              background: "#0a3c57",
-              color: "#fff",
-              padding: "0.6rem 1rem",
-              display: "flex",
-              alignItems: "center",
-              maxWidth: "400px",
-              marginRight: "2rem",
-            }}
-          >
-            <FaLine size={45} style={{ marginRight: "1rem" }} /> ADD LINE:
-            @VITALMEDICLINIC
-          </div>
-          <div
-            style={{
-              display: "flex",
+              maxWidth: "800px",
               width: "100%",
-              alignItems: "flex-end",
+              display: "flex",
+              flexDirection: "column",
               justifyContent: "flex-end",
+              alignItems: "flex-end",
+              borderRight: "10px solid",
             }}
           >
-            <p style={{ padding: "0.5rem 0 0",fontWeight:"bold" }}>
-              CONSULT YOUR HEALTH CONCERNS AND ENJOY EXCLUSIVE PRIVIEGES HERE.
-            </p>
             <div
               style={{
-                maxWidth: "150px",
-                width: "100%",
-                height: "10px",
                 background: "#0a3c57",
+                color: "#fff",
+                padding: "0.6rem 1rem",
+                display: "flex",
+                alignItems: "center",
+                maxWidth: "400px",
+                marginRight: "2rem",
               }}
-            />
+            >
+              <FaLine size={45} style={{ marginRight: "1rem" }} /> ADD LINE:
+              @VITALMEDICLINIC
+            </div>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                alignItems: "flex-end",
+                justifyContent: "flex-end",
+              }}
+            >
+              <p style={{ padding: "0.5rem 0 0", fontWeight: "bold" }}>
+                CONSULT YOUR HEALTH CONCERNS AND ENJOY EXCLUSIVE PRIVIEGES HERE.
+              </p>
+              <div
+                style={{
+                  maxWidth: "150px",
+                  width: "100%",
+                  height: "10px",
+                  background: "#0a3c57",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
-      </div>
       <img
-      src={dotes}
-      style={{ width: "10rem", position: "absolute", left: 0,
-      marginLeft: "-4rem",
-      marginBottom:"-50rem",
-      bottom:0 }}
-    />
+        src={dotes}
+        style={{
+          width: "10rem",
+          position: "absolute",
+          left: 0,
+          marginLeft: "-4rem",
+          marginBottom: "-50rem",
+          bottom: 0,
+        }}
+      />
     </div>
   );
 };

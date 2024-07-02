@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 const Doctor = () => {
   const doctorData = [
     {
-      name: "PHONGPHAKORN SONTANARAT",
-      expert: "ANTI - AGING MEDICINE",
-      expert1: "REGENERATIVE MEDICINE",
-    },
-    {
-      name: "CHAWAPON KIDHIRUNKUL",
+      name: "DR. CHAWAPON KIDHIRUNKUL",
       expert: "PREVENTIVE MEDICINE",
       expert1: "ANTI - AGING MEDICINE",
     },
     {
-      name: "NITHIWAT SRIKANCHANAWAT",
+      name: "DR. PHONGPHAKORN SONTANARAT",
+      expert: "ANTI - AGING MEDICINE",
+      expert1: "REGENERATIVE MEDICINE",
+    },
+    {
+      name: "DR. NITHIWAT SRIKANCHANAWAT",
       expert: "INTERNAL MEDICINE",
       expert1: "ANTI-AGIN MEDICINE",
     },
     {
-      name: "ΚΑΝΤΑΡΟNG NUNCHAI",
+      name: "DR. ΚΑΝΤΑΡΟNG NUNCHAI",
       expert: "APPILY THI TRADITIONAL MEDICINE",
       expert1: "",
     },

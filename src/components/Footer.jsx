@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo-color.png";
 import qr from "../assets/qr.png";
 import fb from "../assets/social/fb.png";
 import line from "../assets/social/line.png";
 import insta from "../assets/social/insta.png";
 import phone from "../assets/social/phone.png";
 import blueBack from "../assets/HOMEPAGE/pic-clinic.jpg";
+import vitalLogo from "../assets/vital-logo.png"
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="between" style={{ maxWidth: "1300px", width: "100%" }}>
         <div style={{ maxWidth: "450px" }}>
           <img
-            src={logo}
+            src={vitalLogo}
             style={{ objectFit: "contain", maxWidth: "26rem",width:"100%" }}
             alt="logo"
           />
@@ -70,7 +70,7 @@ const Footer = () => {
         <div style={{ maxWidth: "220px" }}>
           <p style={{ textDecoration: "underline" }}>CONTACT US</p>
           <p>
-            4Th Floor, The Marche, Thong Lo Rd., Khlong Tan Nuea, Wattana,
+            4Th Floor, The Marche, Thonglor Rd., Khlong Tan Nuea, Wattana,
             Bangkok 10110
           </p>
           <p>info@drcbdgroup.com</p>

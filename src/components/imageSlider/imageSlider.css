@@ -2,10 +2,10 @@
   background-image: url("../../assets/HOMEPAGE/sevice-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .slider-container {
@@ -13,13 +13,13 @@
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .slider-item { 
   width: 20rem;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30rem !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,7 +34,8 @@
 .slider-item>img{
   height: 100%;
   width: 100%;
-  object-fit:cover;
+  object-fit:contain;
+  border-radius: 5px;
 }
 .prev,.next{
   font-size: 75px;

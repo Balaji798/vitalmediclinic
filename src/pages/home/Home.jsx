@@ -7,7 +7,7 @@ import ImageSlider from "../../components/imageSlider/ImageSlider";
 import DoctorSlider from "../../components/doctorSlider/DoctorSlider";
 import promotion from "../../assets/promotion1.jpg";
 import windowImage from "../../assets/windowImage.jpg";
-import banner from "../../assets/about-us.jpg"
+import vitalLogo from "../../assets/vital-logo.png";
 import group from "../../assets/group.jpg";
 const data = [
   {
@@ -36,6 +36,11 @@ const Home = () => {
   return (
     <div className="" style={{ width: "100%" }}>
       <div className="banner">
+        <img
+          src={vitalLogo}
+          style={{ objectFit: "contain", maxWidth: "26rem", width: "100%" }}
+          alt="logo"
+        />
         <h2 style={{ paddingBottom: "10px" }}>
           #1 Integrative Medical Approach
         </h2>
@@ -107,10 +112,9 @@ const Home = () => {
         </div>
       </div>
       <div
-      className="PROMOTION"
+        className="PROMOTION"
         style={{
           backgroundImage: `url(${promotion})`,
-
         }}
       >
         <h2
@@ -130,7 +134,7 @@ const Home = () => {
         <button>CONTACT US</button>
       </div>
       <div
-      className="center"
+        className="center"
         style={{
           backgroundImage: `url(${windowImage})`,
           backgroundSize: "cover",
@@ -142,17 +146,22 @@ const Home = () => {
       >
         {" "}
         <div
-          style={{ maxWidth: "1000px",width:"100%",paddingLeft:"2rem",textAlign:"left" }}
+          style={{
+            maxWidth: "1000px",
+            width: "100%",
+            paddingLeft: "2rem",
+            textAlign: "left",
+          }}
         >
           <h2
             style={{
               borderBottom: "2px solid",
-              maxWidth:"300px"
+              maxWidth: "300px",
             }}
           >
             AREA OF EXPERTS
           </h2>
-          <p style={{maxWidth:"400px"}}>
+          <p style={{ maxWidth: "400px" }}>
             <span style={{ fontWeight: 600 }}>
               Our tema of experienced healthcare professionals includes
               physicians specializing in preventive care, anti-aging, and
@@ -167,7 +176,7 @@ const Home = () => {
       </div>
       <DoctorSlider />
       <div
-      className="center"
+        className="center"
         style={{
           backgroundImage: `url(${group})`,
           backgroundSize: "cover",
@@ -179,7 +188,12 @@ const Home = () => {
       >
         {" "}
         <div
-          style={{ maxWidth: "1000px",width:"100%", textAlign: "left",padding:"0 2rem" }}
+          style={{
+            maxWidth: "1000px",
+            width: "100%",
+            textAlign: "left",
+            padding: "0 2rem",
+          }}
         >
           <h2
             style={{

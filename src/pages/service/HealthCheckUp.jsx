@@ -39,38 +39,23 @@ const HealthCheckUp = () => {
         <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
           TAILORED HEALTH ASSESSMENTS
         </h2>
-        <p style={{ padding: "1rem 0" }}>
-          <span>Heavy Metal Toxicity Testing:</span> Detect exposure levels to
-          harmful heavy metals, allowing for proactive detoxification strategies
+        <p style={{ padding: "1rem 0 0" }}>
+          <span>Tailored {"Men's"} and {"Women's"} Health Assessments:</span> Thorough evaluations of essential health markers with packages designed specifically for the unique needs of male and female patients.
         </p>
-        <p style={{ fontWeight: "bold", padding: "0.5rem 0" }}>
-          Heavy Metal Toxicity Testing: Safeguard your health and optimize
-          well-being.
+        <p style={{ fontWeight: "bold", padding: "0 0 1rem" }}>
+          Comprehensive Health Check: Proactive Wellness for Men and Women.
         </p>
-        <p style={{ padding: "1rem 0" }}>
-          Our Heavy Metal Toxicity Testing provides a comprehensive evaluation
-          of your exposure to potentially harmful heavy metals, including
-          mercury, lead, arsenic, and others. This precision testing empowers
-          you with the knowledge needed to take proactive steps towards
-          detoxification. Benefits may include:
+        <p>
+        Our tailored health assessments empower you to take charge of your health. We focus on early detection of potential health risks and optimizing your overall well-being.
         </p>
         <p style={{ paddingTop: "1rem" }}>
-          <span>• Improved Energy Levels:</span> Reduce fatigue caused by heavy
-          metal burdens.
-        </p>
-        <p>
-          <span>• Enhanced Mental Clarity:</span> Address potential cognitive
-          impacts for sharper focus.
-        </p>{" "}
-        <p>
-          <span>• Organ Protection:</span> Safeguard your long-term health by
-          identifying heavy metal exposure.
+          <span>• Personalized Care:</span>  Your health needs are unique. Our {"men's"} and {"women's"} health assessments address your specific concerns and are designed to provide actionable insights into your current health status, guiding you towards a healthier future.
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
-          {" "}
-          <span>• Personalized Detoxification:</span> Our experts use your test
-          results to tailor a detoxification plan that restores your health and
-          vitality.
+          <span>• Key Elements:</span> Our comprehensive checkups often include assessments of blood pressure, cholesterol, blood sugar, hormone levels, and more. Packages are customized based on your individual needs, health goals, and age.
+        </p>{" "}
+        <p style={{ paddingBottom: "0.5rem" }}>
+         Doctor-Guided Approach: Our experienced physicians review your results in detail, offering personalized consultations to explain your health profile and provide strategic recommendations to maximize your well-being.
         </p>
         <p style={{ fontWeight: "bold" }}>
           Contact us to learn more about Heavy Metal Toxicity Testing and take
