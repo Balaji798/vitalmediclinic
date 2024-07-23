@@ -20,9 +20,9 @@ const AllergiesTesting = () => {
         />
         <img
           src={dotes}
+           className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             left: 0,
             marginLeft: "-3rem",
             bottom: "-20rem",

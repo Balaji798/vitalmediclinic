@@ -1,4 +1,4 @@
-import promotion from "../assets/promotion.jpg";
+//import promotion from "../assets/promotion.jpg";
 import dotes from "../assets/SERVICES/servic-pic-18.png";
 import one from "../assets/HOMEPAGE/promotion-01.jpg";
 import two from "../assets/HOMEPAGE/promotion-02.jpg";
@@ -79,9 +79,9 @@ const Promotion = () => {
       />
       <img
         src={dotes}
+         className="content-position"
         style={{
           width: "10rem",
-          position: "absolute",
           right: 0,
           marginRight: "-0.5rem",
           marginBottom: "-60rem",

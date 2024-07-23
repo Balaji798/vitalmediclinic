@@ -13,7 +13,8 @@ const WellnessProgram = () => {
       >
         <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", left: 0 }}
+           className="content-position"
+          style={{ width: "10rem", left: 0 }}
         />
         <div
           style={{ maxWidth: "530px", textAlign: "center", padding: "1rem" }}

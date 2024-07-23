@@ -72,7 +72,8 @@ const Package = () => {
       />
       <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", right: 0,
+           className="content-position"
+          style={{ width: "10rem", right: 0,
           marginRight: "-0.5rem",
           marginBottom:"-60rem",
           bottom:0 }}

@@ -67,7 +67,8 @@ const ServiceOffered = () => {
       >
         <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", left: 0 }}
+           className="content-position"
+          style={{ width: "10rem", left: 0 }}
         />
         <div
           style={{ maxWidth: "530px", textAlign: "center", padding: "1rem" }}
@@ -259,7 +260,8 @@ const ServiceOffered = () => {
       >
         <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", left: 0 }}
+           className="content-position"
+          style={{ width: "10rem", left: 0 }}
         />
         <h2>MEDICAL CONDITIONS ADDRESSED</h2>
         <div
@@ -289,7 +291,8 @@ const ServiceOffered = () => {
       >
         <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", left: 0 }}
+           className="content-position"
+          style={{ width: "10rem", left: 0 }}
         />
         <div className="center">
           <div style={{ maxWidth: "500px", textAlign: "center" }}>
@@ -637,9 +640,9 @@ const ServiceOffered = () => {
       <div className="center" style={{ padding: "3rem 0" }}>
         <img
           src={dotes}
+           className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             left: 0,
             marginLeft: "-3rem",
             marginTop: "-10rem",

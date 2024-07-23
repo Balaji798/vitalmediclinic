@@ -174,9 +174,9 @@ const NCDDisease = () => {
         </div>
         <img
           src={dotes}
+           className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             right: 0,
             marginRight: "-3rem",
             marginTop: "20rem",

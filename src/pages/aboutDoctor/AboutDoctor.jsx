@@ -44,14 +44,7 @@ const AboutDoctor = () => {
               >
                 <img
                   src={doctor[0]?.image}
-                  style={{
-                    maxWidth: "390px",
-                    width:"100%",
-                    marginLeft: "14.4rem",
-                    objectFit: "cover",
-                    height: "28.2rem",
-                    marginTop:"-1.5rem"
-                  }}
+                 className="doctor-img"
                 />
               </div>
             </div>
@@ -156,7 +149,8 @@ const AboutDoctor = () => {
       </div>
       <img
       src={dotes}
-      style={{ width: "10rem", position: "absolute", right: 0,bottom:0 }}
+       className="content-position"
+      style={{ width: "10rem", right: 0,bottom:0 }}
     />
     </div>
   );

@@ -81,9 +81,9 @@ const KartomTherapies = () => {
       <div className="center" style={{ padding: "3rem 1rem" }}>
         <img
           src={dotes}
+           className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             left: 0,
             marginLeft: "-3rem",
             marginTop: "-10rem",

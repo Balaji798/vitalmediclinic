@@ -63,7 +63,9 @@ const HerbalMedicean = () => {
       >
         <img
           src={dotes}
-          style={{ width: "10rem", position: "absolute", left: 0 }}
+
+           className="content-position"
+          style={{ width: "10rem", left: 0 }}
         />
         <div className="center" style={{flexWrap:"wrap",maxWidth:"1200px",width:"100%"}}>
           <div style={{ maxWidth: "500px", textAlign: "center",padding:"0 1rem" }}>

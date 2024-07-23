@@ -44,9 +44,9 @@ const PainManagement = () => {
         />
         <img
           src={dotes}
+          className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             left: 0,
             marginLeft: "-3rem",
             marginTop: "20rem",
@@ -178,9 +178,9 @@ className="service-image"
         </div>
         <img
           src={dotes}
+           className="content-position"
           style={{
             width: "10rem",
-            position: "absolute",
             right: 0,
             marginRight: "-3rem",
             marginTop: "20rem",

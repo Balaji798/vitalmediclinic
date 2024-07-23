@@ -35,7 +35,7 @@ const doctorData = [
 
 const Doctor = () => {
   return (
-    <div className="center" style={{ paddingBottom: "4rem" }}>
+    <div className="center" style={{ padding: "0 1rem 4rem" }}>
       <div className="container center" style={{flexDirection:"column"}}>
         <p style={{width:"100%",paddingTop:"0.5rem"}}>Home {">"} Doctor</p>
         <h1 style={{ padding: "2rem 0", textAlign: "center" }}>
@@ -191,9 +191,9 @@ const Doctor = () => {
       </div>
       <img
         src={dotes}
+         className="content-position"
         style={{
           width: "10rem",
-          position: "absolute",
           left: 0,
           marginLeft: "-4rem",
           marginBottom: "-50rem",

@@ -2,9 +2,11 @@ import { FormControl, FormLabel, MenuItem, Select } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "../../components/modal/Modal";
 
 const Appointments = () => {
   const form = useRef();
+  const [open,setOpen] = useState(false)
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -38,6 +40,7 @@ const Appointments = () => {
         .then(
           () => {
             console.log("SUCCESS!");
+            setOpen(true)
           },
           (error) => {
             console.log("FAILED...", error.text);
@@ -49,6 +52,7 @@ const Appointments = () => {
   };
   return (
     <div>
+    {open && <Modal setOpen={setOpen} />}
       <h1 style={{ textAlign: "center", padding: "2rem 0" }}>APPOINTMENTS</h1>
       <div
         className="center"

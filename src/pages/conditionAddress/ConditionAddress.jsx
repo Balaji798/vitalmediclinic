@@ -35,9 +35,9 @@ const ConditionAddress = () => {
       </div>
       <img
         src={dotes}
+         className="content-position"
         style={{
           width: "10rem",
-          position: "absolute",
           left: 0,
           marginTop: "-20rem",
           marginLeft: "-4rem",
@@ -45,9 +45,9 @@ const ConditionAddress = () => {
       />
       <img
         src={dotes}
+         className="content-position"
         style={{
           width: "10rem",
-          position: "absolute",
           right: 0,
           marginBottom: "-30rem",
           marginRight: "-3.8rem",

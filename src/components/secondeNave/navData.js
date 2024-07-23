@@ -147,6 +147,7 @@ export const navData = [
   },
   {
     title: "PACKAGE",
+    link:"/package",
     options: [
       {
         title: "EXTRACTION",
@@ -172,6 +173,7 @@ export const navData = [
   },
   {
     title: "DOCTOR",
+    link:"/doctor",
     options: [
       {
         title: "DR. CHAWAPON KIDHIRUNKUL",
@@ -193,6 +195,7 @@ export const navData = [
   },
   {
     title: "CONTACT US",
+    link:"/contact-us",
     options: [
    
     ],
