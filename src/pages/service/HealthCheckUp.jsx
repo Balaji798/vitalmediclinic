@@ -4,16 +4,7 @@ import doctorConsultation from "../../assets/SERVICES/doctor-consultation.jpg";
 
 const HealthCheckUp = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexWrap:"wrap",
-        padding: "2rem 0",
-        minHeight: "50rem",
-        height: "100%",
-      }}
-    >
+    <div className="service">
       <div
         style={{
           width: "15rem",
@@ -40,22 +31,38 @@ const HealthCheckUp = () => {
           TAILORED HEALTH ASSESSMENTS
         </h2>
         <p style={{ padding: "1rem 0 0" }}>
-          <span>Tailored {"Men's"} and {"Women's"} Health Assessments:</span> Thorough evaluations of essential health markers with packages designed specifically for the unique needs of male and female patients.
+          <span>
+            Tailored {"Men's"} and {"Women's"} Health Assessments:
+          </span>{" "}
+          Thorough evaluations of essential health markers with packages
+          designed specifically for the unique needs of male and female
+          patients.
         </p>
         <p style={{ fontWeight: "bold", padding: "0 0 1rem" }}>
           Comprehensive Health Check: Proactive Wellness for Men and Women.
         </p>
         <p>
-        Our tailored health assessments empower you to take charge of your health. We focus on early detection of potential health risks and optimizing your overall well-being.
+          Our tailored health assessments empower you to take charge of your
+          health. We focus on early detection of potential health risks and
+          optimizing your overall well-being.
         </p>
         <p style={{ paddingTop: "1rem" }}>
-          <span>• Personalized Care:</span>  Your health needs are unique. Our {"men's"} and {"women's"} health assessments address your specific concerns and are designed to provide actionable insights into your current health status, guiding you towards a healthier future.
+          <span>• Personalized Care:</span> Your health needs are unique. Our{" "}
+          {"men's"} and {"women's"} health assessments address your specific
+          concerns and are designed to provide actionable insights into your
+          current health status, guiding you towards a healthier future.
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
-          <span>• Key Elements:</span> Our comprehensive checkups often include assessments of blood pressure, cholesterol, blood sugar, hormone levels, and more. Packages are customized based on your individual needs, health goals, and age.
+          <span>• Key Elements:</span> Our comprehensive checkups often include
+          assessments of blood pressure, cholesterol, blood sugar, hormone
+          levels, and more. Packages are customized based on your individual
+          needs, health goals, and age.
         </p>{" "}
         <p style={{ paddingBottom: "0.5rem" }}>
-         Doctor-Guided Approach: Our experienced physicians review your results in detail, offering personalized consultations to explain your health profile and provide strategic recommendations to maximize your well-being.
+          Doctor-Guided Approach: Our experienced physicians review your results
+          in detail, offering personalized consultations to explain your health
+          profile and provide strategic recommendations to maximize your
+          well-being.
         </p>
         <p style={{ fontWeight: "bold" }}>
           Contact us to learn more about Heavy Metal Toxicity Testing and take
@@ -74,22 +81,14 @@ const HealthCheckUp = () => {
             height: "28rem",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            paddingTop:"2rem"
+            paddingTop: "2rem",
           }}
         >
-          <img
-            src={doctorConsultation}
-            style={{
-              maxWidth: "312px",
-              marginLeft: "-7.01rem",
-              objectFit: "cover",
-              height: "22rem",
-            }}
-          />
+          <img src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default HealthCheckUp
+export default HealthCheckUp;

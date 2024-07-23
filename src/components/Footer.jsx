@@ -27,8 +27,12 @@ const Footer = () => {
         alignItems: "center",
         padding: "2rem 0", }}
       >
-        <h1 className="contact-tag" style={{color: "#fff",}}>ARE YOU READY FOR OPTIMUM HEALTH</h1>
-        <Link to="/appointments" style={{background:"#fff",borderRadius:"10px",padding:"10px 2rem",marginTop:"2rem",color:"#0a3c57",fontWeight:"bold",fontSize:"1.2rem"}}>START NOW</Link>
+        <h2 className="contact-tag">
+        Are you ready to achieve optimum health?
+        <br/>
+        Please schedule your appointment now!
+        </h2>
+        <Link to="/appointments" style={{background:"#fff",borderRadius:"10px",padding:"10px 2rem",marginTop:"1rem",color:"#0a3c57",fontWeight:"bold",fontSize:"1.2rem"}}>START NOW</Link>
       </div>
       <div className="between" style={{ maxWidth: "1300px", width: "100%" }}>
         <div style={{ maxWidth: "450px" }}>
@@ -37,7 +41,7 @@ const Footer = () => {
             style={{ objectFit: "contain", maxWidth: "26rem",width:"100%" }}
             alt="logo"
           />
-          <p>
+          <p >
             Vital Medi Clinic is an Integrated Healthcare Center that practices
             Integrative Medicine, Regenerative Medicine and Micro Biology by
             combining the beauty of East & West approach
@@ -76,10 +80,10 @@ const Footer = () => {
           <p>info@drcbdgroup.com</p>
           <p>+66 9 4263 9964</p>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center",flexWrap:"wrap" }}>
           <img
             src={qr}
-            style={{ maxWidth: "12rem", marginRight: "1rem" }}
+            style={{ maxWidth: "12rem", marginRight: "1rem",marginBottom:"1rem" }}
             alt="qr-code"
           />
           <div>

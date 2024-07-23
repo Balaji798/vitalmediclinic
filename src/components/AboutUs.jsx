@@ -49,7 +49,7 @@ const AboutUs = () => {
               }}
             >
               <Link
-                to="/vision-mission"
+                to="/about-us"
                 style={{ cursor: "pointer" }}
                 className="sub-menu"
               >

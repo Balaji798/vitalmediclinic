@@ -1,11 +1,11 @@
 .backgroundImage{
     background: no-repeat center center; 
     background-size: content;
-    width: 1600px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 }
 
 .backgroundImage1{

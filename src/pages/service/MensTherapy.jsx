@@ -5,13 +5,7 @@ import doctorConsultation from "../../assets/wellness/male-patient.jpg";
 const MensTherapy = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "2rem 0",
-        minHeight: "50rem",
-        height: "100%",
-      }}
+className="service"
     >
       <div
         style={{
@@ -102,12 +96,7 @@ const MensTherapy = () => {
         >
           <img
             src={doctorConsultation}
-            style={{
-              maxWidth: "312px",
-              marginLeft: "-7.01rem",
-              objectFit: "cover",
-              height: "22rem",
-            }}
+      className="service-image"
           />
         </div>
       </div>

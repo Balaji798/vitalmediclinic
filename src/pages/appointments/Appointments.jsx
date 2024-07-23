@@ -30,10 +30,11 @@ const Appointments = () => {
   const handelSubmit = (e) => {
     e.preventDefault();
     try {
-      emailjs
-        .sendForm("service_b2jwjoh", "template_uf8y0s4", form.current, {
-          publicKey: "WlO2gyXeybyR-sGeA",
-        })
+      emailjs.sendForm("service_kj18m6c","template_o5w7euu",form.current,{publicKey: "l3WgmiK9ZDpxLaykU"})
+        // .sendForm("service_b2jwjoh", "template_uf8y0s4", form.current, {
+        //   publicKey: "WlO2gyXeybyR-sGeA",
+        // })
+
         .then(
           () => {
             console.log("SUCCESS!");
@@ -61,19 +62,23 @@ const Appointments = () => {
             justifyContent: "center",
           }}
         >
-          <div style={{ maxWidth: "440px", width: "100%",paddingRight:"0.5rem" }}>
-            <h2>
-              If You Are Interested In Optimal Your Health, Pleas Send Us A
-              Message
-            </h2>
-            <p style={{paddingTop:"0.5rem"}}>
+{/*          <div
+            style={{ maxWidth: "440px", width: "100%", paddingRight: "0.5rem" }}
+          >
+            <h3>
+              Are you ready to achieve optimum health?
+              <br />
+              Please schedule your appointment now!
+            </h3>
+            <p style={{ paddingTop: "0.5rem" }}>
               {"You're"} welcome to get in touch withe us should you wish to
               make an enquiry, arrange an appointment or give us feedback about
               our website and/or products and services.
               <br /> {"We'd"} love to hear from you
             </p>
-          </div>
-          <form ref={form}
+          </div>*/}
+          <form
+            ref={form}
             style={{
               maxWidth: "600px",
               width: "100%",
@@ -94,7 +99,7 @@ const Appointments = () => {
                 label="First Name"
                 variant="outlined"
                 name="firstName"
-                style={{width:"49%"}}
+                style={{ width: "49%" }}
                 required
               />
               <TextField
@@ -102,7 +107,7 @@ const Appointments = () => {
                 label="Last Name"
                 variant="outlined"
                 name="lastName"
-                style={{width:"49%"}}
+                style={{ width: "49%" }}
                 required
               />
             </div>

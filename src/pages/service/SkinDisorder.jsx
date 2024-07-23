@@ -7,12 +7,7 @@ const SkinDisorder = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          height: "100%",
-        }}
+className="service"
       >
         <div
           style={{
@@ -84,12 +79,7 @@ const SkinDisorder = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
@@ -97,7 +87,8 @@ const SkinDisorder = () => {
       <div
         style={{
           display: "flex",
-          padding: "2rem 0",
+          flexWrap:"wrap",
+          padding: "2rem 1rem",
           height: "100%",
         }}
       >

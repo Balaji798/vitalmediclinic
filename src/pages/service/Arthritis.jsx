@@ -8,6 +8,7 @@ const Arthritis = () => {
     <div
       style={{
         padding: "2rem 0",
+        overflowX:"hidden"
       }}
     >
       <div style={{ display: "flex" }}>
@@ -32,11 +33,12 @@ const Arthritis = () => {
         style={{
           backgroundColor: "#e0e0e2",
           display: "flex",
-          paddingLeft: "15rem",
           alignItems: "center",
+          justifyContent:"flex-end",
+          flexWrap:"wrap"
         }}
       >
-        <div>
+        <div style={{maxWidth:"900px",width:"100%"}}>
           <p style={{ padding: "1rem 0" }}>
             <span>Rheumatoid Arthritis (RA):</span> Understanding the Disease
             and Our Integrative Treatment Approach
@@ -73,13 +75,7 @@ const Arthritis = () => {
         />
       </div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "50rem",
-          height: "100%",
-        }}
+className="service"
       >
         {" "}
         <div style={{ maxWidth: "500px", width: "100%" }}>

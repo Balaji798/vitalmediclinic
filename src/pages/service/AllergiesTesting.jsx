@@ -6,19 +6,10 @@ import service2 from "../../assets/SERVICES/foodAllergy/sevice-pic-19.png";
 import service3 from "../../assets/SERVICES/foodAllergy/sevice-pic-20.png";
 import service4 from "../../assets/SERVICES/foodAllergy/sevice-pic-21.png";
 
-
 const AllergiesTesting = () => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "35rem",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -79,15 +70,7 @@ const AllergiesTesting = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
-            />
+            <img src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -95,19 +78,27 @@ const AllergiesTesting = () => {
         className="center"
         style={{ flexDirection: "column", backgroundColor: "#e9e9e7" }}
       >
-        <div style={{ maxWidth: "540px", padding: "1rem 0 2rem" }}>
-          <h2 style={{ fontWeight: "bold",textAlign:"center",paddingBottom:"1rem" }}>
+        <div style={{ maxWidth: "540px", padding: "1rem 1rem 2rem 1rem" }}>
+          <h2
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              paddingBottom: "1rem",
+            }}
+          >
             Benefits of Food Sensitivity Testing:
           </h2>
           <div
             style={{
               display: "flex",
               background: "#fff",
-              alignItems:"center",
+              alignItems: "center",
               padding: "10px",
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
+              flexWrap:"wrap",
+              justifyContent:"center",
             }}
           >
             <img src={service1} style={{ maxWidth: "5rem" }} />
@@ -121,10 +112,12 @@ const AllergiesTesting = () => {
               display: "flex",
               background: "#fff",
               padding: "10px",
-              alignItems:"center",
+              alignItems: "center",
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
+              flexWrap:"wrap",
+              justifyContent:"center",
             }}
           >
             <img src={service2} style={{ maxWidth: "5rem" }} />
@@ -137,43 +130,50 @@ const AllergiesTesting = () => {
             style={{
               display: "flex",
               background: "#fff",
-              alignItems:"center",
+              alignItems: "center",
               padding: "10px",
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
+              flexWrap:"wrap",
+              justifyContent:"center",
             }}
           >
             <img src={service3} style={{ maxWidth: "5rem" }} />
             <div style={{ marginLeft: "0.5rem" }}>
-                <h2 style={{ fontSize: "1.5rem" }}>Clearer Skin</h2> 
-                <p>Address potential dietary causes of
-                skin concerns.</p>
+              <h2 style={{ fontSize: "1.5rem" }}>Clearer Skin</h2>
+              <p>Address potential dietary causes of skin concerns.</p>
             </div>
           </div>
           <div
-          style={{
-            display: "flex",
-            background: "#fff",
-            alignItems:"center",
-            padding: "10px",
-            borderRadius: "10px",
-            boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          <img src={service4} style={{ maxWidth: "5rem" }} />
-          <div style={{ marginLeft: "0.5rem" }}>
-            {" "}
-            <h2 style={{ fontSize: "1.5rem" }}>Overall Well-being</h2> 
-            <p>Feel your best by uncovering
-            hidden food sensitivities. Take action today! Schedule your Food
-            Allergy and Intolerance Testing and start your journey towards
-            better health.
-            </p>
-          </div>
+            style={{
+              display: "flex",
+              background: "#fff",
+              alignItems: "center",
+              padding: "10px",
+              borderRadius: "10px",
+              boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
+              flexWrap:"wrap",
+              justifyContent:"center",
+              
+            }}
+          >
+            <img src={service4} style={{ maxWidth: "5rem" }} />
+            <div style={{ marginLeft: "0.5rem" }}>
+              {" "}
+              <h2 style={{ fontSize: "1.5rem" }}>Overall Well-being</h2>
+              <p>
+                Feel your best by uncovering hidden food sensitivities. Take
+                action today! Schedule your Food Allergy and Intolerance Testing
+                and start your journey towards better health.
+              </p>
+            </div>
           </div>
         </div>
-          <p style={{fontWeight:"bold",paddingBottom:"0.5rem"}}>Take action today! Schedule your Food Allergy and Intolerance Testing and start your journey towards better health</p>
+        <p style={{ fontWeight: "bold", paddingBottom: "0.5rem" }}>
+          Take action today! Schedule your Food Allergy and Intolerance Testing
+          and start your journey towards better health
+        </p>
       </div>
     </div>
   );

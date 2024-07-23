@@ -8,13 +8,7 @@ const MicroNutrient = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-
-          height: "100%",
-        }}
+className="service"
       >
         <div
           style={{
@@ -68,12 +62,7 @@ const MicroNutrient = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
@@ -83,10 +72,11 @@ const MicroNutrient = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          flexWrap:"wrap",
           padding:"2rem 0 1rem"
         }}
       >
-        <div style={{ maxWidth: "1100px", display: "flex",alignItems:"center" }}>
+        <div style={{ maxWidth: "1100px", display: "flex",alignItems:"center",flexWrap:"wrap" }}>
           <div style={{maxWidth:"28rem", paddingLeft: "1rem", borderLeft: "5px solid",height:"19rem" }}>
             <img
               src={happy}

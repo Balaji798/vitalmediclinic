@@ -9,7 +9,7 @@ const WellnessProgram = () => {
     <div>
       <div
         className="center"
-        style={{ display: "flex", background: "#e6e8e7", padding: "3rem 0" }}
+        style={{ display: "flex", background: "#e6e8e7", padding: "3rem 0",flexWrap:"wrap" }}
       >
         <img
           src={dotes}
@@ -88,7 +88,7 @@ const WellnessProgram = () => {
           </div>
         </div>
       </div>
-      <div className="center" style={{ padding: "2rem 0" }}>
+      <div className="center" style={{ padding: "2rem 1rem" }}>
         <div className="container">
           <p style={{ textAlign: "center", paddingBottom: "2rem" }}>
             Our clinic offers a range of specialized wellness programs designed
@@ -104,6 +104,7 @@ const WellnessProgram = () => {
                 width: "100%",
                 background: "#fff",
                 display: "flex",
+                flexWrap:"wrap",
                 flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
                 marginBottom: "1rem",
                 padding: "1rem 1.5rem",
@@ -131,7 +132,7 @@ const WellnessProgram = () => {
       className="center"
       style={{ background: "#e6e8e7", padding: "2rem 0" }}
     >
-      <div className="container center" style={{ display: "flex" }}>
+      <div className="container center" style={{flexWrap:"wrap"}}>
         <div
           style={{
             display: "flex",

@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import "@emotion/styled"
 import "@mui/styled-engine"
+import SecondeNave from "./components/secondeNave/SecondeNave";
 const AboutDoctor =lazy(async ()=> await import("./pages/aboutDoctor/AboutDoctor"));
 const Home = lazy(async () => await import("./pages/home/Home"));
 const Navbar = lazy(async () => await import("./components/navbar/Navbar"));
@@ -50,6 +51,7 @@ const PrenatalMassage = lazy(async()=> await import("./pages/service/PrenatalMas
 const Wellness = lazy(async()=> await import("./pages/service/Wellness"))
 
 function App() {
+  const [openNav, setOpenNav] = useState(false);
   return (
     <Suspense
       fallback={
@@ -69,7 +71,8 @@ function App() {
       }
     >
       <Router scrollRestoration="auto">
-        <Navbar />
+        <Navbar setOpenNav={setOpenNav} openNav={openNav}/>
+        <SecondeNave setOpenNav={setOpenNav} openNav={openNav} />
         <div style={{ paddingTop: "4rem" }}>
           <Routes>
             <Route path="/" element={<Home />} />

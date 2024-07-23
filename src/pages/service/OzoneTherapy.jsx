@@ -4,15 +4,7 @@ import doctorConsultation from "../../assets/wellness/smiling-pleased.jpg";
 
 const OzoneTherapy = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "2rem 0",
-        minHeight: "50rem",
-        height: "100%",
-      }}
-    >
+    <div className="service">
       <div
         style={{
           width: "15rem",
@@ -57,7 +49,7 @@ const OzoneTherapy = () => {
           as a natural antioxidant and may help reduce inflammation throughout
           the body.
         </p>{" "}
-        <p style={{paddingBottom:"1rem"}}>
+        <p style={{ paddingBottom: "1rem" }}>
           <span>• Improved Oxygen Delivery:</span> Ozone may enhance oxygen
           utilization by cells, potentially improving circulation and tissue
           health.
@@ -111,12 +103,7 @@ const OzoneTherapy = () => {
         >
           <img
             src={doctorConsultation}
-            style={{
-              maxWidth: "312px",
-              marginLeft: "-7.01rem",
-              objectFit: "cover",
-              height: "22rem",
-            }}
+className="service-image"
           />
         </div>
       </div>

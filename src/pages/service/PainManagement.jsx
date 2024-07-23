@@ -33,15 +33,7 @@ const PainManagement = () => {
   ];
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "50rem",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -151,25 +143,12 @@ const PainManagement = () => {
           >
             <img
               src={active}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "50rem",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         {" "}
         <div style={{ maxWidth: "500px", width: "100%" }}>
           <div
@@ -257,7 +236,7 @@ const PainManagement = () => {
         className="center"
         style={{ background: "#0a3c57", flexDirection: "column" }}
       >
-        <div style={{ maxWidth: "700px", padding: "2rem 0" }}>
+        <div style={{ maxWidth: "700px", padding: "2rem 1rem" }}>
           <h3
             style={{
               color: "#fff",
@@ -274,6 +253,7 @@ const PainManagement = () => {
                 style={{
                   backgroundColor: "#fff",
                   display: "flex",
+                  flexWrap:"wrap",
                   flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                   marginBottom: "1rem",
                   padding: "0.5rem 1.5rem",
@@ -295,7 +275,7 @@ const PainManagement = () => {
               </div>
             ))}
           </div>
-          <p style={{color:"#fff"}}>
+          <p style={{ color: "#fff" }}>
             Our goal is not just pain relief but long-term improvement. Consult
             with our specialists to develop a personalized strategy to break the
             cycle of chronic pain and reclaim your well-being

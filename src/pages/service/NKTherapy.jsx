@@ -6,14 +6,7 @@ import therapy from "../../assets/wellness/sevice-pic-43.jpg";
 const NKTherapy = () => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -100,15 +93,7 @@ const NKTherapy = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
-            />
+            <img src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -119,31 +104,51 @@ const NKTherapy = () => {
           backgroundRepeat: "no-repeat",
           maxWidth: "1600px",
           objectFit: "cover",
-          padding: "4rem 0rem 4rem 50rem",
+          padding: "4rem 1rem 4rem",
+          display:"flex",
+          justifyContent:"flex-end",
+          alignItems:"center"
         }}
       >
-        <span
-          style={{ paddingBottom: "0.5rem", maxWidth: "400px", fontSize: "18px" }}
-        >
-          Important Considerations:
-        </span>
-        <p
-          style={{ paddingBottom: "0.5rem", maxWidth: "500px", fontSize: "14px" }}
-        >
-          <span>• Personalized Approach:</span>NK Cell Therapy protocols are
-          tailored to the individual {"patient's"} needs and health conditions.
-        </p>
-        <p
-          style={{ paddingBottom: "0.5rem", maxWidth: "500px", fontSize: "14px" }}
-        >
-          <span>• Evolving Therapy:</span>This is a rapidly developing field of
-          medicine with continuous research into its potential benefits and
-          applications.
-        </p>
-        <p style={{ fontWeight: "bold", maxWidth: "500px", fontSize: "14px" }}>
-          Consult with a specialist to determine if NK Cell Therapy may be a
-          suitable option to support your health goals and treatment plan
-        </p>
+        <div style={{maxWidth:"800px",width:"100%"}}>
+          <span
+            style={{
+              paddingBottom: "0.5rem",
+              maxWidth: "400px",
+              fontSize: "18px",
+            }}
+          >
+            Important Considerations:
+          </span>
+          <p
+            style={{
+              paddingBottom: "0.5rem",
+              maxWidth: "500px",
+              fontSize: "14px",
+            }}
+          >
+            <span>• Personalized Approach:</span>NK Cell Therapy protocols are
+            tailored to the individual {"patient's"} needs and health
+            conditions.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0.5rem",
+              maxWidth: "500px",
+              fontSize: "14px",
+            }}
+          >
+            <span>• Evolving Therapy:</span>This is a rapidly developing field
+            of medicine with continuous research into its potential benefits and
+            applications.
+          </p>
+          <p
+            style={{ fontWeight: "bold", maxWidth: "500px", fontSize: "14px" }}
+          >
+            Consult with a specialist to determine if NK Cell Therapy may be a
+            suitable option to support your health goals and treatment plan
+          </p>
+        </div>
       </div>
     </div>
   );

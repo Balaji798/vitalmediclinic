@@ -10,14 +10,7 @@ import res from "../../assets/wellness/scientist-researcher.jpg";
 const StemTherapy = () => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -84,23 +77,19 @@ const StemTherapy = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
-            />
+            <img src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
+      <div className="center" style={{padding:"0 1rem"}}>
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-between",
           alignItems: "center",
+          flexWrap: "wrap",
+          maxWidth:"1000px",
+          width:"100%"
         }}
       >
         <div
@@ -108,6 +97,7 @@ const StemTherapy = () => {
             display: "flex",
             flexWrap: "wrap",
             maxWidth: "16rem",
+            width:"100%",
             justifyContent: "space-between",
             padding: "1rem 0",
           }}
@@ -139,7 +129,7 @@ const StemTherapy = () => {
             style={{ width: "7.8rem", height: "9rem", objectFit: "cover" }}
           />
         </div>
-        <div style={{maxWidth:"700px",paddingLeft:"3rem"}}>
+        <div style={{ maxWidth: "700px" }}>
           <span>How Stem Cell Therapy Works:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
             {" "}
@@ -163,6 +153,7 @@ const StemTherapy = () => {
           </p>
         </div>
       </div>
+      </div>
       <div
         style={{
           backgroundImage: `url(${therapy})`,
@@ -173,7 +164,7 @@ const StemTherapy = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "3rem 0rem",
+          padding: "3rem 1rem",
         }}
       >
         <div style={{ maxWidth: "920px", width: "100%" }}>

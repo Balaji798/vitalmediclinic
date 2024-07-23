@@ -7,11 +7,7 @@ const ProfileAnalysis = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-        }}
+className="service"
       >
         <div
           style={{

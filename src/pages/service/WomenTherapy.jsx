@@ -4,15 +4,7 @@ import doctorConsultation from "../../assets/wellness/female-doctor.jpg";
 
 const WomenTherapy = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "2rem 0",
-        minHeight: "50rem",
-        height: "100%",
-      }}
-    >
+    <div className="service">
       <div
         style={{
           width: "15rem",
@@ -80,7 +72,9 @@ const WomenTherapy = () => {
           triglycerides, and blood circulation for a healthier heart.
         </p>
         <p style={{ fontWeight: "bold" }}>
-        Experience the transformative power of our {"Women's"} Health Therapies. Schedule your consultation today and begin your journey to optimal wellness.
+          Experience the transformative power of our {"Women's"} Health
+          Therapies. Schedule your consultation today and begin your journey to
+          optimal wellness.
         </p>
       </div>
       <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -100,12 +94,7 @@ const WomenTherapy = () => {
         >
           <img
             src={doctorConsultation}
-            style={{
-              maxWidth: "312px",
-              marginLeft: "-7.01rem",
-              objectFit: "cover",
-              height: "22rem",
-            }}
+            className="service-image"
           />
         </div>
       </div>

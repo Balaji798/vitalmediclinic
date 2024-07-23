@@ -7,13 +7,14 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 const Package = () => {
   return (
     <div style={{paddingBottom:"4rem"}}>
-      <div style={{ display: "flex", alignItems: "center", padding: "2rem 0" }}>
+      <div style={{ display: "flex", alignItems: "center", padding: "2rem 1rem" }}>
         <div
           style={{
-            width: "12rem",
+            maxWidth: "12rem",
+            width:"100%",
             height: "5px",
             background: "#0a3c57",
-            marginRight: "10rem",
+ 
           }}
         />
         <h1>HEALTH CHECK UP PACKAGE</h1>
@@ -28,8 +29,8 @@ const Package = () => {
         marginLeft:"-0.5rem",
         marginTop:"42rem"
       }}/>
-      <div className="center">
-        <div className="wrap" style={{ maxWidth: "1000px" }}>
+      <div className="center" style={{padding:"0 1rem"}}>
+        <div className="wrap" style={{ maxWidth: "1000px",width:"100%" }}>
           <img src={cufe} style={{ maxWidth: "480px", marginBottom: "2rem" }} />
           <img
             src={virus}

@@ -5,13 +5,7 @@ import doctorConsultation from "../../assets/healthCheckUp/senior-doctor.jpg";
 const ToxicityTesting = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "2rem 0",
-        minHeight: "50rem",
-        height: "100%",
-      }}
+className="service"
     >
       <div
         style={{

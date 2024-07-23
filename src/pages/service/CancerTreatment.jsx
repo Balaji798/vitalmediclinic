@@ -9,12 +9,7 @@ const CancerTreatment = () => {
   return (
     <div className="center" style={{ flexDirection: "column" }}>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          height: "100%",
-        }}
+        className="service"
       >
         <div
           style={{

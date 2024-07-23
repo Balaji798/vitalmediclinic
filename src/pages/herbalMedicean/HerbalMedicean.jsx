@@ -59,14 +59,14 @@ const HerbalMedicean = () => {
     <div>
       <div
         className="center"
-        style={{ background: "#e6e8e7", padding: "2rem 0" }}
+        style={{ background: "#e6e8e7", padding: "2rem 0rem" }}
       >
         <img
           src={dotes}
           style={{ width: "10rem", position: "absolute", left: 0 }}
         />
-        <div className="center">
-          <div style={{ maxWidth: "500px", textAlign: "center" }}>
+        <div className="center" style={{flexWrap:"wrap",maxWidth:"1200px",width:"100%"}}>
+          <div style={{ maxWidth: "500px", textAlign: "center",padding:"0 1rem" }}>
             <div
               style={{
                 width: "8rem",
@@ -117,12 +117,7 @@ const HerbalMedicean = () => {
             </div>
             <img
               src={herbal}
-              style={{
-                maxWidth: "400px",
-                position: "absolute",
-                marginLeft: "10px",
-                marginTop: "10px",
-              }}
+              className="service-image1"
             />
             <div
               style={{
@@ -140,7 +135,7 @@ const HerbalMedicean = () => {
           </div>
         </div>
       </div>
-      <div className="center" style={{ padding: "2rem 0" }}>
+      <div className="center" style={{ padding: "2rem 1rem" }}>
         <div className="container">
           <h2 style={{ textAlign: "center" }}>
             KEY ELEMENTS OF OUR THAI HERBAL MEDICINE APPROACH:
@@ -160,9 +155,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
+                flexWrap:"wrap"
               }}
             >
-              <img src={individualized} style={{ maxWidth: "200px" }} />
+              <img src={individualized} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Individualized Formulations:
@@ -178,9 +174,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
+                flexWrap:"wrap"
               }}
             >
-              <img src={proven} style={{ maxWidth: "200px" }} />
+              <img src={proven} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Proven Remedies:</span> We
                 utiliz herbs with a long history of safe and effective use
@@ -195,9 +192,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
+                flexWrap:"wrap"
               }}
             >
-              <img src={synergistic} style={{ maxWidth: "200px" }} />
+              <img src={synergistic} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Synergistic Integration:
@@ -214,9 +212,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
+                flexWrap:"wrap"
               }}
             >
-              <img src={holistic} style={{ maxWidth: "200px" }} />
+              <img src={holistic} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Holistic Focus:</span> We
                 address not only physical symptoms but body, mind, and spirit to
@@ -444,7 +443,7 @@ const HerbalMedicean = () => {
         className="center"
         style={{ background: "#0a3c57", flexDirection: "column" }}
       >
-        <div style={{ maxWidth: "700px", padding: "2rem 0" }}>
+        <div style={{ maxWidth: "700px", padding: "2rem 1rem" }}>
           <h3
             style={{
               color: "#fff",
@@ -461,6 +460,7 @@ const HerbalMedicean = () => {
                 style={{
                   backgroundColor: "#fff",
                   display: "flex",
+                  flexWrap:"wrap",
                   flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                   marginBottom: "1rem",
                   padding: "0.5rem 1.5rem",
@@ -485,7 +485,7 @@ const HerbalMedicean = () => {
         </div>
       </div>
       <div className="center">
-        <div style={{ maxWidth: "1050px",width:"100%", padding: "2rem 0" }}>
+        <div style={{ maxWidth: "1050px",width:"100%", padding: "2rem 1rem" }}>
         <h3 style={{textAlign:"center"}}>OUR RESPONSIBLE APPROACH</h3>
           <div
             style={{

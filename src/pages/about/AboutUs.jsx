@@ -21,7 +21,7 @@ import about5 from "../../assets/icons/about-16.png";
 import about6 from "../../assets/icons/about-17.png";
 import about7 from "../../assets/about-us/about-09.jpg";
 import about8 from "../../assets/about-us/about-10.jpg";
-import about9 from "../../assets/about-us/about-08.jpg"
+import about9 from "../../assets/about-us/about-08.jpg";
 import "./aboutUs.css";
 
 const AboutUs = () => {
@@ -97,7 +97,7 @@ const AboutUs = () => {
           }}
         >
           <h2 style={{ fontSize: "35px" }}>WHO WE ARE ?</h2>
-          <p style={{ maxWidth: "500px" }}>
+          <p style={{ maxWidth: "500px", width: "100%" }}>
             <span>Vital Medi Clinic</span> is a leading integrative medicine
             clinic dedicated to optimizing your health and well-being, with a
             primary focus on longevity. We combine the best of Eastern and
@@ -211,7 +211,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="center">
+      <div className="center" style={{ padding: "0 1rem" }}>
         <div style={{ maxWidth: "900px", width: "100%" }}>
           <h2 style={{ textAlign: "center" }}>WHAT DO WE DO?</h2>
           <p style={{ textAlign: "center", width: "100%" }}>
@@ -227,6 +227,7 @@ const AboutUs = () => {
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "space-between",
+              paddingTop: "1rem",
             }}
           >
             {data.map((item, index) => (
@@ -262,7 +263,10 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="center" style={{ backgroundColor: "#e9e9e7" }}>
+      <div
+        className="center"
+        style={{ backgroundColor: "#e9e9e7", padding: "0 1rem" }}
+      >
         <div style={{ maxWidth: "900px", width: "100%" }}>
           <h2 style={{ textAlign: "center" }}>OUR PHILOSOPHY & CORE VALUES:</h2>
           <p style={{ textAlign: "center", width: "100%" }}>
@@ -279,6 +283,7 @@ const AboutUs = () => {
               style={{
                 backgroundColor: "#fff",
                 display: "flex",
+                flexWrap: "wrap",
                 flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                 marginBottom: "1rem",
                 padding: "0.5rem 1.5rem",
@@ -309,7 +314,7 @@ const AboutUs = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "3rem 0rem",
+          padding: "3rem 1rem",
         }}
       >
         <div style={{ maxWidth: "1000px" }}>
@@ -342,24 +347,57 @@ const AboutUs = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "3rem 0rem",
+          padding: "3rem 1rem",
         }}
       >
-        <div style={{ maxWidth: "1000px",width:"100%" }}>
-        <div style={{maxWidth:"800px"}}>
-        <h4>HOW DO WE DO THAT?</h4>
-        <span>How We Approach Your Health Journey</span>
-        <p>
-          At Vital Medi Clinic, we are more than just a medical facility; we
-          are your partners in a personalized journey towards lifelong
-          wellness. Our approach is rooted in the following:
-        </p>
-        <p style={{paddingTop:"2rem"}}><span>1. Personalized Wellness Plans:</span>We believe in treating the individual, not just the condition. Our Doctors, with his extensive experience in preventive, anti-aging, and regenerative medicine, will personally assess your health history,lifestyle, and goals. This detailed evaluation allows us to create a unique plan tailored to your specific needs.</p>
-        <p style={{paddingTop:"0.5rem"}}><span>2. Integrative Expertise:</span>Our Doctors are training in both conventional and alternative medicine bridges the gap between ancient wisdom and modern science. He expertly combines Thai herbal medicine, cutting-edge therapies like stem cell therapy, and personalized nutritional guidance to create a synergistic approach that maximizes your {"body's"} natural healing potential.</p>
-        <p style={{paddingTop:"0.5rem"}}><span>3. Proactive Health Management:</span>Our comprehensive health check-ups go beyond standard screenings. We delve deeper into your unique biochemistry to identify potential risks early on, allowing us to develop proactive strategies to prevent disease and optimize your well-being for years to come.</p>
-        <p style={{paddingTop:"0.5rem"}}><span>4. Evidence-Based and Innovative Therapies:</span>We are committed to offering the most effective, scientifically-backed treatments available. Our team stays at the forefront of medical advancements, incorporating innovative therapies like IV nutrition and ozone therapy, while carefully researching emerging options like cannabis and kratom under strict medical supervision.</p>
-        <p style={{paddingTop:"0.5rem"}}><span>5. Compassionate, Patient-Centered Care:</span>We believe in empowering you with knowledge and support throughout your health journey. Dr. ({"Doctor's"} Namej and our team prioritize clear communication, patient education, and a collaborative approach to ensure you feel informed and confident in your treatment choices.</p>
-        </div>
+        <div style={{ maxWidth: "1000px", width: "100%" }}>
+          <div style={{ maxWidth: "800px" }}>
+            <h4>HOW DO WE DO THAT?</h4>
+            <span>How We Approach Your Health Journey</span>
+            <p>
+              At Vital Medi Clinic, we are more than just a medical facility; we
+              are your partners in a personalized journey towards lifelong
+              wellness. Our approach is rooted in the following:
+            </p>
+            <p style={{ paddingTop: "2rem" }}>
+              <span>1. Personalized Wellness Plans:</span>We believe in treating
+              the individual, not just the condition. Our Doctors, with his
+              extensive experience in preventive, anti-aging, and regenerative
+              medicine, will personally assess your health history,lifestyle,
+              and goals. This detailed evaluation allows us to create a unique
+              plan tailored to your specific needs.
+            </p>
+            <p style={{ paddingTop: "0.5rem" }}>
+              <span>2. Integrative Expertise:</span>Our Doctors are training in
+              both conventional and alternative medicine bridges the gap between
+              ancient wisdom and modern science. He expertly combines Thai
+              herbal medicine, cutting-edge therapies like stem cell therapy,
+              and personalized nutritional guidance to create a synergistic
+              approach that maximizes your {"body's"} natural healing potential.
+            </p>
+            <p style={{ paddingTop: "0.5rem" }}>
+              <span>3. Proactive Health Management:</span>Our comprehensive
+              health check-ups go beyond standard screenings. We delve deeper
+              into your unique biochemistry to identify potential risks early
+              on, allowing us to develop proactive strategies to prevent disease
+              and optimize your well-being for years to come.
+            </p>
+            <p style={{ paddingTop: "0.5rem" }}>
+              <span>4. Evidence-Based and Innovative Therapies:</span>We are
+              committed to offering the most effective, scientifically-backed
+              treatments available. Our team stays at the forefront of medical
+              advancements, incorporating innovative therapies like IV nutrition
+              and ozone therapy, while carefully researching emerging options
+              like cannabis and kratom under strict medical supervision.
+            </p>
+            <p style={{ paddingTop: "0.5rem" }}>
+              <span>5. Compassionate, Patient-Centered Care:</span>We believe in
+              empowering you with knowledge and support throughout your health
+              journey. Dr. ({"Doctor's"} Namej and our team prioritize clear
+              communication, patient education, and a collaborative approach to
+              ensure you feel informed and confident in your treatment choices.
+            </p>
+          </div>
         </div>
       </div>
       <div
@@ -372,7 +410,7 @@ const AboutUs = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "3rem 0rem",
+          padding: "3rem 1rem",
         }}
       >
         <div style={{ maxWidth: "1000px" }}>
@@ -412,6 +450,7 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              flexWrap: "wrap",
             }}
           >
             <img
@@ -440,6 +479,7 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              flexWrap: "wrap",
               textAlign: "end",
             }}
           >
@@ -462,6 +502,7 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              flexWrap: "wrap",
             }}
           >
             <img src={hand} style={{ width: "10rem", marginRight: "1rem" }} />
@@ -483,6 +524,7 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              flexWrap: "wrap",
             }}
           >
             <div>
@@ -505,6 +547,7 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              flexWrap: "wrap",
               justifyContent: "space-between",
             }}
           >

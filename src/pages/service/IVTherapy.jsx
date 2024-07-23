@@ -7,13 +7,7 @@ const IVTherapy = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "50rem",
-          height: "100%",
-        }}
+className="service"
       >
         <div
           style={{
@@ -105,12 +99,7 @@ const IVTherapy = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
@@ -123,9 +112,10 @@ const IVTherapy = () => {
           maxWidth: "1600px",
           objectFit: "cover",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
-          padding: "4rem 0rem 4rem 40rem",
+          justifyContent:"flex-end",
+          flexDirection:"column",
+          padding: "4rem 1rem",
         }}
       >
         <p style={{ paddingBottom: "0.5rem", maxWidth: "400px",fontSize:"14px" }}>

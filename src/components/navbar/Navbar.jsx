@@ -8,19 +8,18 @@ import ContactUs from "../ContactUs";
 import Service from "../Service";
 import { TbSearch } from "react-icons/tb";
 import calendar from "../../assets/calendar.png";
-import { useState } from "react";
 
-const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+// eslint-disable-next-line react/prop-types
+const Navbar = ({setOpenNav, openNav}) => {
   return (
     <nav>
       <input
-        checked={openMenu}
+        checked={openNav}
         type="checkbox"
         name=""
         id="check"
         onChange={() => {
-          setOpenMenu(!openMenu);
+          setOpenNav(!openNav);
         }}
       />
       <div className="navContainer">
@@ -28,7 +27,7 @@ const Navbar = () => {
           {" "}
           <img src={logo} className="logo" />
         </Link>
-        <div className={openMenu?"nav-btn check":"nav-btn"}>
+        <div className="nav-btn">
           <AboutUs />
           <Service />
           <Packages />

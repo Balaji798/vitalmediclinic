@@ -3,19 +3,12 @@ import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/massage.jpg";
 import womanBg from "../../assets/wellness/woman-bg.jpg";
 import bg from "../../assets/conditions/bg.png";
-import womanDoctor from "../../assets/wellness/woman-doctor.jpg"
+import womanDoctor from "../../assets/wellness/woman-doctor.jpg";
 
 const PrenatalMassage = () => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0 0",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -99,15 +92,7 @@ const PrenatalMassage = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
-            />
+            <img src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -115,7 +100,8 @@ const PrenatalMassage = () => {
         style={{
           display: "flex",
           //justifyContent: "space-between",
-          padding: "0rem 0 2rem",
+          flexWrap:"wrap",
+          padding: "0rem 1rem 2rem",
           height: "100%",
         }}
       >
@@ -188,22 +174,34 @@ const PrenatalMassage = () => {
         style={{
           backgroundImage: `url(${womanBg})`,
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           flexDirection: "column",
           width: "100%",
           backgroundSize: "cover",
           alignItems: "center",
-          padding: "4rem 0",
+          padding: "4rem 1rem",
         }}
       >
         {" "}
-        <div style={{maxWidth:"700px",marginLeft:"-25rem"}}>
-        <p style={{paddingBottom:"0.5rem"}}>
-        Experience the ultimate relaxation and comfort during this special time with our specially tailored massages designed to alleviate pregnancy-related discomfort and promote overall well-being for both mom and baby.
-        </p>
-        <p style={{paddingBottom:"0.5rem"}}>Our skilled and caring massage therapists are trained in prenatal techniques to ensure a safe and soothing experience for every mom-to-be. From relieving back pain and reducing swelling to easing muscle tension and improving sleep quality, our prenatal massages offer a multitude of benefits for you and your growing baby.
-        </p>
-        <p>Treat yourself to a moment of tranquility and pampering with our prenatal massage services. You deserve to feel your absolute best as you prepare for the arrival of your little one.</p>
+        <div style={{ maxWidth: "1200px",width:"100%",textAlign:"left"  }}>
+          <p style={{ paddingBottom: "0.5rem",maxWidth:"500px" }}>
+            Experience the ultimate relaxation and comfort during this special
+            time with our specially tailored massages designed to alleviate
+            pregnancy-related discomfort and promote overall well-being for both
+            mom and baby.
+          </p>
+          <p style={{ paddingBottom: "0.5rem",maxWidth:"500px" }}>
+            Our skilled and caring massage therapists are trained in prenatal
+            techniques to ensure a safe and soothing experience for every
+            mom-to-be. From relieving back pain and reducing swelling to easing
+            muscle tension and improving sleep quality, our prenatal massages
+            offer a multitude of benefits for you and your growing baby.
+          </p>
+          <p style={{maxWidth:"500px"}}>
+            Treat yourself to a moment of tranquility and pampering with our
+            prenatal massage services. You deserve to feel your absolute best as
+            you prepare for the arrival of your little one.
+          </p>
         </div>
       </div>
     </div>

@@ -8,23 +8,23 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { HiClock } from "react-icons/hi2";
 import { FaLocationDot } from "react-icons/fa6";
-import bg from "../../assets/HOMEPAGE/sevice-bg.png"
+import bg from "../../assets/HOMEPAGE/sevice-bg.png";
 
 const ContactUs = () => {
   return (
-    <div style={{padding:"8rem 0 3rem"}}>
-    <img
-          src={bg}
-          style={{
-            objectFit: "contain",
-            width:"100%",
-            position: "absolute",
-            left: 0,
-            top: 0,
-            marginTop:"-12rem",
-            zIndex:0
-          }}
-        />
+    <div className="contact-main">
+      <img
+        src={bg}
+        style={{
+          objectFit: "contain",
+          width: "100%",
+          position: "absolute",
+          left: 0,
+          top: 0,
+          marginTop: "-12rem",
+          zIndex: 0,
+        }}
+      />
       <h1 style={{ textAlign: "center" }}>CONTACT US</h1>
       <div
         style={{
@@ -33,134 +33,130 @@ const ContactUs = () => {
           justifyContent: "center",
           alignItems: "center",
           overflowY: "hidden",
+          padding:"0 1rem"
         }}
         className="contact"
       >
-        
+        <div
+          className="contact-container"
+        >
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
-              maxWidth: "1200px",
-              width: "100%",
+              alignItems: "center",
+              flexDirection: "column",
+              textAlign: "center",
+              maxWidth:"300px",
             }}
           >
-            <div style={{display:"flex",
-            alignItems:"center",flexDirection:"column",textAlign:"center"}}>
-              <div
-                className="center"
-                style={{
-                  width: "7rem",
-                  height: "7rem",
-                  borderRadius: "100%",
-                  background: "#0a3c57",
-                  color: "#fff",
-                }}
-              >
-                <FaPhoneAlt size={65} />
-              </div>
-              +66 9 4263 9964
+            <div
+              className="center contact-icon"
+            >
+              <FaPhoneAlt />
             </div>
-            <div style={{display:"flex",
-            alignItems:"center",flexDirection:"column",textAlign:"center"}}>
-              <div
-                className="center"
-                style={{
-                  width: "7rem",
-                  height: "7rem",
-                  borderRadius: "100%",
-                  background: "#0a3c57",
-                  color: "#fff",
-                }}
-              >
-                <TfiEmail size={65} />
-              </div>
-              vitalmediclinic@drcbdgroup.com
+            +66 9 4263 9964
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              textAlign: "center",
+              maxWidth:"100px",
+            }}
+          >
+            <div
+              className="center contact-icon"
+            >
+              <TfiEmail />
             </div>
-            <div style={{display:"flex",
-            alignItems:"center",flexDirection:"column",textAlign:"center"}}>
-              <div
-                className="center"
-                style={{
-                  width: "7rem",
-                  height: "7rem",
-                  borderRadius: "100%",
-                  background: "#0a3c57",
-                  color: "#fff",
-                }}
-              >
-                <HiClock size={65} />
-              </div>
-              Monday - Friday
+            vitalmediclinic@drcbdgroup.com
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              textAlign: "center",
+            }}
+          >
+            <div
+              className="center contact-icon"
+            >
+              <HiClock />
             </div>
-            <div style={{display:"flex",
-            alignItems:"center",flexDirection:"column",textAlign:"center"}}>
-              <div
-                className="center"
-                style={{
-                  width: "7rem",
-                  height: "7rem",
-                  borderRadius: "100%",
-                  background: "#0a3c57",
-                  color: "#fff",
-                }}
-              >
-                <FaLocationDot size={65} />
-              </div>
-              4th Floor, The Marche<br/>
-              Thong Lo Road<br/>
-              Khlong Tan Nuea<br/>
-              Wattana, Bangkok 10110
+            Monday - Friday
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              textAlign: "center",
+            }}
+          >
+            <div
+              className="center contact-icon"
+            >
+              <FaLocationDot />
             </div>
+            4th Floor, The Marche
+            <br />
+            Thong Lo Road
+            <br />
+            Khlong Tan Nuea
+            <br />
+            Wattana, Bangkok 10110
+          </div>
+          <div>
+            <img
+              src={qr}
+              style={{ maxWidth: "8rem", marginRight: "1rem" }}
+              alt="qr-code"
+            />
             <div>
-              <img
-                src={qr}
-                style={{ maxWidth: "8rem", marginRight: "1rem" }}
-                alt="qr-code"
-              />
-              <div>
-                <p
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  <img src={fb} style={{ width: "1.2rem" }} alt="faceBook" />{" "}
-                  Vital Medi Clinic
-                </p>
-                <p
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  <img src={line} style={{ width: "1.2rem" }} alt="line" />{" "}
-                  @vitalmediclinic
-                </p>
-                <p
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  <img src={insta} style={{ width: "1.2rem" }} alt="line" />{" "}
-                  Vital Medi Clinic
-                </p>
-                <p
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  <img src={phone} style={{ width: "1.2rem" }} alt="line" /> +66
-                  9 4263 9964
-                </p>
-              </div>
+              <p
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <img src={fb} style={{ width: "1.2rem" }} alt="faceBook" />{" "}
+                Vital Medi Clinic
+              </p>
+              <p
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <img src={line} style={{ width: "1.2rem" }} alt="line" />{" "}
+                @vitalmediclinic
+              </p>
+              <p
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <img src={insta} style={{ width: "1.2rem" }} alt="line" /> Vital
+                Medi Clinic
+              </p>
+              <p
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                <img src={phone} style={{ width: "1.2rem" }} alt="line" /> +66 9
+                4263 9964
+              </p>
             </div>
+          </div>
         </div>
         <div style={{ maxWidth: 1200, width: "100%", padding: "50px 1rem 0" }}>
           <div

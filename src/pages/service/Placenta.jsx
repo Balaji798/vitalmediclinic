@@ -7,15 +7,7 @@ import bg from "../../assets/conditions/bg.png";
 const Placenta = () => {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          minHeight: "50rem",
-          height: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -93,7 +85,6 @@ const Placenta = () => {
             <span>• Body Composition Benefits:</span>May contribute to
             increasing lean muscle mass and reducing body fat.
           </p>
-        
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
           <div
@@ -112,12 +103,7 @@ const Placenta = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+              className="service-image"
             />
           </div>
         </div>
@@ -126,9 +112,10 @@ const Placenta = () => {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          padding: "2rem 0",
+          flexWrap:"wrap",
+          padding: "2rem 1rem",
           height: "100%",
-          background:"#f1f1f1"
+          background: "#f1f1f1",
         }}
       >
         {" "}
@@ -150,7 +137,7 @@ const Placenta = () => {
             <img
               src={young}
               style={{
-                maxWidth: "350px",
+                maxWidth: "380px",
                 marginLeft: "8.2rem",
                 objectFit: "cover",
                 height: "21.97rem",
@@ -162,26 +149,29 @@ const Placenta = () => {
           <span>Potential Benefits of Placenta Therapy:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
             <span>• Increased Energy Levels:</span>May help combat fatigue and
-            postpartum depletion 
-            </p>
-           <p><span>• Enhanced Mood:</span> Potential improve mood stability
-           and reduce symptoms of postpartum depression.</p> 
+            postpartum depletion
+          </p>
+          <p>
+            <span>• Enhanced Mood:</span> Potential improve mood stability and
+            reduce symptoms of postpartum depression.
+          </p>
           <p style={{ paddingBottom: "0.5rem" }}>
             <span>• Improved Lactation:</span> May support milk production for
             breastfeeding mothers.
           </p>
           <p style={{ paddingBottom: "0.5rem" }}>
             <span>•Faster Postpartum Recovery:</span> Could aid in wound healing
-            and tissue regeneration Schedule a consultation with us to explore of
-            Placenta Therapy aligns with your supplementation needs.
+            and tissue regeneration Schedule a consultation with us to explore
+            of Placenta Therapy aligns with your supplementation needs.
           </p>
           <p style={{ paddingBottom: "0.5rem" }}>
-          {" "}
-          <span>Important Note:</span>
-          While there is anecdotal evidence and some supporting research, more
-          studies are needed to fully understand the extent of these benefits
-          and potential risks associated with placenta therapy. Consult with our doctors before considering this therapy.
-        </p>
+            {" "}
+            <span>Important Note:</span>
+            While there is anecdotal evidence and some supporting research, more
+            studies are needed to fully understand the extent of these benefits
+            and potential risks associated with placenta therapy. Consult with
+            our doctors before considering this therapy.
+          </p>
         </div>
       </div>
     </div>

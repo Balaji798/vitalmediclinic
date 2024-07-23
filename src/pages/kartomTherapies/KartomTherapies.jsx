@@ -6,7 +6,7 @@ const KartomTherapies = () => {
   return (
     <div>
       {" "}
-      <div className="center" style={{ padding: "2rem 0" }}>
+      <div className="center" style={{ padding: "2rem 1rem",flexWrap:"wrap" }}>
         <div style={{ maxWidth: "500px", textAlign: "end" }}>
           <h2>
             EXPLORING EMERGING <br />
@@ -19,11 +19,10 @@ const KartomTherapies = () => {
             under the supervision of experienced healthcare professionals.
           </p>
         </div>
-        <div></div>
         <img
           src={exploring}
           alt="/exploring"
-          style={{ maxWidth: "400px", marginLeft: "1rem" }}
+          style={{ maxWidth: "400px",width:"100%", marginLeft: "1rem" }}
         />
       </div>
       <div
@@ -31,7 +30,7 @@ const KartomTherapies = () => {
         style={{
           width: "100%",
           flexDirection: "column",
-          padding: "2rem 0",
+          padding: "2rem 1rem",
           background: "#0a3c57",
         }}
       >
@@ -46,6 +45,7 @@ const KartomTherapies = () => {
                 width: "100%",
                 display: "flex",
                 flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
+                flexWrap:"wrap"
               }}
             >
               <div
@@ -53,6 +53,7 @@ const KartomTherapies = () => {
                   width: "90%",
                   background: "#fff",
                   display: "flex",
+                  flexWrap:"wrap",
                   marginBottom: "1rem",
                   padding: "1rem 1.5rem",
                   borderRadius: "1.2rem",
@@ -77,7 +78,7 @@ const KartomTherapies = () => {
           ))}
         </div>
       </div>
-      <div className="center" style={{ padding: "3rem 0" }}>
+      <div className="center" style={{ padding: "3rem 1rem" }}>
         <img
           src={dotes}
           style={{

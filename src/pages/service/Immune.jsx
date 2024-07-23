@@ -47,12 +47,7 @@ const Immune = () => {
     <div>
       <div className="center" style={{ flexDirection: "column" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            padding: "2rem 0",
-            width: "100%",
-          }}
+className="service"
         >
           <div
             style={{
@@ -120,12 +115,7 @@ const Immune = () => {
             >
               <img
                 src={shield}
-                style={{
-                  maxWidth: "312px",
-                  marginLeft: "-7.01rem",
-                  objectFit: "cover",
-                  height: "22rem",
-                }}
+className="service-image"
               />
             </div>
           </div>
@@ -173,7 +163,8 @@ const Immune = () => {
             <div
               key={index}
               style={{
-                width: "14rem",
+                maxWidth: "14rem",
+                width:"100%",
                 height: "12rem",
                 display: "flex",
                 flexDirection: "column",
@@ -192,6 +183,7 @@ const Immune = () => {
       <div
         style={{
           display: "flex",
+          flexWrap:"wrap",
           justifyContent: "space-between",
           padding: "2rem 0",
           //minHeight: "40rem",

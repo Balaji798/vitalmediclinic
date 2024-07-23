@@ -26,11 +26,7 @@ const BiomarkerTesting = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-        }}
+        className="service"
       >
         <div
           style={{
@@ -110,12 +106,7 @@ const BiomarkerTesting = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
@@ -126,7 +117,7 @@ const BiomarkerTesting = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          padding: "1.5rem 0",
+          padding: "1.5rem 1rem",
         }}
       >
         <h2 style={{ paddingBottom: "0.5rem" }}>
@@ -138,6 +129,7 @@ const BiomarkerTesting = () => {
             width: "100%",
             display: "flex",
             justifyContent: "space-between",
+            flexWrap:"wrap"
           }}
         >
           {data.map((item, index) => (
@@ -148,6 +140,8 @@ const BiomarkerTesting = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
+                maxWidth:"280px",
+                width:"100%"
               }}
             >
               <img src={item.icon} style={{ width: "100px" }} />

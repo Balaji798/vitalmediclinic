@@ -6,14 +6,7 @@ import shield from "../../assets/conditions/doctor-raising.jpg";
 const Neurological = () => {
   return (
     <div className="center" style={{ flexDirection: "column" }}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          width: "100%",
-        }}
-      >
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -162,20 +155,12 @@ const Neurological = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
-            />
+            <img src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
 
-      <div style={{maxWidth:"1000px",width:"100%"}}>
+      <div style={{ maxWidth: "1000px", width: "100%", padding: "0 1rem" }}>
         <img
           src={shield}
           style={{ width: "100%", objectFit: "cover", maxHeight: "30rem" }}

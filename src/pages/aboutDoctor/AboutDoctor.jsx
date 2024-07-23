@@ -13,7 +13,7 @@ const AboutDoctor = () => {
 
   console.log(doctor);
   return (
-    <div className="center" style={{ marginBottom: "2rem",paddingTop:"1rem" }}>
+    <div className="center" style={{ marginBottom: "2rem",padding:"1rem 1rem 0" }}>
       <div className="container">
         <p>
           Home {">"} Doctor {">"} {doctor[0]?.name}

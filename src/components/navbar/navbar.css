@@ -274,6 +274,8 @@ nav {
     height: auto;
     left: 0;
     position: block;
+    background-color: #e6e8e7;
+    box-shadow: none;
   }
   .dropdown > .different {
     width: 100%;

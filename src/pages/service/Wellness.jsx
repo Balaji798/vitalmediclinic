@@ -11,12 +11,7 @@ const Wellness = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0 0",
-          height: "100%",
-        }}
+className="service"
       >
         <div
           style={{
@@ -84,12 +79,7 @@ const Wellness = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
@@ -98,7 +88,8 @@ const Wellness = () => {
         style={{
           display: "flex",
           //justifyContent: "space-between",
-          padding: "2rem 0",
+          flexWrap:"wrap",
+          padding: "2rem 1rem",
           height: "100%",
         }}
       >
@@ -173,6 +164,7 @@ const Wellness = () => {
         style={{
           backgroundImage: `url(${relax})`,
           display: "flex",
+          flexWrap:"wrap",
           justifyContent: "center",
           flexDirection: "column",
           width: "100%",
@@ -182,29 +174,29 @@ const Wellness = () => {
         }}
       >
         {" "}
-        <div style={{ maxWidth: "700px", marginLeft: "-20rem" }}>
+        <div style={{ maxWidth: "1000px",width:"100%",textAlign:"left",paddingLeft:"1rem" }}>
           <span>Health Benefits of Thai Traditional Massage</span>
-          <p style={{ paddingBottom: "0.5rem" }}>
+          <p style={{ maxWidth:"650px", paddingBottom: "0.5rem" }}>
             <span>• Stress Relief:</span> The gentle pressure and stretching
             techniques promote deep relaxation, helping to alleviate stress that
             can negatively impact your physical and mental health.
           </p>
-          <p style={{ paddingBottom: "0.5rem" }}>
+          <p style={{ maxWidth:"650px", paddingBottom: "0.5rem" }}>
             <span>• Pain Relief:</span> Thai massage effectively targets back
             pain by releasing muscle tightness, improving core strength, and
             increasing flexibility.
           </p>
-          <p>
+          <p style={{maxWidth:"650px",}}>
             <span>• Improved Circulation:</span> The yoga-like stretches enhance
             blood flow, delivering oxygen and nutrients to your tissues for
             faster healing.
           </p>
-          <p>
+          <p style={{maxWidth:"650px",}}>
             <span>• Increased Flexibility:</span> * Regular Thai massage
             gradually improves flexibility and range of motion, beneficial for
             overall well-being and athletic performance.
           </p>
-          <p>
+          <p style={{maxWidth:"650px",}}>
             <span>• Energy Boost:</span> Based on the concept of energy lines
             {'("sen")'}, Thai massage aims to release blockages that cause
             stiffness and fatigue. This revitalizing approach can benefit
@@ -221,13 +213,13 @@ const Wellness = () => {
           width: "100%",
           backgroundSize: "cover",
           alignItems: "flex-end",
-          padding: "4rem 0",
+          padding: "4rem 1rem",
         }}
       >
         {" "}
-        <div style={{ maxWidth: "700px", marginRight: "10rem" }}>
+        <div style={{ maxWidth: "700px",width:"100%",textAlign:"left" }}>
           <span>Who Can Benefit From Thai Massage?</span>
-          <p>
+          <p style={{maxWidth:"650px"}}>
             Thai massage is a great choice for people of all ages and fitness
             levels seeking a holistic approach to well-being. It can be
             particularly helpful for those experiencing:

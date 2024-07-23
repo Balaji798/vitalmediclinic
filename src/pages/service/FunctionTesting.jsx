@@ -9,12 +9,7 @@ const FunctionTesting = () => {
   return (
     <div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "2rem 0",
-          height: "100%",
-        }}
+className="service"
       >
         <div
           style={{
@@ -90,18 +85,13 @@ const FunctionTesting = () => {
           >
             <img
               src={doctorConsultation}
-              style={{
-                maxWidth: "312px",
-                marginLeft: "-7.01rem",
-                objectFit: "cover",
-                height: "22rem",
-              }}
+className="service-image"
             />
           </div>
         </div>
       </div>
-      <div className="center">
-        <div style={{ maxWidth: "1000px", display: "flex" }}>
+      <div className="center" style={{}}>
+        <div style={{ maxWidth: "1000px", display: "flex",flexWrap:"wrap" }}>
           <div style={{paddingLeft:"0.5rem",borderLeft:"4px solid",width: "20rem"}}>
             <img src={virus} style={{ width: "18rem",height:"8rem" }} />
             <img src={shield} style={{ width: "18rem",height:"8rem" }} />
