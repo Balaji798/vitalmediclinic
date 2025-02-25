@@ -2,10 +2,24 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/conditions/x-ray.jpg";
 import shield from "../../assets/conditions/doctor-raising.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Neurological = () => {
   return (
-    <div className="center" style={{ flexDirection: "column" }}>
+    <div>
+      <Helmet>
+        <title>Neurological Disorders Treatment Clinic Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="Neurological Disorders Treatment Bangkok, Neurological Disorders Treatment, Neurological Disorders Treatment Clinic"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s best neurological disorders treatment at Vital Medi Clinic. Our approach combines understanding causes with multifaceted care for optimal results."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -15,9 +29,9 @@ const Neurological = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -155,26 +169,28 @@ const Neurological = () => {
               paddingTop: "2rem",
             }}
           >
-            <img src={doctorConsultation} className="service-image" />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
-
-      <div style={{ maxWidth: "1000px", width: "100%", padding: "0 1rem" }}>
-        <img
-          src={shield}
-          style={{ width: "100%", objectFit: "cover", maxHeight: "30rem" }}
-        />
-        <p style={{ paddingBottom: "0.5rem" }}>
-          <span>Our Focus on Hope and Healing:</span> While not all neurological
-          disorders have cures, our goal is to improve your quality of life,
-          manage symptoms effectively, and explore ways to support your{" "}
-          {"body's"} natural healing abilities.
-        </p>
-        <p style={{ paddingBottom: "2rem" }}>
-          Schedule a consultation to discuss how our integrative approach can
-          address your neurological concerns, and optimize your health journey.
-        </p>
+      <div className="center">
+        <div style={{ maxWidth: "1000px", width: "100%", padding: "0 1rem" }}>
+           <img loading="lazy"
+            src={shield}
+            style={{ width: "100%", objectFit: "cover", maxHeight: "30rem" }}
+          />
+          <p style={{ paddingBottom: "0.5rem" }}>
+            <span>Our Focus on Hope and Healing:</span> While not all
+            neurological disorders have cures, our goal is to improve your
+            quality of life, manage symptoms effectively, and explore ways to
+            support your {"body's"} natural healing abilities.
+          </p>
+          <p style={{ paddingBottom: "2rem" }}>
+            Schedule a consultation to discuss how our integrative approach can
+            address your neurological concerns, and optimize your health
+            journey.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Packages = () => {
           <a>PACKAGE</a>
         </p>
         <div className="dropdown-content" style={{justifyContent:"flex-start"}}>
-          <img src={navBanner} style={{ width: "70%" }} alt="/" />
+           <img loading="lazy" src={navBanner} style={{ width: "70%" }} alt="/"  />
           <div
             style={{
               maxWidth:"300px",

@@ -78,7 +78,7 @@ const AboutUs = () => {
               </Link>*/}
             </div>
           </div>
-          <img src={navBanner} style={{ width: "50%" }} alt="/" />
+           <img loading="lazy" src={navBanner} style={{ width: "50%" }} alt="/"  />
         </div>
       </div>
     </div>

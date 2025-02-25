@@ -4,13 +4,27 @@ import doctorConsultation from "../../assets/healthCheckUp/researcher.jpg";
 import scientists from "../../assets/scientists.jpg";
 import shield from "../../assets/shield-isolation.jpg";
 import virus from "../../assets/virus.jpg";
+import { Helmet } from "react-helmet-async";
 
 const FunctionTesting = () => {
   return (
     <div>
-      <div
-className="service"
-      >
+      <Helmet>
+        <title>
+          Immune Function Testing Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Immune Function Testing, Immune Function Testing Bangkok, Immune Function Testing Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Get reliable immune function testing in Bangkok, Thailand. Comprehensive evaluations to monitor and improve your immune system's performance."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -19,9 +33,9 @@ className="service"
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -83,21 +97,24 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
       <div className="center" style={{}}>
-        <div style={{ maxWidth: "1000px", display: "flex",flexWrap:"wrap" }}>
-          <div style={{paddingLeft:"0.5rem",borderLeft:"4px solid",width: "20rem"}}>
-            <img src={virus} style={{ width: "18rem",height:"8rem" }} />
-            <img src={shield} style={{ width: "18rem",height:"8rem" }} />
-            <img src={scientists} style={{ width: "18rem",height:"8rem" }} />
+        <div style={{ maxWidth: "1000px", display: "flex", flexWrap: "wrap",justifyContent:"space-between" }}>
+          <div
+            style={{
+              paddingLeft: "0.5rem",
+              borderLeft: "4px solid",
+              width: "300px",
+            }}
+          >
+             <img loading="lazy" src={virus} style={{ width: "18rem", height: "8rem" }} />
+             <img loading="lazy" src={shield} style={{ width: "18rem", height: "8rem" }} />
+             <img loading="lazy" src={scientists} style={{ width: "18rem", height: "8rem" }} />
           </div>
-          <div style={{width:"100%",paddingLeft:"1rem"}}>
+          <div style={{maxWidth:"700px", width: "100%", paddingLeft: "1rem" }}>
             {" "}
             <span>Benefits of Immune Function Testing:</span>
             <p>

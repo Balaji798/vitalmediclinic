@@ -14,6 +14,7 @@ import service4 from "../../assets/servic-pic-08.png";
 import doc from "../../assets/medical-doctor.jpg";
 import composition from "../../assets/composition.jpg";
 import doctor from "../../assets/female-doc.jpg";
+import { Helmet } from "react-helmet-async";
 
 const HerbalMedicean = () => {
   const data = [
@@ -57,18 +58,41 @@ const HerbalMedicean = () => {
   ];
   return (
     <div>
+      <Helmet>
+        <title>
+          Herbal Medicine Centre Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Herbal Medicine Centre, Herbal Medicine Centre Bangkok, Herbal Medicine Centre Thailand "
+        />
+
+        <meta
+          name="description"
+          content="Visit our Herbal Medicine Centre in Bangkok for holistic wellness. Integrating Thai Herbal Medicine for enhanced vitality and natural healing. Book now."
+        />
+      </Helmet>
       <div
         className="center"
         style={{ background: "#e6e8e7", padding: "2rem 0rem" }}
       >
-        <img
+         <img loading="lazy"
           src={dotes}
-
-           className="content-position"
+          className="content-position"
           style={{ width: "10rem", left: 0 }}
         />
-        <div className="center" style={{flexWrap:"wrap",maxWidth:"1200px",width:"100%"}}>
-          <div style={{ maxWidth: "500px", textAlign: "center",padding:"0 1rem" }}>
+        <div
+          className="center"
+          style={{ flexWrap: "wrap", maxWidth: "1200px", width: "100%" }}
+        >
+          <div
+            style={{
+              maxWidth: "500px",
+              textAlign: "center",
+              padding: "0 1rem",
+            }}
+          >
             <div
               style={{
                 width: "8rem",
@@ -117,10 +141,7 @@ const HerbalMedicean = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
-              src={herbal}
-              className="service-image1"
-            />
+             <img loading="lazy" src={herbal} className="service-image1" />
             <div
               style={{
                 width: "380px",
@@ -157,10 +178,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
-                flexWrap:"wrap"
+                flexWrap: "wrap",
               }}
             >
-              <img src={individualized} className="herbal-img" />
+               <img loading="lazy" src={individualized} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Individualized Formulations:
@@ -176,10 +197,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
-                flexWrap:"wrap"
+                flexWrap: "wrap",
               }}
             >
-              <img src={proven} className="herbal-img" />
+               <img loading="lazy" src={proven} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Proven Remedies:</span> We
                 utiliz herbs with a long history of safe and effective use
@@ -194,10 +215,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
-                flexWrap:"wrap"
+                flexWrap: "wrap",
               }}
             >
-              <img src={synergistic} className="herbal-img" />
+               <img loading="lazy" src={synergistic} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Synergistic Integration:
@@ -214,10 +235,10 @@ const HerbalMedicean = () => {
                 padding: "1rem 0",
                 display: "flex",
                 justifyContent: "space-between",
-                flexWrap:"wrap"
+                flexWrap: "wrap",
               }}
             >
-              <img src={holistic} className="herbal-img" />
+               <img loading="lazy" src={holistic} className="herbal-img" />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Holistic Focus:</span> We
                 address not only physical symptoms but body, mind, and spirit to
@@ -269,7 +290,7 @@ const HerbalMedicean = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
+             <img loading="lazy"
               src={additional}
               style={{
                 maxWidth: "600px",
@@ -415,7 +436,7 @@ const HerbalMedicean = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
+             <img loading="lazy"
               src={midsection}
               style={{
                 maxWidth: "400px",
@@ -445,7 +466,7 @@ const HerbalMedicean = () => {
         className="center"
         style={{ background: "#0a3c57", flexDirection: "column" }}
       >
-        <div style={{ maxWidth: "700px", padding: "2rem 1rem" }}>
+        <div style={{ maxWidth: "1000px", padding: "2rem 1rem" }}>
           <h3
             style={{
               color: "#fff",
@@ -460,22 +481,25 @@ const HerbalMedicean = () => {
               <div
                 key={index}
                 style={{
+                  maxWidth:"700px",
+                  width:"100%",
                   backgroundColor: "#fff",
                   display: "flex",
-                  flexWrap:"wrap",
+                  flexWrap: "wrap",
                   flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                   marginBottom: "1rem",
                   padding: "0.5rem 1.5rem",
                   borderRadius: "10px",
-                  marginLeft: index % 2 === 0 ? "0" : "4rem",
-                  marginRight: index % 2 === 0 ? "4rem" : "0",
                 }}
+                className={index % 2 === 0?"marginRight":"margin-style"}
               >
-                <img src={item.icon} style={{ width: "6rem" }} />
+                 <img loading="lazy" src={item.icon} style={{ maxWidth: "6rem",width:"100%" }} />
                 <div
                   style={{
                     padding: "0 0.5rem",
                     textAlign: index % 2 === 0 ? "left" : "right",
+                    maxWidth:"400px",
+                    width:"100%"
                   }}
                 >
                   <h4>{item.title}</h4>
@@ -487,8 +511,10 @@ const HerbalMedicean = () => {
         </div>
       </div>
       <div className="center">
-        <div style={{ maxWidth: "1050px",width:"100%", padding: "2rem 1rem" }}>
-        <h3 style={{textAlign:"center"}}>OUR RESPONSIBLE APPROACH</h3>
+        <div
+          style={{ maxWidth: "1050px", width: "100%", padding: "2rem 1rem" }}
+        >
+          <h3 style={{ textAlign: "center" }}>OUR RESPONSIBLE APPROACH</h3>
           <div
             style={{
               width: "100%",
@@ -500,13 +526,18 @@ const HerbalMedicean = () => {
           >
             {data2.map((item, index) => (
               <div key={index} style={{ maxWidth: "330px", width: "100%" }}>
-                <img src={item.icon} style={{ width: "100%" }} />
+                 <img loading="lazy" src={item.icon} style={{ width: "100%" }} />
                 <h4 style={{ padding: "0.5rem" }}>{item.title}</h4>
                 <p>{item.para}</p>
               </div>
             ))}
           </div>
-          <p style={{paddingTop:"1rem"}}><span>Important Note:</span> Cannabis and kratom therapies are evolving fields of medicine. We emphasize transparency, ongoing monitoring, and patient education to ensure safe and responsible exploration of their potential benefits</p>
+          <p style={{ paddingTop: "1rem" }}>
+            <span>Important Note:</span> Cannabis and kratom therapies are
+            evolving fields of medicine. We emphasize transparency, ongoing
+            monitoring, and patient education to ensure safe and responsible
+            exploration of their potential benefits
+          </p>
         </div>
       </div>
     </div>

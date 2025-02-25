@@ -11,6 +11,7 @@ import additional from "../../assets/SERVICES/additional.jpg";
 import targeted from "../../assets/SERVICES/targeted.jpg";
 import medicine from "../../assets/SERVICES/medicine.jpg";
 import { data, potentialFData, serviceData, ourData } from "./data";
+import { Link } from "react-router-dom";
 
 const ServiceOffered = () => {
   return (
@@ -65,7 +66,7 @@ const ServiceOffered = () => {
         className="center"
         style={{ display: "flex", background: "#e6e8e7", padding: "3rem 0" }}
       >
-        <img
+         <img loading="lazy"
           src={dotes}
            className="content-position"
           style={{ width: "10rem", left: 0 }}
@@ -87,8 +88,8 @@ const ServiceOffered = () => {
             <br /> PROGRAMS
           </h1>
           <p>
-            Our clinic offers Placenta Therapy, IV Nutrition, Ozone Therapy, and
-            Stem Cell Therapy programs designed to enhance cellular
+            Our clinic offers <a style={{color:"blue",textDecoration:"underline"}} href=" https://vitalmediclinic.com/service/wellness/placenta-therapy">Placenta Therapy</a>, <a style={{color:"blue",textDecoration:"underline"}} href="https://vitalmediclinic.com/service/wellness/iv-nutrition-therapy">IV Nutrition</a>, <a style={{color:"blue",textDecoration:"underline"}} href="https://vitalmediclinic.com/service/wellness/ozone-therapy">Ozone Therapy</a>, and
+            <a style={{color:"blue",textDecoration:"underline"}} href="https://vitalmediclinic.com/service/wellness/stem-therapy">Stem Cell Therapy</a> programs designed to enhance cellular
             regeneration, promote rejuvenation, and support overall well-being.
           </p>
           <p>
@@ -119,7 +120,7 @@ const ServiceOffered = () => {
               style={{ width: "100%", height: "100%", background: "#fff" }}
             />
           </div>
-          <img
+           <img loading="lazy"
             src={targeted}
             style={{
               maxWidth: "400px",
@@ -152,7 +153,7 @@ const ServiceOffered = () => {
             the potential to accelerate healing and optimize your well-being
           </p>
           {serviceData.map((item, index) => (
-            <div
+            <Link to={item.link}
               className="item"
               key={index}
               style={{
@@ -166,7 +167,7 @@ const ServiceOffered = () => {
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
             >
-              <img src={item.image} style={{ width: "7rem" }} />
+               <img loading="lazy" src={item.image} style={{ width: "7rem" }} />
               <div
                 style={{
                   maxWidth: "600px",
@@ -178,7 +179,7 @@ const ServiceOffered = () => {
                 <h4>{item.title}</h4>
                 <p>{item.para}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -210,7 +211,7 @@ const ServiceOffered = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
+             <img loading="lazy"
               src={medicine}
               style={{
                 maxWidth: "400px",
@@ -258,7 +259,7 @@ const ServiceOffered = () => {
         className="center"
         style={{ flexDirection: "column", padding: "2rem 0" }}
       >
-        <img
+         <img loading="lazy"
           src={dotes}
            className="content-position"
           style={{ width: "10rem", left: 0 }}
@@ -278,7 +279,7 @@ const ServiceOffered = () => {
               key={index}
               style={{ padding: "0 1.5rem 1.5rem", textAlign: "center" }}
             >
-              <img src={item.image} style={{ width: "7rem" }} />
+               <img loading="lazy" src={item.image} style={{ width: "7rem" }} />
               <h4>{item.title}</h4>
               <h4>{item?.title2}</h4>
             </div>
@@ -289,7 +290,7 @@ const ServiceOffered = () => {
         className="center"
         style={{ background: "#e6e8e7", padding: "2rem 0" }}
       >
-        <img
+         <img loading="lazy"
           src={dotes}
            className="content-position"
           style={{ width: "10rem", left: 0 }}
@@ -344,7 +345,7 @@ const ServiceOffered = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
+             <img loading="lazy"
               src={herbal}
               style={{
                 maxWidth: "400px",
@@ -352,6 +353,7 @@ const ServiceOffered = () => {
                 marginLeft: "10px",
                 marginTop: "10px",
               }}
+               
             />
             <div
               style={{
@@ -391,7 +393,7 @@ const ServiceOffered = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img src={individualized} style={{ maxWidth: "200px" }} />
+               <img loading="lazy" src={individualized} style={{ maxWidth: "200px" }}  />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Individualized Formulations:
@@ -409,7 +411,7 @@ const ServiceOffered = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img src={proven} style={{ maxWidth: "200px" }} />
+               <img loading="lazy" src={proven} style={{ maxWidth: "200px" }}  />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Proven Remedies:</span> We
                 utiliz herbs with a long history of safe and effective use
@@ -426,7 +428,7 @@ const ServiceOffered = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img src={synergistic} style={{ maxWidth: "200px" }} />
+               <img loading="lazy" src={synergistic} style={{ maxWidth: "200px" }}  />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>
                   Synergistic Integration:
@@ -445,7 +447,7 @@ const ServiceOffered = () => {
                 justifyContent: "space-between",
               }}
             >
-              <img src={holistic} style={{ maxWidth: "200px" }} />
+               <img loading="lazy" src={holistic} style={{ maxWidth: "200px" }}  />
               <li style={{ maxWidth: "340px" }}>
                 <span style={{ fontWeight: "bold" }}>Holistic Focus:</span> We
                 address not only physical symptoms but body, mind, and spirit to
@@ -497,7 +499,7 @@ const ServiceOffered = () => {
                 style={{ width: "100%", height: "100%", background: "#fff" }}
               />
             </div>
-            <img
+             <img loading="lazy"
               src={additional}
               style={{
                 maxWidth: "600px",
@@ -505,6 +507,7 @@ const ServiceOffered = () => {
                 marginRight: "0.5rem",
                 marginTop: "8px",
               }}
+               
             />
             <div
               style={{
@@ -580,10 +583,11 @@ const ServiceOffered = () => {
           </p>
         </div>
         <div></div>
-        <img
+         <img loading="lazy"
           src={exploring}
           alt="/exploring"
           style={{ maxWidth: "400px", marginLeft: "1rem" }}
+           
         />
       </div>
       <div
@@ -620,7 +624,7 @@ const ServiceOffered = () => {
                   flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
                 }}
               >
-                <img src={item.image} style={{ width: "7rem" }} />
+                 <img loading="lazy" src={item.image} style={{ width: "7rem" }}  />
                 <div
                   style={{
                     maxWidth: "600px",
@@ -638,7 +642,7 @@ const ServiceOffered = () => {
         </div>
       </div>
       <div className="center" style={{ padding: "3rem 0" }}>
-        <img
+         <img loading="lazy"
           src={dotes}
            className="content-position"
           style={{
@@ -647,6 +651,7 @@ const ServiceOffered = () => {
             marginLeft: "-3rem",
             marginTop: "-10rem",
           }}
+           
         />
         <div className="container">
           <h2 style={{ textAlign: "center", padding: "1rem 0" }}>
@@ -663,13 +668,14 @@ const ServiceOffered = () => {
           >
             {ourData.map((item, index) => (
               <div key={index} style={{ maxWidth: "380px" }}>
-                <img
+                 <img loading="lazy"
                   src={item.image}
                   style={{
                     width: "100%",
                     objectFit: "contain",
                     marginBottom: "1rem",
                   }}
+                   
                 />
                 <h3>{item.title}</h3>
                 <p>{item.para}</p>

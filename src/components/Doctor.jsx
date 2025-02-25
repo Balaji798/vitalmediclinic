@@ -34,7 +34,7 @@ const Doctor = () => {
           className="dropdown-content"
           style={{ justifyContent: "flex-start" }}
         >
-          <img src={navBanner} style={{ width: "40%" }} alt="/" />
+           <img loading="lazy" src={navBanner} style={{ width: "40%" }} alt="/"  />
           <div
             style={{
               maxWidth: "800px",

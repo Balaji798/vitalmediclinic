@@ -1,10 +1,18 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/SERVICES/doctor-consultation.jpg";
+import { Helmet } from "react-helmet-async";
 
 const HealthCheckUp = () => {
   return (
     <div className="service">
+      <Helmet>
+      <title>Health Checkup Packages for Men & Women</title>
+
+      <meta name="keywords" content="health check for men, health check for women, Health Checkup Packages for Men, Health Checkup Packages for Women"/>
+      
+      <meta name="description" content="A top-rated health check-up centre provides health checkup for Men & Women, Leading health check-up center in Thailand for preventive care."/>
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -13,9 +21,9 @@ const HealthCheckUp = () => {
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -84,7 +92,7 @@ const HealthCheckUp = () => {
             paddingTop: "2rem",
           }}
         >
-          <img src={doctorConsultation} className="service-image" />
+           <img loading="lazy" src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>

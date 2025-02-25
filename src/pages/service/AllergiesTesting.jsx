@@ -5,10 +5,27 @@ import service1 from "../../assets/SERVICES/foodAllergy/sevice-pic-18.png";
 import service2 from "../../assets/SERVICES/foodAllergy/sevice-pic-19.png";
 import service3 from "../../assets/SERVICES/foodAllergy/sevice-pic-20.png";
 import service4 from "../../assets/SERVICES/foodAllergy/sevice-pic-21.png";
+import { Helmet } from "react-helmet-async";
 
 const AllergiesTesting = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Food Allergy & Intolerance Testing Bangkok, Thailand | Vital Medi
+          Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Food Allergy testing Bangkok, Food Allergy & Intolerance Testing Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok's leading center for food allergy and intolerance testing. Get accurate and affordable allergies testing today."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -18,9 +35,9 @@ const AllergiesTesting = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -70,7 +87,7 @@ const AllergiesTesting = () => {
               paddingTop: "2rem",
             }}
           >
-            <img src={doctorConsultation} className="service-image" />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -97,12 +114,12 @@ const AllergiesTesting = () => {
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
-              flexWrap:"wrap",
-              justifyContent:"center",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
-            <img src={service1} style={{ maxWidth: "5rem" }} />
-            <div style={{ marginLeft: "0.5rem" }}>
+             <img loading="lazy" src={service1} style={{ maxWidth: "5rem" }} />
+            <div style={{ marginLeft: "0.5rem",maxWidth:"400px",width:"100%" }}>
               <h3 style={{ fontSize: "1.5rem" }}>Improved Gut Health</h3>
               <p>Optimize digestion and reduce uncomfortable symptoms.</p>
             </div>
@@ -116,12 +133,12 @@ const AllergiesTesting = () => {
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
-              flexWrap:"wrap",
-              justifyContent:"center",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
-            <img src={service2} style={{ maxWidth: "5rem" }} />
-            <div style={{ marginLeft: "0.5rem" }}>
+             <img loading="lazy" src={service2} style={{ maxWidth: "5rem" }} />
+            <div style={{ marginLeft: "0.5rem",maxWidth:"400px",width:"100%" }}>
               <h2 style={{ fontSize: "1.5rem" }}>Enhanced Energy Levels</h2>
               <p>Identify foods that may be draining your energy.</p>
             </div>
@@ -135,12 +152,12 @@ const AllergiesTesting = () => {
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
               marginBottom: "1rem",
-              flexWrap:"wrap",
-              justifyContent:"center",
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
-            <img src={service3} style={{ maxWidth: "5rem" }} />
-            <div style={{ marginLeft: "0.5rem" }}>
+             <img loading="lazy" src={service3} style={{ maxWidth: "5rem" }} />
+            <div style={{ marginLeft: "0.5rem",maxWidth:"400px",width:"100%" }}>
               <h2 style={{ fontSize: "1.5rem" }}>Clearer Skin</h2>
               <p>Address potential dietary causes of skin concerns.</p>
             </div>
@@ -153,13 +170,12 @@ const AllergiesTesting = () => {
               padding: "10px",
               borderRadius: "10px",
               boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
-              flexWrap:"wrap",
-              justifyContent:"center",
-              
+              flexWrap: "wrap",
+              justifyContent: "center",
             }}
           >
-            <img src={service4} style={{ maxWidth: "5rem" }} />
-            <div style={{ marginLeft: "0.5rem" }}>
+             <img loading="lazy" src={service4} style={{ maxWidth: "5rem" }} />
+            <div style={{ marginLeft: "0.5rem",maxWidth:"400px",width:"100%" }}>
               {" "}
               <h2 style={{ fontSize: "1.5rem" }}>Overall Well-being</h2>
               <p>

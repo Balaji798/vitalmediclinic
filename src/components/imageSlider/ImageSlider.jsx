@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import one from "../../assets/HOMEPAGE/promotion-01.jpg";
 import two from "../../assets/HOMEPAGE/promotion-02.jpg";
@@ -61,7 +62,7 @@ const ImageSlider = () => {
       <Slider {...settings} className="slider-container">
         {data.map((image, i) => (
           <div className="slider-item" key={i} style={{ maxWidth: "10rem" }}>
-            <img src={image} alt="/" />
+             <img loading="lazy" src={image} alt="/"  />
           </div>
         ))}
       </Slider>

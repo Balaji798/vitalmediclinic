@@ -80,7 +80,7 @@ const Doctor = () => {
                 justifyContent: "flex-start",
               }}
             >
-              <img
+               <img loading="lazy"
                 src={item.image}
                 style={{ maxWidth: "19rem", width: "100%", height: "22rem" }}
               />
@@ -189,7 +189,7 @@ const Doctor = () => {
           </div>
         </div>
       </div>
-      <img
+       <img loading="lazy"
         src={dotes}
          className="content-position"
         style={{

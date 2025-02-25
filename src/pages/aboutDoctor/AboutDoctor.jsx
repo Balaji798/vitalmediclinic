@@ -42,9 +42,10 @@ const AboutDoctor = () => {
                   paddingTop: "2rem",
                 }}
               >
-                <img
+                 <img loading="lazy"
                   src={doctor[0]?.image}
                  className="doctor-img"
+                  
                 />
               </div>
             </div>
@@ -84,12 +85,12 @@ const AboutDoctor = () => {
                 </p>
               ))}
             </div>
-            <div style={{ maxWidth: "580px", width: "100%" }}>
+{    /*        <div style={{ maxWidth: "580px", width: "100%" }}>
               <h4>WORK EXPERTISE</h4>
               {doctor[0]?.experience.map((item, index) => (
                 <p key={index}>{item}</p>
               ))}
-            </div>
+            </div>*/}
           </div>
         </div>
         <div
@@ -147,10 +148,11 @@ const AboutDoctor = () => {
           </div>
         </div>
       </div>
-      <img
+       <img loading="lazy"
       src={dotes}
        className="content-position"
       style={{ width: "10rem", right: 0,bottom:0 }}
+       
     />
     </div>
   );

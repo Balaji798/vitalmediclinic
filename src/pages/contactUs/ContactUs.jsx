@@ -13,7 +13,7 @@ import bg from "../../assets/HOMEPAGE/sevice-bg.png";
 const ContactUs = () => {
   return (
     <div className="contact-main">
-      <img
+       <img loading="lazy"
         src={bg}
         style={{
           objectFit: "contain",
@@ -109,7 +109,7 @@ const ContactUs = () => {
             Wattana, Bangkok 10110
           </div>
           <div>
-            <img
+             <img loading="lazy"
               src={qr}
               style={{ maxWidth: "8rem", marginRight: "1rem" }}
               alt="qr-code"
@@ -122,7 +122,7 @@ const ContactUs = () => {
                   marginBottom: "0.5rem",
                 }}
               >
-                <img src={fb} style={{ width: "1.2rem" }} alt="faceBook" />{" "}
+                 <img loading="lazy" src={fb} style={{ width: "1.2rem" }} alt="faceBook" />{" "}
                 Vital Medi Clinic
               </p>
               <p
@@ -132,7 +132,7 @@ const ContactUs = () => {
                   marginBottom: "0.5rem",
                 }}
               >
-                <img src={line} style={{ width: "1.2rem" }} alt="line" />{" "}
+                 <img loading="lazy" src={line} style={{ width: "1.2rem" }} alt="line" />{" "}
                 @vitalmediclinic
               </p>
               <p
@@ -142,7 +142,7 @@ const ContactUs = () => {
                   marginBottom: "0.5rem",
                 }}
               >
-                <img src={insta} style={{ width: "1.2rem" }} alt="line" /> Vital
+                 <img loading="lazy" src={insta} style={{ width: "1.2rem" }} alt="line" /> Vital
                 Medi Clinic
               </p>
               <p
@@ -152,7 +152,7 @@ const ContactUs = () => {
                   marginBottom: "0.5rem",
                 }}
               >
-                <img src={phone} style={{ width: "1.2rem" }} alt="line" /> +66 9
+                 <img loading="lazy" src={phone} style={{ width: "1.2rem" }} alt="line" /> +66 9
                 4263 9964
               </p>
             </div>
@@ -178,7 +178,7 @@ const ContactUs = () => {
             height="450"
             style={{ border: 0 }}
             allowfullscreen=""
-            loading="lazy"
+             
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>

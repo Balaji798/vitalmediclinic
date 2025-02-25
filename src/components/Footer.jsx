@@ -36,10 +36,11 @@ const Footer = () => {
       </div>
       <div className="between" style={{ maxWidth: "1300px", width: "100%" }}>
         <div style={{ maxWidth: "450px" }}>
-          <img
+           <img loading="lazy"
             src={vitalLogo}
             style={{ objectFit: "contain", maxWidth: "26rem",width:"100%" }}
             alt="logo"
+             
           />
           <p >
             Vital Medi Clinic is an Integrated Healthcare Center that practices
@@ -81,10 +82,11 @@ const Footer = () => {
           <p>+66 9 4263 9964</p>
         </div>
         <div style={{ display: "flex", alignItems: "center",flexWrap:"wrap" }}>
-          <img
+           <img loading="lazy"
             src={qr}
             style={{ maxWidth: "12rem", marginRight: "1rem",marginBottom:"1rem" }}
             alt="qr-code"
+             
           />
           <div>
             <a
@@ -96,7 +98,7 @@ const Footer = () => {
                 color:"#000"
               }}
             >
-              <img src={fb} style={{ width: "1.6rem" }} alt="faceBook" /> Vital
+               <img loading="lazy" src={fb} style={{ width: "1.6rem" }} alt="faceBook"  /> Vital
               Medi Clinic
             </a>
             <p
@@ -106,7 +108,7 @@ const Footer = () => {
                 marginBottom: "0.5rem",
               }}
             >
-              <img src={line} style={{ width: "1.6rem" }} alt="line" />{" "}
+               <img loading="lazy" src={line} style={{ width: "1.6rem" }} alt="line"  />{" "}
               @vitalmediclinic
             </p>
             <a
@@ -118,7 +120,7 @@ const Footer = () => {
                 color:"#000"
               }}
             >
-              <img src={insta} style={{ width: "1.6rem" }} alt="line" /> Vital
+               <img loading="lazy" src={insta} style={{ width: "1.6rem" }} alt="line"  /> Vital
               Medi Clinic
             </a>
             <p
@@ -128,7 +130,7 @@ const Footer = () => {
                 marginBottom: "0.5rem",
               }}
             >
-              <img src={phone} style={{ width: "1.6rem" }} alt="line" /> +66 9
+               <img loading="lazy" src={phone} style={{ width: "1.6rem" }} alt="line"  /> +66 9
               4263 9964
             </p>
           </div>

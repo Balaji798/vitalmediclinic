@@ -1,12 +1,26 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/conditions/sleep.jpg";
+import { Helmet } from "react-helmet-async";
 
 const SleepDisorder = () => {
   return (
-    <div
-className="service"
-    >
+    <div className="service">
+      <Helmet>
+        <title>
+          Sleep Disorders Treatment Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Sleep Disorders Treatment, Sleep Disorders Treatment Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s premier sleep disorders treatment clinic. Address disruptions in sleep patterns to boost quality of life and overall health."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -15,9 +29,9 @@ className="service"
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -89,17 +103,27 @@ className="service"
         </p>
         <p style={{ paddingBottom: "0.5rem", marginLeft: "10px" }}>
           <span>o Cannabis Under Guidance:</span> * Carefully exploring the
-          potential role of cannabis in addressing certain sleep
-          disorder symptoms.
+          potential role of cannabis in addressing certain sleep disorder
+          symptoms.
         </p>
         <p style={{ paddingBottom: "0.5rem", marginLeft: "10px" }}>
-          <span>o Relaxation Techniques:</span> Thai massage techniques might be recommended.
+          <span>o Relaxation Techniques:</span> Thai massage techniques might be
+          recommended.
         </p>
         <p style={{ paddingBottom: "0.5rem", marginLeft: "10px" }}>
-          <span>o Lifestyle Optimization:</span> We provide guidance on sleep hygiene, nutrition, stress management, and creating a sleep-conducive environment.
+          <span>o Lifestyle Optimization:</span> We provide guidance on sleep
+          hygiene, nutrition, stress management, and creating a sleep-conducive
+          environment.
         </p>
-        <p style={{ paddingBottom: "0.5rem"}}><span>Restorative Sleep, Renewed Vitality:</span>Our goal is to empower you to achieve lasting improvements in your sleep quality for overall health and well-being.</p>
-        <span>Schedule a consultation to start your journey towards peaceful nights and refreshed days</span>
+        <p style={{ paddingBottom: "0.5rem" }}>
+          <span>Restorative Sleep, Renewed Vitality:</span>Our goal is to
+          empower you to achieve lasting improvements in your sleep quality for
+          overall health and well-being.
+        </p>
+        <span>
+          Schedule a consultation to start your journey towards peaceful nights
+          and refreshed days
+        </span>
       </div>
       <div style={{ maxWidth: "500px", width: "100%" }}>
         <div
@@ -116,10 +140,7 @@ className="service"
             paddingTop: "2rem",
           }}
         >
-          <img
-            src={doctorConsultation}
-className="service-image"
-          />
+           <img loading="lazy" src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>

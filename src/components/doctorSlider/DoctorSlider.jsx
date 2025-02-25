@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -80,10 +81,11 @@ const DoctorSlider = () => {
               key={i}
               style={{backgroundColor: "#fff" }}
             >
-              <img
+               <img loading="lazy"
                 src={item.image}
                 alt="/"
                 style={{ width: "100%", height: "20rem",marginBottom:"0.5rem" }}
+                 
               />
               <h4 style={{color:"black"}}>{item.name}</h4>
               <p style={{fontSize:"12px",color:"black"}}>{item.expert}</p>

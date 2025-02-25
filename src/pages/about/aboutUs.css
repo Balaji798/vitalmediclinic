@@ -1,6 +1,6 @@
 .backgroundImage{
     background: no-repeat center center; 
-    background-size: content;
+    background-size: cover;
     width: 100%;
     display: flex;
     justify-content: center;

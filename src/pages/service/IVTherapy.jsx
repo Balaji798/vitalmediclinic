@@ -2,13 +2,25 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/iv-drip.jpg";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
+import { Helmet } from "react-helmet-async";
 
 const IVTherapy = () => {
   return (
     <div>
-      <div
-className="service"
-      >
+      <Helmet>
+        <title>IV Nutrition Therapy Centre Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="IV Nutrition Therapy, IV Nutrition Therapy Centre, IV Nutrition Therapy Bangkok, IV Nutrition Therapy Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s leading IV nutrition therapy. Get a concentrated dose of vitamins and minerals directly into your bloodstream for optimal health."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -17,9 +29,9 @@ className="service"
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -97,10 +109,7 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -113,18 +122,24 @@ className="service-image"
           objectFit: "cover",
           display: "flex",
           alignItems: "center",
-          justifyContent:"flex-end",
-          flexDirection:"column",
+          justifyContent: "flex-end",
+          flexDirection: "column",
           padding: "4rem 1rem",
         }}
       >
-        <p style={{ paddingBottom: "0.5rem", maxWidth: "400px",fontSize:"14px" }}>
+        <p
+          style={{
+            paddingBottom: "0.5rem",
+            maxWidth: "400px",
+            fontSize: "14px",
+          }}
+        >
           {" "}
           <span>• Personalized For Your Needs:</span> Our IV Nutrition Therapy
           infusions are tailored to your specific health goals and concerns,
           ensuring you receive the optimal blend of nutrients.
         </p>
-        <p style={{ fontWeight: "bold", maxWidth: "400px",fontSize:"14px" }}>
+        <p style={{ fontWeight: "bold", maxWidth: "400px", fontSize: "14px" }}>
           Experience the difference. Schedule your IV Nutrition Therapy
           consultation today and revitalize your health from within!
         </p>

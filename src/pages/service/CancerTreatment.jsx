@@ -4,13 +4,27 @@ import doctorConsultation from "../../assets/conditions/cancer.jpg";
 import surgery from "../../assets/conditions/surgery.jpg";
 import middleaged from "../../assets/conditions/middleaged-woman.jpg";
 import doctor from "../../assets/conditions/doctor-medical.jpg";
+import { Helmet } from "react-helmet-async";
 
 const CancerTreatment = () => {
   return (
-    <div className="center" style={{ flexDirection: "column" }}>
-      <div
-        className="service"
-      >
+    <div>
+      <Helmet>
+        <title>
+          Cancer Treatment Clinic Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Cancer Treatment Clinic, Cancer Treatment Clinic Bangkok, Cancer Treatment Clinic Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Looking for cancer treatment in Bangkok? Our holistic and integrative methods support your treatment plan and well-being. Consult our experts today."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -19,9 +33,9 @@ const CancerTreatment = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -91,7 +105,7 @@ const CancerTreatment = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={doctorConsultation}
               style={{
                 maxWidth: "312px",
@@ -103,15 +117,16 @@ const CancerTreatment = () => {
           </div>
         </div>
       </div>
+      <div className="center">
       <div style={{ maxWidth: "950px", width: "100%" }}>
         <div style={{ display: "flex" }}>
           <div>
-            <img src={surgery} style={{ width: "20rem", height: "8rem" }} />
-            <img
+             <img loading="lazy" src={surgery} style={{ width: "20rem", height: "8rem" }} />
+             <img loading="lazy"
               src={middleaged}
               style={{ maxWidth: "20rem", height: "8rem" }}
             />
-            <img src={doctor} style={{ width: "20rem", height: "8rem" }} />
+             <img loading="lazy" src={doctor} style={{ width: "20rem", height: "8rem" }} />
           </div>
           <div>
             <span>
@@ -145,7 +160,8 @@ const CancerTreatment = () => {
             <span>Our Goal:</span>Enhancing Well-being Throughout Your Jourmey
             While conventional therapies are the mainstay of cancer treatment,
             our aim is to support your {"body's"} natural healing abilities,
-            manage symptoms, and optimize your quality of life during this challenging time.
+            manage symptoms, and optimize your quality of life during this
+            challenging time.
           </p>
           <span>
             Schedule a consultation to explore how our integrative approach can
@@ -153,6 +169,7 @@ const CancerTreatment = () => {
             well-being.
           </span>
         </div>
+      </div>
       </div>
     </div>
   );

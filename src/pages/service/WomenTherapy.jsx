@@ -1,10 +1,24 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/female-doctor.jpg";
+import { Helmet } from "react-helmet-async";
 
 const WomenTherapy = () => {
   return (
     <div className="service">
+      <Helmet>
+        <title>{"Women's"} Health Therapy Centre Bangkok, Thailand </title>
+
+        <meta
+          name="keywords"
+          content="Women's Health Therapy Bangkok, Women's Health Therapy, Women's Health Therapy Centre, Women's Health Therapy Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Achieve optimal health with our women's health therapy in Bangkok. Specialized treatments to support balance, vitality, and well-being across life stages."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -13,9 +27,9 @@ const WomenTherapy = () => {
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -92,10 +106,7 @@ const WomenTherapy = () => {
             paddingTop: "2rem",
           }}
         >
-          <img
-            src={doctorConsultation}
-            className="service-image"
-          />
+           <img loading="lazy" src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>

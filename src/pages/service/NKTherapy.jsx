@@ -2,10 +2,26 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/molecule-water.jpg";
 import therapy from "../../assets/wellness/sevice-pic-43.jpg";
+import { Helmet } from "react-helmet-async";
 
 const NKTherapy = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          NK Cell Therapy Centre Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="NK Cell Therapy, NK Cell Therapy Bangkok, NK Cell Therapy Centre"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok's premier NK cell therapy. Strengthen your body's first-line defence with advanced treatments to improve immune response and fight disease."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -15,9 +31,9 @@ const NKTherapy = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -93,7 +109,7 @@ const NKTherapy = () => {
               paddingTop: "2rem",
             }}
           >
-            <img src={doctorConsultation} className="service-image" />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -105,12 +121,12 @@ const NKTherapy = () => {
           maxWidth: "1600px",
           objectFit: "cover",
           padding: "4rem 1rem 4rem",
-          display:"flex",
-          justifyContent:"flex-end",
-          alignItems:"center"
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "center",
         }}
       >
-        <div style={{maxWidth:"800px",width:"100%"}}>
+        <div style={{ maxWidth: "800px", width: "100%" }}>
           <span
             style={{
               paddingBottom: "0.5rem",

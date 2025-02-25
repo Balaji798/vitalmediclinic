@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const SecondeNave = ({ openNav, setOpenNav }) => {
   const [menusIndex, setMenusIndex] = useState(-1);
   const [secondIndex, setSecondIndex] = useState(-1);
-  console.log(secondIndex);
   return (
     <>
       <div
@@ -40,7 +39,8 @@ const SecondeNave = ({ openNav, setOpenNav }) => {
                     to={item.link}
                     onClick={() => {
                       setOpenNav(!openNav);
-                      setMenusIndex(-1);
+                      setSecondIndex(-1)
+                      setMenusIndex(menusIndex);
                     }}
                   >
                     {item.title}

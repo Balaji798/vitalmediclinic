@@ -9,6 +9,7 @@ import service3 from "../../assets/conditions/icons/sevice-pic-31.png";
 import service4 from "../../assets/conditions/icons/sevice-pic-32.png";
 import service5 from "../../assets/conditions/icons/sevice-pic-33.png";
 import service6 from "../../assets/conditions/icons/sevice-pic-34.png";
+import { Helmet } from "react-helmet-async";
 
 const Immune = () => {
   const data = [
@@ -45,10 +46,22 @@ const Immune = () => {
   ];
   return (
     <div>
-      <div className="center" style={{ flexDirection: "column" }}>
-        <div
-className="service"
-        >
+      <Helmet>
+        <title>
+          Immune Disorders Treatment Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Immune Disorders, Immune Disorders Treatment, Immune Disorders Treatment Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s best immune disorders treatment clinic. Specialized care for autoimmune and immunodeficiency disorders to restore health."
+        />
+      </Helmet>
+        <div className="service">
           <div
             style={{
               width: "15rem",
@@ -57,9 +70,9 @@ className="service"
               marginTop: "3.4rem",
             }}
           />
-          <img
+           <img loading="lazy"
             src={dotes}
-             className="content-position"
+            className="content-position"
             style={{
               width: "10rem",
               left: 0,
@@ -113,15 +126,12 @@ className="service"
                 paddingTop: "2rem",
               }}
             >
-              <img
-                src={shield}
-className="service-image"
-              />
+               <img loading="lazy" src={shield} className="service-image" />
             </div>
           </div>
         </div>
         {/*<div style={{ maxWidth: "1000px", width: "100%" }}>
-          <img
+           <img loading="lazy"
             src={shield}
             style={{ width: "100%", objectFit: "cover", maxHeight: "30rem" }}
           />
@@ -135,7 +145,6 @@ className="service-image"
             help you achieve optimal immune health and well-being.
           </p>
         </div>*/}
-      </div>
       <div className="center" style={{ background: "#e8e8e6" }}>
         <div
           style={{
@@ -164,7 +173,7 @@ className="service-image"
               key={index}
               style={{
                 maxWidth: "14rem",
-                width:"100%",
+                width: "100%",
                 height: "12rem",
                 display: "flex",
                 flexDirection: "column",
@@ -173,7 +182,7 @@ className="service-image"
                 alignItems: "center",
               }}
             >
-              <img src={item.image} style={{ width: "6rem" }} />
+               <img loading="lazy" src={item.image} style={{ width: "6rem" }} />
               <span>{item.title}</span>
               <p style={{ fontSize: "12px" }}>{item.para}</p>
             </div>
@@ -183,7 +192,7 @@ className="service-image"
       <div
         style={{
           display: "flex",
-          flexWrap:"wrap",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           padding: "2rem 0",
           //minHeight: "40rem",
@@ -206,7 +215,7 @@ className="service-image"
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={protection}
               style={{
                 maxWidth: "312px",
@@ -217,9 +226,9 @@ className="service-image"
             />
           </div>
         </div>
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             right: 0,
@@ -228,7 +237,9 @@ className="service-image"
           }}
         />
         <div style={{ maxWidth: "660px", width: "100%" }}>
-          <h3 style={{fontWeight:"bold"}}>Our Integrative Approach to Immune Disorders:</h3>
+          <h3 style={{ fontWeight: "bold" }}>
+            Our Integrative Approach to Immune Disorders:
+          </h3>
           <p>
             <span>1. Identifying Imbalances: </span> Thorough evaluation,
             including specialized testing, to uncover the type of immune

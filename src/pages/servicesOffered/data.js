@@ -22,25 +22,25 @@ export const serviceData = [
       title: "PLACENTA THERAPY",
       para: "This therapy utilizes the nutrient-rich placenta to potentially boost energy levels, support postpartum recovery, enhance immune function, and promote a sense of overall well-being.",
       image: shield,
-      link:"/wellness/placenta-therapy"
+      link:"/service/wellness/placenta-therapy"
     },
     {
       title: "IV NUTRITION THERAPY",
       para: "Intravenous delivery of essential vitamins, minerals, and antioxidants provides targeted cellular nourishment, allowing for higher absorption and rapid replenishment compared to oral supplements.",
       image: therapy,
-      link:"/wellness/iv-nutrition-therapy"
+      link:"/service/wellness/iv-nutrition-therapy"
     },
     {
       title: "OZONE THERAPY",
       para: "This therapy harnesses the potential benefits of medical-grade ozone to stimulate oxygenation, potentially reduce inflammation, and support the body's natural healing processes.",
       image: ozone,
-      link:"/wellness/ozone-therapy"
+      link:"/service/wellness/ozone-therapy"
     },
     {
       title: "STEM CELL THERAPY",
       para: "We utilize advanced regenerative medicine techniques to deliver stem cells, which have the potential to repair damaged tissues, reduce inflammation, and promote overall rejuvenation.",
       image: service,
-      link:"/wellness/stem-therapy"
+      link:"/service/wellness/stem-therapy"
     },
   ];
   export const data = [

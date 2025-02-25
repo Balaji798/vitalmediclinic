@@ -9,7 +9,7 @@ const ContactUs = () => {
           <a>CONTACT US</a>
         </p>
         <div className="dropdown-content" style={{justifyContent:"flex-start"}}>
-        <img src={navBanner} style={{ width: "65%" }} alt="/" />
+         <img loading="lazy" src={navBanner} style={{ width: "65%" }} alt="/"  />
           <div
             style={{
               maxWidth:"400px",

@@ -6,10 +6,26 @@ import cosmetic from "../../assets/wellness/cosmetic.jpg";
 import asian from "../../assets/wellness/asian-biologist.jpg";
 import dna from "../../assets/wellness/1576023.jpg";
 import res from "../../assets/wellness/scientist-researcher.jpg";
+import { Helmet } from "react-helmet-async";
 
 const StemTherapy = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Stem Cell Therapy Centre Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Stem Cell Therapy Clinic, Stem Cell Therapy Centre, Stem Cell Therapy, Stem Cell Therapy Bangkok, Stem Cell Therapy Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s top stem cell therapy, Utilize unique stem cells for advanced healing, tissue repair, and rejuvenation in regenerative medicine."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -19,9 +35,9 @@ const StemTherapy = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -77,82 +93,83 @@ const StemTherapy = () => {
               paddingTop: "2rem",
             }}
           >
-            <img src={doctorConsultation} className="service-image" />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
-      <div className="center" style={{padding:"0 1rem"}}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          maxWidth:"1000px",
-          width:"100%"
-        }}
-      >
+      <div className="center" style={{ padding: "0 1rem" }}>
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
-            maxWidth: "16rem",
-            width:"100%",
             justifyContent: "space-between",
-            padding: "1rem 0",
+            alignItems: "center",
+            flexWrap: "wrap",
+            maxWidth: "1000px",
+            width: "100%",
           }}
         >
-          <img
-            src={cosmetic}
+          <div
             style={{
-              width: "7.8rem",
-              height: "9rem",
-              objectFit: "cover",
-              marginBottom: "0.4rem",
+              display: "flex",
+              flexWrap: "wrap",
+              maxWidth: "16rem",
+              width: "100%",
+              justifyContent: "space-between",
+              padding: "1rem 0",
             }}
-          />
-          <img
-            src={res}
-            style={{
-              width: "7.8rem",
-              height: "9rem",
-              objectFit: "cover",
-              marginBottom: "0.4rem",
-            }}
-          />
-          <img
-            src={asian}
-            style={{ width: "7.8rem", height: "9rem", objectFit: "cover" }}
-          />
-          <img
-            src={dna}
-            style={{ width: "7.8rem", height: "9rem", objectFit: "cover" }}
-          />
+          >
+             <img loading="lazy"
+              src={cosmetic}
+              style={{
+                width: "7.8rem",
+                height: "9rem",
+                objectFit: "cover",
+                marginBottom: "0.4rem",
+              }}
+            />
+             <img loading="lazy"
+              src={res}
+              style={{
+                width: "7.8rem",
+                height: "9rem",
+                objectFit: "cover",
+                marginBottom: "0.4rem",
+              }}
+            />
+             <img loading="lazy"
+              src={asian}
+              style={{ width: "7.8rem", height: "9rem", objectFit: "cover" }}
+            />
+             <img loading="lazy"
+              src={dna}
+              style={{ width: "7.8rem", height: "9rem", objectFit: "cover" }}
+            />
+          </div>
+          <div style={{ maxWidth: "700px" }}>
+            <span>How Stem Cell Therapy Works:</span>
+            <p style={{ paddingBottom: "0.5rem" }}>
+              {" "}
+              <span>1. Stem Cell Source:</span> Stem cells can be obtained from
+              various sources, including the {"patient's"} own body (e.g., bone
+              marrow, fat tissue) or donated sources.
+            </p>
+            <p style={{ paddingBottom: "0.3rem" }}>
+              <span>2. Laboratory Processing:</span> Stem cells are isolated and
+              possibly expanded in a laboratory to increase their numbers.
+            </p>
+            <p style={{ paddingBottom: "0.3rem" }}>
+              <span>3. Targeted Administration:</span> Stem cells are then
+              delivered into the area of need via injection, IV, or other
+              methods.
+            </p>
+            <p style={{ paddingBottom: "0.3rem" }}>
+              <span>4. Regeneration and Repair:</span> Stem cells may stimulate
+              the
+              {"body's"} natural healing processes, promote tissue regeneration,
+              and reduce inflammation.
+            </p>
+          </div>
         </div>
-        <div style={{ maxWidth: "700px" }}>
-          <span>How Stem Cell Therapy Works:</span>
-          <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>1. Stem Cell Source:</span> Stem cells can be obtained from
-            various sources, including the {"patient's"} own body (e.g., bone
-            marrow, fat tissue) or donated sources.
-          </p>
-          <p style={{ paddingBottom: "0.3rem" }}>
-            <span>2. Laboratory Processing:</span> Stem cells are isolated and
-            possibly expanded in a laboratory to increase their numbers.
-          </p>
-          <p style={{ paddingBottom: "0.3rem" }}>
-            <span>3. Targeted Administration:</span> Stem cells are then
-            delivered into the area of need via injection, IV, or other methods.
-          </p>
-          <p style={{ paddingBottom: "0.3rem" }}>
-            <span>4. Regeneration and Repair:</span> Stem cells may stimulate
-            the
-            {"body's"} natural healing processes, promote tissue regeneration,
-            and reduce inflammation.
-          </p>
-        </div>
-      </div>
       </div>
       <div
         style={{

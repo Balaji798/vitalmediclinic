@@ -66,7 +66,7 @@ body {
 }
 /* p{font-family: Avenir;} */
 .banner {
-  background-image: url("./assets/banner.jpg");
+  background-image: url("./assets/hero.webp");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -84,6 +84,16 @@ body {
 }
 .banner_home {
   background-image: url("./assets/HOMEPAGE/doctor-check.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 h1 {
   font-size: 4rem;
@@ -91,6 +101,7 @@ h1 {
 .banner_second {
   background-image: url("./assets/about-us.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   justify-content: flex-start;
   padding: 2rem 0 0;
   height: 65rem;
@@ -188,7 +199,7 @@ span {
   justify-content: space-between;
 }
 .content {
-  height: 75%;
+  height: 77%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -245,6 +256,20 @@ span {
   height: 28.2rem;
   margin-top: -1.5rem;
 }
+.margin-style{
+  margin-left: 4rem;
+}
+.marginRight{
+  margin-right: 4rem;
+}
+.bluer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  left: 0;
+}
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 1.2rem;
@@ -252,18 +277,36 @@ span {
   .our-service {
     position: relative;
     bottom: 0;
-    margin-top: 10px;
+    margin-top: 3.5rem;
+    padding-bottom: 0px;
   }
   .our-service > div {
     justify-content: center;
   }
+  .banner{
+    background-image: url("./assets/hero-mobile.jpg");
+
+    padding-top: 1.5rem;
+  }
+  .bluer{
+    opacity: 0.5;
+    height: 30rem;
+    z-index: 0;
+  }
   .banner_second,
   .banner {
-    height: 25rem;
+    height: 30rem;
+    padding: 0 10px;
+  }
+  .content-para>p,.content-para>h2{
+    color:#fff
   }
   .banner_second {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+  .content{
+    padding-top: 20px;
   }
   .content > p {
     padding: 0 2rem;
@@ -296,5 +339,11 @@ span {
   }
   .doctor-img{
     margin-left: 0;
+  }
+  .margin-style{
+    margin-left: 10px;
+  }
+  .marginRight{
+    margin-right: 10px;
   }
 }

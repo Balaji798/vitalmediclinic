@@ -2,13 +2,25 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/healthCheckUp/female-hand.jpg";
 import fruits from "../../assets/fruits.jpg";
+import { Helmet } from "react-helmet-async";
 
 const ProfileAnalysis = () => {
   return (
     <div>
-      <div
-className="service"
-      >
+      <Helmet>
+        <title>Metabolic Profile Analysis Bangkok | Vital Medi Clinic</title>
+
+        <meta
+          name="keywords"
+          content="Metabolic Profile Analysis, Metabolic Profile Analysis Bangkok, Metabolic Profile Analysis Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Accurate metabolic profile analysis in Bangkok. Discover personalized insights to boost your metabolic health and well-being."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -17,9 +29,9 @@ className="service"
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -77,7 +89,7 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={doctorConsultation}
               style={{
                 maxWidth: "312px",
@@ -89,10 +101,17 @@ className="service"
           </div>
         </div>
       </div>
-      <div className="center" style={{padding:"2rem 0"}}>
-        <div style={{ maxWidth: "1000px", width: "100%",display:"flex",justifyContent:"space-between" }}>
-          <img src={fruits} style={{ width: "350px" }} />
-          <div style={{maxWidth:"600px"}}>
+      <div className="center" style={{ padding: "2rem 0" }}>
+        <div
+          style={{
+            maxWidth: "1000px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+           <img loading="lazy" src={fruits} style={{ width: "350px" }} />
+          <div style={{ maxWidth: "600px" }}>
             {" "}
             <p style={{ padding: "1rem 0 0.5rem", fontWeight: "bold" }}>
               Benefits of Metabolic Profile Analysis:

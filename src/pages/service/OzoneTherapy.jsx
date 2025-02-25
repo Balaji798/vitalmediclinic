@@ -1,10 +1,24 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/smiling-pleased.jpg";
+import { Helmet } from "react-helmet-async";
 
 const OzoneTherapy = () => {
   return (
     <div className="service">
+      <Helmet>
+        <title>Ozone (O3) Therapy Centre in Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="ozone therapy, ozone therapy Bangkok, O3 Therapy"
+        />
+
+        <meta
+          name="description"
+          content="Explore ozone therapy in Bangkok. Harness the healing power of ozone (O3) to stimulate natural healing and experience potential health benefits."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -13,9 +27,9 @@ const OzoneTherapy = () => {
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -101,10 +115,7 @@ const OzoneTherapy = () => {
             paddingTop: "2rem",
           }}
         >
-          <img
-            src={doctorConsultation}
-className="service-image"
-          />
+           <img loading="lazy" src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>

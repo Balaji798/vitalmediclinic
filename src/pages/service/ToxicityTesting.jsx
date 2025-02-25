@@ -1,12 +1,26 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/healthCheckUp/senior-doctor.jpg";
+import { Helmet } from "react-helmet-async";
 
 const ToxicityTesting = () => {
   return (
-    <div
-className="service"
-    >
+    <div className="service">
+      <Helmet>
+        <title>
+          Heavy Metal Toxicity Testing in Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Heavy Metal Toxicity Testing in Bangkok, Heavy Metal Toxicity Testing, Heavy Metal Toxicity Testing Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok's top center for heavy metal toxicity testing. Detailed assessments to detect and manage heavy metal exposure for optimal health."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -15,9 +29,9 @@ className="service"
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -34,7 +48,8 @@ className="service"
         </h2>
         <p style={{ padding: "1rem 0" }}>
           <span>Heavy Metal Toxicity Testing:</span> Detect exposure levels to
-          harmful heavy metals, allowing for proactive detoxification strategies.
+          harmful heavy metals, allowing for proactive detoxification
+          strategies.
         </p>
         <p style={{ fontWeight: "bold", padding: "0.5rem 0" }}>
           Heavy Metal Toxicity Testing: Safeguard your health and optimize
@@ -82,10 +97,10 @@ className="service"
             height: "28rem",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            paddingTop:"2rem"
+            paddingTop: "2rem",
           }}
         >
-          <img
+           <img loading="lazy"
             src={doctorConsultation}
             style={{
               maxWidth: "312px",

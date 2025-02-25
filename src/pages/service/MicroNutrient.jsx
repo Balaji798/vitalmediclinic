@@ -3,13 +3,27 @@ import doctorConsultation from "../../assets/SERVICES/doctor-consultation.jpg";
 import happy from "../../assets/SERVICES/happy-couple.jpg";
 import senior from "../../assets/SERVICES/senior-couple.jpg";
 import asian from "../../assets/SERVICES/asian-senior.jpg";
+import { Helmet } from "react-helmet-async";
 
 const MicroNutrient = () => {
   return (
     <div>
-      <div
-className="service"
-      >
+      <Helmet>
+        <title>
+          Micronutrient Analysis Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Micronutrient Analysis, Micronutrient Analysis Thailand, Micronutrient Analysis Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Get accurate micronutrient analysis in Thailand. Detailed assessments to optimize your nutrition and health. Book your micronutrient analysis today."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -60,10 +74,7 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -72,26 +83,40 @@ className="service-image"
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          flexWrap:"wrap",
-          padding:"2rem 0 1rem"
+          flexWrap: "wrap",
+          padding: "2rem 0 1rem",
         }}
       >
-        <div style={{ maxWidth: "1100px", display: "flex",alignItems:"center",flexWrap:"wrap" }}>
-          <div style={{maxWidth:"28rem", paddingLeft: "1rem", borderLeft: "5px solid",height:"19rem" }}>
-            <img
+        <div
+          style={{
+            maxWidth: "1200px",
+            display: "flex",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "28rem",
+              paddingLeft: "1rem",
+              borderLeft: "5px solid",
+              height: "19rem",
+            }}
+          >
+             <img loading="lazy"
               src={happy}
               style={{ width: "24rem", objectFit: "cover", height: "6rem" }}
             />
-            <img
+             <img loading="lazy"
               src={senior}
               style={{ width: "24rem", objectFit: "cover", height: "6rem" }}
             />
-            <img
+             <img loading="lazy"
               src={asian}
               style={{ width: "24rem", objectFit: "cover", height: "6rem" }}
             />
           </div>
-          <div style={{width:"100%"}}>
+          <div style={{ maxWidth:"600px",width: "100%" }}>
             <span>Unlock the Benefits:</span>
             <p style={{ paddingTop: "1rem" }}>
               <span>• Sustainable Energy:</span> Address micronutrient gaps that
@@ -108,18 +133,22 @@ className="service-image"
             <p style={{ padding: "1rem 0" }}>
               {" "}
               <span>• Data-Driven, Personalized Care:</span> We use your test
-              results to create a supplement strategy
-               tailored to your unique needs, empowering
-              you to achieve your health goals.
+              results to create a supplement strategy tailored to your unique
+              needs, empowering you to achieve your health goals.
             </p>
-
           </div>
         </div>
       </div>
-      <p style={{textAlign:"center",paddingBottom:"1rem",fontWeight:"bold"}}>
-      Schedule your Micronutrient Analysis and embark on your journey to
-      optimal wellness!
-    </p>
+      <p
+        style={{
+          textAlign: "center",
+          paddingBottom: "1rem",
+          fontWeight: "bold",
+        }}
+      >
+        Schedule your Micronutrient Analysis and embark on your journey to
+        optimal wellness!
+      </p>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-import doctor1 from "../../assets/about-us/pic-clinic-30.jpg";
-import doctor2 from "../../assets/about-us/pic-clinic-31.jpg";
-import doctor3 from "../../assets/about-us/pic-clinic-32.jpg";
+import doctor1 from "../../assets/about-us/pic-clinic-30.webp";
+import doctor2 from "../../assets/about-us/vision.webp";
+import doctor3 from "../../assets/about-us/mission.webp";
 //import doctor4 from "../../assets/about-us/pic-clinic-33.jpg";
 import doctor5 from "../../assets/about-us/pic-clinic-34.jpg";
 import location from "../../assets/about-us/pic-clinic-26.png";
@@ -8,7 +8,7 @@ import person from "../../assets/about-us/pic-clinic-25.png";
 import hand from "../../assets/about-us/pic-clinic-23.png";
 import leaf from "../../assets/about-us/pic-clinic-24.png";
 import injunction from "../../assets/about-us/pic-clinic-22.png";
-import write from "../../assets/about-us/write.jpg";
+import write from "../../assets/about-us/write.webp";
 import doctorConsultation from "../../assets/wellness/female-doctor.jpg";
 import consultation from "../../assets/SERVICES/doctor-consultation.jpg";
 import attend from "../../assets/doctor-attend.jpg";
@@ -22,6 +22,11 @@ import about6 from "../../assets/icons/about-17.png";
 import about7 from "../../assets/about-us/about-09.jpg";
 import about8 from "../../assets/about-us/about-10.jpg";
 import about9 from "../../assets/about-us/about-08.jpg";
+import blueBack from "../../assets/HOMEPAGE/pic-clinic.jpg";
+import massage from "../../assets/about-us/massage.webp";
+import mellness from "../../assets/about-us/wellness.webp";
+import attm from "../../assets/about-us/attm-treatment.webp";
+import cannabis from "../../assets/about-us/cannabis.webp";
 import "./aboutUs.css";
 
 const AboutUs = () => {
@@ -80,9 +85,60 @@ const AboutUs = () => {
       icon: about6,
     },
   ];
+
+  const data3 = [
+    {
+      title: "Health Check-up Programs",
+      para: [
+        "Men's and Women's Health",
+        "Food Allergy and Intolerance Testing",
+        "Micronutrient Analysis",
+        "Natural Killer (NK) Cell Activity Tes",
+        "Cancer Biomarker Testing",
+      ],
+      image: write,
+    },
+    {
+      title: "Wellness programs",
+      para: [
+        "Vital After party IV Drip",
+        "Vital Mayer IV Drip",
+        "Vital White Booster+ IV Drip",
+        "Vital NMN Booster+ IV Drip",
+        "Vital Immune Booster IV Drip",
+        "Vital Weight Loss Control IV Drip",
+        "Vital White Radiance IV Drip",
+        "Vital Alpha-Lipoic accid IV Drip",
+        "Vital Curcumin IV Drip",
+        "Vital Resveratrol IV Drip",
+        "Vital Detoxify (Chelation) IV Drip",
+        "Vital Plaque Cleanse IV Drip",
+        "Stem cell Therapy",
+        "NK Cell Therapy",
+        "Weight Management",
+      ],
+      image: mellness,
+    },
+    {
+      title: "ATTM Treatments",
+      para: [
+        "Acupressure",
+        "Migraine Massage",
+        "Office Syndrome Massage",
+        "Neck, Shoulder, and Upper Back Massage",
+        "Constipation Massage",
+        "Plantar Fasciitis Massage",
+        "Prenatal Massage",
+        "Thai Traditional Oil Pourtice",
+        "Herbal Inhalation",
+        "Cupping Therapy",
+      ],
+      image: attm,
+    },
+  ];
+
   return (
     <div>
-      <h1 style={{ textAlign: "center", padding: "2rem 0" }}>AboutUs</h1>
       <div
         className="backgroundImage"
         style={{ backgroundImage: `url(${doctor1})` }}
@@ -94,48 +150,253 @@ const AboutUs = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-start",
+            paddingBottom: "5rem",
           }}
         >
+          <h1 style={{ textAlign: "center", padding: "2rem 0" }}>AboutUs</h1>
           <h2 style={{ fontSize: "35px" }}>WHO WE ARE ?</h2>
           <p style={{ maxWidth: "500px", width: "100%" }}>
-            <span>Vital Medi Clinic</span> is a leading integrative medicine
-            clinic dedicated to optimizing your health and well-being, with a
-            primary focus on longevity. We combine the best of Eastern and
-            Western practices, seamlessly integrating ancient wisdom with modern
-            science to offer comprehensive and innovative therapies designed to
-            extend your vitality and enhance your quality of life for years to
-            come.
+            <span>Vital Medi Clinic</span> is a leading{" "}
+            <a
+              style={{ color: "blue", textDecoration: "underline" }}
+              href="https://vitalmediclinic.com/"
+            >
+              integrative medicine clinic
+            </a>{" "}
+            dedicated to optimizing your health and well-being, with a primary
+            focus on longevity. We combine the best of Eastern and Western
+            practices, seamlessly integrating ancient wisdom with modern science
+            to offer comprehensive and innovative therapies designed to extend
+            your vitality and enhance your quality of life for years to come.
           </p>
         </div>
       </div>
       <div
         className="backgroundImage"
         style={{
-          backgroundImage: `url(${write})`,
           flexDirection: "column",
           justifyContent: "flex-end",
-          height: "35rem",
           paddingBottom: "2rem",
+          textAlign: "center",
         }}
       >
+        <img src={write} style={{ objectFit: "contain", maxWidth: "600px" }} />
         <p style={{ maxWidth: "1000px", paddingBottom: "0.5rem" }}>
-          Our team of experienced healthcare professionals includes physicians
-          specializing in preventive care, anti-aging, and regenerative
-          medicine, along with holistic practitioners and specialists in various
-          fields. We work collaboratively to develop personalized treatment
-          plans that address your unique needs and goals, with a focus on
-          promoting long-term health and vitality.
+          <span style={{ fontWeight: "bold" }}>
+            Our team of experienced healthcare professionals
+          </span>{" "}
+          includes physicians specializing in preventive care, anti-aging, and
+          regenerative medicine, along with holistic practitioners and
+          specialists in various fields. We work collaboratively to develop
+          personalized treatment plans that address your unique needs and goals,
+          with a focus on promoting long-term health and vitality.
         </p>
         <p style={{ maxWidth: "1000px" }}>
           In addition to our comprehensive health check-ups and personalized
           wellness programs, we offer a range of cutting-edge therapies, such as
           stem cell therapy and IV nutrition, that can help unlock your{" "}
           {"body's"} full potential and slow down the aging process. Whether{" "}
-          {"you're"} seeking to manage a chronic condition, prevent future
-          health issues, or simply feel your best at every age, Vital Medi
-          Clinic is committed to empowering you on your journey to a longer,
-          healthier life.
         </p>
+      </div>
+      <div
+        className="backgroundImage"
+        style={{ backgroundImage: `url(${blueBack})` }}
+      >
+        <div className="center" style={{ padding: "0 1rem" }}>
+          <div style={{ maxWidth: "900px", width: "100%" }}>
+            <h2 style={{ textAlign: "center", color: "#fff" }}>
+              WHAT DO WE DO?
+            </h2>
+            <p style={{ textAlign: "center", width: "100%", color: "#fff" }}>
+              Vital Medi Clinic: Your Partner in Holistic Health and Longevity
+            </p>
+            <p style={{ textAlign: "center", color: "#fff" }}>
+              We offer a comprehensive approach to wellness, focusing on four
+              key pillars to help you
+              <br /> optimal health and longevity:
+            </p>
+            <div
+              style={{
+                width: "100%",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "1rem",
+                gap: "40px",
+              }}
+            >
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    maxWidth: "430px",
+                    borderRadius: "20px",
+                    overflow: "hidden",
+                    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                    color: "#000",
+                    backgroundColor: "#fff",
+                    textAlign: "center",
+                  }}
+                >
+                  <img
+                    loading="lazy"
+                    src={item.image}
+                    style={{
+                      width: "430px",
+                      objectFit: "cover",
+                      height: "16rem",
+                    }}
+                  />
+                  <h3 style={{ textAlign: "center" }}>{item.title}</h3>
+                  <p style={{ padding: "10px 20px 20px" }}>{item.para}</p>
+                </div>
+              ))}
+            </div>
+            <div className="center">
+              <div
+                style={{
+                  maxWidth: "530px",
+                  borderRadius: "20px",
+                  overflow: "hidden",
+                  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                  color: "#000",
+                  backgroundColor: "#fff",
+                  textAlign: "center",
+                  marginTop: "40px",
+                }}
+              >
+                <img
+                  loading="lazy"
+                  src={massage}
+                  style={{
+                    width: "100%",
+                    objectFit: "cover",
+                    height: "16rem",
+                  }}
+                />
+                <h3 style={{ textAlign: "center" }}>
+                  Applied Thai Traditional Medicine (ATTM)
+                </h3>
+                <p style={{ padding: "10px 20px 20px" }}>
+                  Experience the profound healing power of tradition Thai
+                  therapies. Our skilled practitioners offer a range of
+                  treatments, including acupressure, therapeutic messages (for
+                  migraines, office syndrome, constipation, plantar fasciitis,
+                  prenatal care, and more), oil pourtice, and herbal
+                  inhalations, to restore, balance pain, relieve pain, and
+                  promote deep relaxation
+                </p>
+              </div>
+            </div>
+            <div
+              className="center"
+              style={{ width: "100%", padding: "1.5rem 0px" }}
+            >
+              <button
+                style={{
+                  backgroundColor: "#fff",
+                  color: "#0a3c57",
+                  fontWeight: "bold",
+                  fontSize: "22px",
+                  paddingTop: "15px",
+                }}
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="center"
+        style={{ backgroundColor: "#fff", padding: "0 1rem" }}
+      >
+        <div style={{ maxWidth: "900px", width: "100%" }}>
+          <p style={{ textAlign: "center" }}>
+            In addition to our comprehensive health check-ups and personalized
+            wellness programs,
+            <br /> we offer a range of cutting-edge therapies, such as stem cell
+            therapy and IV nutrition, <br /> alongside a suite of authentic ATTM
+            treatments.
+          </p>
+          <h2 style={{ textAlign: "center" }}>
+            OUR COMPREHENSIVE SERVICES ENCOMPASS:
+          </h2>
+          {data3.map((item, index) => (
+            <div
+              key={index}
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                flexDirection: index == 1 ? "row-reverse" : "row",
+                alignItems: "center",
+                paddingBottom: "3rem",
+              }}
+            >
+              <img src={item.image} style={{ maxWidth: "430px" }} />
+              <div
+                style={{
+                  paddingLeft: index !== 1 ? "30px" : "0px",
+                  paddingRight: index === 1 ? "30px" : "0px",
+                }}
+              >
+                <h4>{item.title}</h4>
+                <ul style={{ listStyle: "none" }}>
+                  {item.para.map((i, j) => (
+                    <li key={j}>{i}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+          <div className="center" style={{ flexDirection: "column" }}>
+            <div
+              style={{
+                maxWidth: "630px",
+                textAlign: "center",
+                margin: "40px 0px",
+              }}
+            >
+              <img
+                loading="lazy"
+                src={cannabis}
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                }}
+              />
+              <h3 style={{ textAlign: "center" }}>Cannabis Treatment</h3>
+              <p style={{ padding: "0px" }}>
+                We offer personalized cannabis-based therapies, under the
+                guidance of our medical professionals, to explore potential
+                benefits for pain management, mood regulation, sleep support,
+                and overall well-being.
+              </p>
+            </div>
+            <div
+              style={{
+                maxWidth: "700px",
+                width: "100%",
+                textAlign: "center",
+                margin: "40px 0px",
+                backgroundColor: "#093b56",
+                color: "#fff",
+                padding: "20px 0px",
+                borderRadius: "25px",
+              }}
+              className="center"
+            >
+              <p style={{ maxWidth: "560px" }}>
+                Whether {"you're"} seeking to manage a chronic condition,
+                prevent future health issues, explore the benefits of Thai
+                Traditional Medicine, or simply feel your best at everry age,
+                Vital Medi Clinic is committed to empowering you on your journey
+                to a longer, healthier life.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         className="backgroundImage"
@@ -211,55 +472,42 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="center" style={{ padding: "0 1rem" }}>
-        <div style={{ maxWidth: "900px", width: "100%" }}>
-          <h2 style={{ textAlign: "center" }}>WHAT DO WE DO?</h2>
-          <p style={{ textAlign: "center", width: "100%" }}>
-            Vital Medi Clinic: Your Partner in Holistic Health and Longevity
-          </p>
-          <p style={{ textAlign: "center" }}>
-            We offer a comprehensive approach to wellness, focusing on four key
-            pillars to help you optimal health and longevity:
-          </p>
-          <div
-            style={{
-              width: "100%",
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-between",
-              paddingTop: "1rem",
-            }}
-          >
-            {data.map((item, index) => (
-              <div
-                key={index}
-                style={{
-                  maxWidth: "430px",
-                  borderRadius: "20px",
-                  overflow: "hidden",
-                  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-                  marginBottom: "1.5rem",
-                  color: "#000",
-                }}
-              >
-                <img
-                  src={item.image}
-                  style={{
-                    width: "430px",
-                    objectFit: "cover",
-                    height: "16rem",
-                  }}
-                />
-                <h3 style={{ textAlign: "center" }}>{item.title}</h3>
-                <p style={{ padding: "10px 20px 20px" }}>{item.para}</p>
-              </div>
-            ))}
+      <div
+        style={{
+          backgroundImage: `url(${about7})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          maxWidth: "1600px",
+          objectFit: "cover",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "3rem 1rem",
+        }}
+      >
+        <div style={{ maxWidth: "1000px" }}>
+          <div style={{ maxWidth: "900px" }}>
+            <span>Our Integrative Approach:</span>
+            <br />
+            At Vital Medi Clinic, we combine the best of Eastern and Western
+            medicine, integrating traditional Thai herbal remedies and <span>time-honored ATTM practices</span> with innovative medical technologies. We offer a variety of treatments, including IV Nutrition, PRP Therapy, <span> and a comprehensive suite of Thai Traditional Medicine therapies,</span> to support your {"body's"} natural healing processes and promote optimal health
           </div>
           <div
-            className="center"
-            style={{ width: "100%", paddingBottom: "1.5rem" }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-end",
+              alignItems: 'flex-end',
+              textAlign: 'right',
+              paddingTop: '50px',
+            }}
           >
-            <button>LEARN MORE</button>
+            <span>Your Journey to a Healthier, Longer Life:</span>
+            <p>
+            Our mission is to empower you to take control of your health and
+            well-being. We believe that by focusing on prevention, personalized
+            treatment, a holistic approach to wellness, <span> and the integration of Applied Thai Traditional Medicine,</span> We can help you achieve your goals and live a longer, more fulfilling life.
+            </p>
           </div>
         </div>
       </div>
@@ -290,11 +538,16 @@ const AboutUs = () => {
                 borderRadius: "10px",
               }}
             >
-              <img src={item.icon} style={{ width: "7rem" }} />
+              <img
+                loading="lazy"
+                src={item.icon}
+                style={{ width: "7rem", height: "7rem", objectFit: "contain" }}
+              />
               <div
                 style={{
-                  padding: "0 0.5rem",
+                  padding: "0 1rem",
                   textAlign: index % 2 === 0 ? "left" : "right",
+                  maxWidth: "600px",
                 }}
               >
                 <h4>{item.title}</h4>
@@ -302,39 +555,6 @@ const AboutUs = () => {
               </div>
             </div>
           ))}
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${about7})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          maxWidth: "1600px",
-          objectFit: "cover",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "3rem 1rem",
-        }}
-      >
-        <div style={{ maxWidth: "1000px" }}>
-          <p>
-            <span>Our Integrative Approach:</span>
-            <br />
-            At Vital Medi Clinic, we combine the best of Eastern and Western
-            medicine, integrating traditional Thai herbal remedies with
-            innovative medical technologies. We offer a variety of treatments,
-            including IV Nutrition, and Stem Cell Therapy, to support your{" "}
-            {"body's"} natural healing processes and promote optimal health.
-          </p>
-          <p>
-            <span>Your Journey to a Healthier, Longer Life:</span>
-            <br />
-            Our mission is to empower you to take control of your health and
-            well-being. We believe that by focusing on prevention, personalized
-            treatment, and a holistic approach to wellness, we can help you
-            achieve your health goals and live a longer, more fulfilling life.
-          </p>
         </div>
       </div>
       <div
@@ -439,9 +659,9 @@ const AboutUs = () => {
           }}
         >
           <h1 style={{ textAlign: "center" }}>OUR DISTINCTIVE APPROACH</h1>
-          <h1 style={{ fontWeight: 100, textAlign: "center" }}>
+          <h2 style={{ fontWeight: 100, textAlign: "center", fontSize: 35 }}>
             (How Are We Different From Others)
-          </h1>
+          </h2>
           <div
             style={{
               background: "#fff",
@@ -454,10 +674,11 @@ const AboutUs = () => {
             }}
           >
             <img
+              loading="lazy"
               src={location}
               style={{ width: "10rem", marginRight: "1rem" }}
             />
-            <div>
+            <div style={{ maxWidth: "600px" }}>
               <h4>
                 HARNESSING ANCIENT WISDOM & MODERN SCIENCE EASTERN_WESTERN
                 INTEGRATION
@@ -480,10 +701,11 @@ const AboutUs = () => {
               borderRadius: "1.2rem",
               display: "flex",
               flexWrap: "wrap",
+              justifyContent: "flex-end",
               textAlign: "end",
             }}
           >
-            <div>
+            <div style={{ maxWidth: "600px" }}>
               <h4>PERSONALIZED CARE, TAILORED SOLUTIONS</h4>
               <p>
                 Each client receives a customized treatment plan designed around
@@ -492,7 +714,11 @@ const AboutUs = () => {
                 therapies
               </p>
             </div>
-            <img src={person} style={{ width: "10rem", marginLeft: "1rem" }} />
+            <img
+              loading="lazy"
+              src={person}
+              style={{ width: "10rem", marginLeft: "1rem" }}
+            />
           </div>
           <div
             style={{
@@ -505,8 +731,12 @@ const AboutUs = () => {
               flexWrap: "wrap",
             }}
           >
-            <img src={hand} style={{ width: "10rem", marginRight: "1rem" }} />
-            <div>
+            <img
+              loading="lazy"
+              src={hand}
+              style={{ width: "10rem", marginRight: "1rem" }}
+            />
+            <div style={{ maxWidth: "600px" }}>
               <h4>SIGNATURE THERAPIES & MODALITIES</h4>
               <p>
                 Thai Herbal Medicine Expertise: We harness the centuries-old
@@ -524,10 +754,12 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
+              justifyContent: "flex-end",
               flexWrap: "wrap",
+              textAlign: "end",
             }}
           >
-            <div>
+            <div style={{ maxWidth: "600px" }}>
               <h4>EXPLORING CANNABIS & KRATOM THERAPIES</h4>
               <p>
                 Our clinic offers therapeutic interventions utilieing cannabis
@@ -537,7 +769,11 @@ const AboutUs = () => {
                 professionals
               </p>
             </div>
-            <img src={leaf} style={{ width: "10rem", marginLeft: "1rem" }} />
+            <img
+              loading="lazy"
+              src={leaf}
+              style={{ width: "10rem", marginLeft: "1rem" }}
+            />
           </div>
           <div
             style={{
@@ -548,14 +784,14 @@ const AboutUs = () => {
               borderRadius: "1.2rem",
               display: "flex",
               flexWrap: "wrap",
-              justifyContent: "space-between",
             }}
           >
             <img
+              loading="lazy"
               src={injunction}
               style={{ width: "10rem", height: "10rem", marginRight: "1rem" }}
             />
-            <div style={{ maxWidth: "720px" }}>
+            <div style={{ maxWidth: "600px" }}>
               <h4>ADVANCED WESTERN MODALITIES</h4>
               <p>
                 Our clinic integrates a range of cutting-edge Western medical

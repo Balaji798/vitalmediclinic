@@ -1,10 +1,24 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import active from "../../assets/healthCheckUp/bubble-molecule.jpg";
+import { Helmet } from "react-helmet-async";
 
 const ActivityTest = () => {
   return (
     <div className="service">
+      <Helmet>
+        <title>Natural Killer (NK) Cell Activity Test Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="Natural Killer Cell Activity Test, NK Cell Activity Test, NK Cell Activity Test Bangkok, NK Cell Activity Test Thailand "
+        />
+
+        <meta
+          name="description"
+          content="Top Bangkok center for Natural Killer (NK) Cell Activity Test. Precise immunological testing to assess and enhance immune function."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -13,9 +27,9 @@ const ActivityTest = () => {
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -87,7 +101,7 @@ const ActivityTest = () => {
             paddingTop: "2rem",
           }}
         >
-          <img src={active} className="service-image" />
+           <img loading="lazy" src={active} className="service-image" />
         </div>
       </div>
     </div>

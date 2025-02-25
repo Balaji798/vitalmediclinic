@@ -83,7 +83,11 @@ const Service = () => {
         {
           title:"BODY WORKS & WELLNESS",
           link:"/body-works-wellness"
-        }
+        },
+        {
+          title:"WEIGHT MANAGEMENT",
+          link:"/wellness/weight-management"
+        },
       ],
     },
     {
@@ -129,14 +133,27 @@ const Service = () => {
       ],
     },
     {
-      title: "4. THAI HERBAL MEDICINE INTEGRATION",
+      title: "4.CANNABIS TREATMENT & THAI HERBAL MEDICINE INTEGRATION",
       link:"/service/herbal-medicean",
-      options: [],
+      options: [
+        {
+          title:"APPLIED THAI TRADITIONAL MEDICINE",
+          link:"/herbal-medicean/thai-traditional-medicine"
+        },
+        {
+          title:"THAI HERBAL FORMULAS",
+          link:"/herbal-medicean/thai-herbal-formulas"
+        },
+        {
+          title:"THAI TRADITIONAL THERAPEUTIC TREATMENT",
+          link:"/herbal-medicean/therapeutic-treatment"
+        }
+      ],
     },
-    {
-      title: "5. CANNABIS & KRATOM TREATMENT",
-      link:"/service/cannabis-and-kartom-therapies",
-    },
+    // {
+    //   title: "5. CANNABIS & KRATOM TREATMENT",
+    //   link:"/service/cannabis-and-kartom-therapies",
+    // },
   ];
   return (
     <div className="navbar">
@@ -185,7 +202,7 @@ const Service = () => {
               style={{ display: "flex", width: "100%",justifyContent:"space-between" }}
             >
               {naveData.map((item, index) => (
-                <div key={index} style={{maxWidth:index>2?"200px":"330px",width:"100%",paddingRight:"0.5rem"}}>
+                <div key={index} style={{maxWidth:index>2?"320px":"330px",width:"100%",paddingRight:"0.5rem"}}>
                   <Link to={item.link}><h4>{item.title}</h4></Link>
                   {item?.options?.map((links, i) => (
                     <Link

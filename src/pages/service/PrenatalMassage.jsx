@@ -4,10 +4,24 @@ import doctorConsultation from "../../assets/wellness/massage.jpg";
 import womanBg from "../../assets/wellness/woman-bg.jpg";
 import bg from "../../assets/conditions/bg.png";
 import womanDoctor from "../../assets/wellness/woman-doctor.jpg";
+import { Helmet } from "react-helmet-async";
 
 const PrenatalMassage = () => {
   return (
     <div>
+      <Helmet>
+        <title>Prenatal & Pregnancy Massage Bangkok | Vital Medi Clinic</title>
+
+        <meta
+          name="keywords"
+          content="prenatal massage Bangkok, Pregnancy Massage Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Relax with specialized prenatal massage in Bangkok. Vital Medi Clinic provides pregnancy massages designed to ease discomfort and boost mental well-being."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -17,9 +31,9 @@ const PrenatalMassage = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -92,7 +106,7 @@ const PrenatalMassage = () => {
               paddingTop: "2rem",
             }}
           >
-            <img src={doctorConsultation} className="service-image" />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -100,7 +114,7 @@ const PrenatalMassage = () => {
         style={{
           display: "flex",
           //justifyContent: "space-between",
-          flexWrap:"wrap",
+          flexWrap: "wrap",
           padding: "0rem 1rem 2rem",
           height: "100%",
         }}
@@ -121,7 +135,7 @@ const PrenatalMassage = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={womanDoctor}
               style={{
                 maxWidth: "312px",
@@ -183,21 +197,21 @@ const PrenatalMassage = () => {
         }}
       >
         {" "}
-        <div style={{ maxWidth: "1200px",width:"100%",textAlign:"left"  }}>
-          <p style={{ paddingBottom: "0.5rem",maxWidth:"500px" }}>
+        <div style={{ maxWidth: "1200px", width: "100%", textAlign: "left" }}>
+          <p style={{ paddingBottom: "0.5rem", maxWidth: "500px" }}>
             Experience the ultimate relaxation and comfort during this special
             time with our specially tailored massages designed to alleviate
             pregnancy-related discomfort and promote overall well-being for both
             mom and baby.
           </p>
-          <p style={{ paddingBottom: "0.5rem",maxWidth:"500px" }}>
+          <p style={{ paddingBottom: "0.5rem", maxWidth: "500px" }}>
             Our skilled and caring massage therapists are trained in prenatal
             techniques to ensure a safe and soothing experience for every
             mom-to-be. From relieving back pain and reducing swelling to easing
             muscle tension and improving sleep quality, our prenatal massages
             offer a multitude of benefits for you and your growing baby.
           </p>
-          <p style={{maxWidth:"500px"}}>
+          <p style={{ maxWidth: "500px" }}>
             Treat yourself to a moment of tranquility and pampering with our
             prenatal massage services. You deserve to feel your absolute best as
             you prepare for the arrival of your little one.

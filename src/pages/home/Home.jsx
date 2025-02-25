@@ -9,6 +9,8 @@ import promotion from "../../assets/promotion1.jpg";
 import windowImage from "../../assets/windowImage.jpg";
 import vitalLogo from "../../assets/vital-logo.png";
 import group from "../../assets/group.jpg";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 const data = [
   {
     title: "Health Checkup",
@@ -31,37 +33,57 @@ const data = [
     image: cannabis,
   },
 ];
-console.log(window.innerWidth);
+
 const Home = () => {
   return (
     <div className="" style={{ width: "100%" }}>
-      <div className="banner">
-        <img
-          src={vitalLogo}
-          style={{ objectFit: "contain", maxWidth: "26rem", width: "100%" }}
-          alt="logo"
+      <Helmet>
+        <title>
+          Trusted International Medical Clinic by Vital Medi Clinic Bangkok,
+          Thailand
+        </title>
+
+        <meta
+          name="keywords"
+          content="Medical Clinic, med clinic, medi center, medical centers, medicare clinic, central medical clinic, med consult clinic, international medical clinic, health care center, health care clinic, family healthcare clinic, chinese medicine clinic"
         />
-        <h2 style={{ paddingBottom: "10px" }}>
-          #1 Integrative Medical Approach
-        </h2>
-        <h1 style={{ fontWeight: "bold", paddingBottom: "20px" }}>
-          THE MEDICAL CROSSROAD
-          <br />
-          BETWEEN EAST & WEST
-        </h1>
-        <button>READ MORE</button>
+
+        <meta
+          name="description"
+          content="A top international medical clinic specializes in family healthcare and Chinese medicine across top medical healthcare clinic centre in Thailand, Bangkok by Vital Medi Clinic."
+        />
+      </Helmet>
+      <div className="banner">
+        <div style={{ maxWidth: "1100px", width: "100%",display:"flex",flexDirection:"column",alignItems:"flex-start" }}>
+           <img loading="lazy"
+            src={vitalLogo}
+            style={{ objectFit: "contain", maxWidth: "29rem", width: "100%" }}
+            alt="logo"
+          />
+          <h2 style={{ paddingBottom: "10px" }}>
+            #1 Integrative Medical Approach
+          </h2>
+          <h2 style={{ fontWeight: "bold",fontSize:30 }}>
+            THE MEDICAL CROSSROAD
+          </h2>
+          <h2 style={{ fontWeight: "bold", paddingBottom: "20px",fontSize:30 }}>BETWEEN EAST & WEST</h2>
+          <Link to="/about-us"><button>READ MORE</button></Link>
+        </div>
       </div>
       <div
-        className="banner banner_home"
+        className="banner_home"
         style={{ maxHeight: "30rem", alignItems: "flex-end" }}
       >
+      <div className="bluer"/>
         <div
           style={{
             maxWidth: "800px",
             width: "100%",
             textAlign: "left",
-            paddingLeft: "2rem",
+            padding:"0 10px",
+            zIndex:1
           }}
+          className="content-para"
         >
           <h2
             style={{
@@ -85,15 +107,9 @@ const Home = () => {
       <div className="banner_second">
         <div className="content">
           <h2>ABOUT US</h2>
-          <p style={{fontWeight:"bold"}}>
-            Vital Medi Clinic is an Integrative Medical clinic which combines
-            Preventive Medical, Applied Thai Traditional Medical (ATTM) and
-            Traditional Chinese Medicine (TCM) altogether. We believe every
-            patient is unique, health condition, especially at the biological
-            level. Therefore, we personalized treatment plans individually to
-            reach practical and sustainable optimum health. We also offer
-            alternative holistic care for patients who need to improve the
-            quality of life.
+          <p style={{padding:"0px"}}>
+            Vital Medi Clinic : Pioneering integrative medicine in Bangkok, we focus on enhancing your healthcare and <br/> promoting longevity through a blend of Eastern and Western therapies,<br/>
+            including Thai Traditional Medicine and Cannabis treatment.<br/>Our personalized approach optimizing your physical, mental, and emotional well-being for a vibrant, fulfilling life.
           </p>
         </div>
         <div className="our-service">
@@ -101,7 +117,7 @@ const Home = () => {
           <div>
             {data.map((item, index) => (
               <div key={index}>
-                <img
+                 <img loading="lazy"
                   src={item.image}
                   style={{ maxWidth: "10rem", objectFit: "cover" }}
                 />
@@ -192,18 +208,19 @@ const Home = () => {
             maxWidth: "1000px",
             width: "100%",
             textAlign: "left",
-            padding: "0 2rem",
+            padding: "0 10px",
           }}
         >
           <h2
             style={{
               borderBottom: "2px solid",
               width: "100%",
+              maxWidth: "420px",
             }}
           >
             INTEGRATIVE MEDICINE CLINIC
           </h2>
-          <p>
+          <p style={{ maxWidth: "420px" }}>
             <span style={{ fontWeight: 600 }}>
               In addition to our comprehensive health check-ups and personalized
               wellness programs, we offer a range of cutting-edge therapies,

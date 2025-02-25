@@ -2,13 +2,25 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/conditions/asian-physiotherapist.jpg";
 import service from "../../assets/conditions/sevice-pic-47.jpg";
+import { Helmet } from "react-helmet-async";
 
 const AlzheimerDisease = () => {
   return (
     <div>
-      <div
-        className="service"
-      >
+      <Helmet>
+        <title>{"Alzheimer's"} Disease Treatment in Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="Alzheimer's Disease Treatment in Bangkok, Alzheimer's Disease Treatment in Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Specialized Alzheimer's disease treatment in Bangkok, Thailand. Comprehensive care for memory loss and cognitive decline. Book your consultation now."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -17,9 +29,9 @@ const AlzheimerDisease = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -104,10 +116,7 @@ const AlzheimerDisease = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>

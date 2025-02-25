@@ -7,7 +7,7 @@ export const doctorData = [
   {
     image:doctor2,
     name: "DR. CHAWAPON KIDHIRUNKUL",
-    expert:"INTERNAL MEDICINE & ANTI-AGING DOCTOR",
+    expert:"PREVENTIVE & ANTI-AGING MEDICINE",
     degree:
       "M.D., PRMPH, ABAARM, MSC",
     eduction: [

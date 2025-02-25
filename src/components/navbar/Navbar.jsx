@@ -25,7 +25,7 @@ const Navbar = ({setOpenNav, openNav}) => {
       <div className="navContainer">
         <Link to="/">
           {" "}
-          <img src={logo} className="logo" />
+           <img loading="lazy" src={logo} className="logo"  />
         </Link>
         <div className="nav-btn">
           <AboutUs />
@@ -40,7 +40,7 @@ const Navbar = ({setOpenNav, openNav}) => {
             <input style={{ outline: "none", border: "none" }} />
           </div>
           <Link to="/appointments">
-            <img src={calendar} style={{ width: "2rem" }} />
+             <img loading="lazy" src={calendar} style={{ width: "2rem" }}  />
           </Link>
         </div>
       </div>

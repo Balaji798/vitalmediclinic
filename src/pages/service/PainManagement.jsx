@@ -7,6 +7,7 @@ import service1 from "../../assets/conditions/icons/sevice-pic-25.png";
 import service2 from "../../assets/conditions/icons/sevice-pic-26.png";
 import service3 from "../../assets/conditions/icons/sevice-pic-27.png";
 import service4 from "../../assets/conditions/icons/sevice-pic-28.png";
+import { Helmet } from "react-helmet-async";
 
 const PainManagement = () => {
   const data = [
@@ -33,6 +34,21 @@ const PainManagement = () => {
   ];
   return (
     <div>
+      <Helmet>
+        <title>
+          Sports Injury Pain Management Treatment Clinic Bangkok, Thailand
+        </title>
+
+        <meta
+          name="keywords"
+          content="Sports Injury Pain Management, Pain Management Treatment Bangkok"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok’s premier pain management treatment clinic for sports injuries. Overcome pain and get back to your active lifestyle with expert care."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -42,7 +58,7 @@ const PainManagement = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
           className="content-position"
           style={{
@@ -141,10 +157,7 @@ const PainManagement = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={active}
-className="service-image"
-            />
+             <img loading="lazy" src={active} className="service-image" />
           </div>
         </div>
       </div>
@@ -165,7 +178,7 @@ className="service-image"
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={woman}
               style={{
                 maxWidth: "312px",
@@ -176,9 +189,9 @@ className="service-image"
             />
           </div>
         </div>
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             right: 0,
@@ -253,20 +266,21 @@ className="service-image"
                 style={{
                   backgroundColor: "#fff",
                   display: "flex",
-                  flexWrap:"wrap",
+                  flexWrap: "wrap",
                   flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                   marginBottom: "1rem",
                   padding: "0.5rem 1.5rem",
                   borderRadius: "10px",
-                  marginLeft: index % 2 === 0 ? "0" : "4rem",
-                  marginRight: index % 2 === 0 ? "4rem" : "0",
                 }}
+                className={index % 2 === 0?"marginRight":"margin-style"}
               >
-                <img src={item.icon} style={{ width: "6rem" }} />
+                 <img loading="lazy" src={item.icon} style={{ width: "6rem" }} />
                 <div
                   style={{
                     padding: "0 0.5rem",
                     textAlign: index % 2 === 0 ? "left" : "right",
+                    maxWidth: "400px",
+                    width: "100%",
                   }}
                 >
                   <h4>{item.title}</h4>

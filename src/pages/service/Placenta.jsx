@@ -3,10 +3,26 @@ import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/micro-sensory.jpg";
 import young from "../../assets/wellness/young-sport.jpg";
 import bg from "../../assets/conditions/bg.png";
+import { Helmet } from "react-helmet-async";
 
 const Placenta = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Placenta Therapy Treatment Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Placenta Therapy Bangkok, Placenta Therapy, Placenta Therapy Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Experience rejuvenating placenta therapy in Bangkok. Advanced treatments for enhanced wellness and skin health."
+        />
+      </Helmet>
       <div className="service">
         <div
           style={{
@@ -16,9 +32,9 @@ const Placenta = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -101,10 +117,7 @@ const Placenta = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-              className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -112,7 +125,7 @@ const Placenta = () => {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          flexWrap:"wrap",
+          flexWrap: "wrap",
           padding: "2rem 1rem",
           height: "100%",
           background: "#f1f1f1",
@@ -134,7 +147,7 @@ const Placenta = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={young}
               style={{
                 maxWidth: "380px",

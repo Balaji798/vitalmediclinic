@@ -2,13 +2,25 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/conditions/skin-adolescents.jpg";
 import bg from "../../assets/conditions/bg.png";
+import { Helmet } from "react-helmet-async";
 
 const SkinDisorder = () => {
   return (
     <div>
-      <div
-className="service"
-      >
+      <Helmet>
+        <title>Skin Disorders Treatment Bangkok | Vital Medi Clinic</title>
+
+        <meta
+          name="keywords"
+          content="Skin Disorders Treatment Bangkok, Skin Disorders Treatment Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok's top skin disorders treatment. Promote healthy skin by addressing imbalances and reducing inflammation with expert care."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -17,9 +29,9 @@ className="service"
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -77,17 +89,14 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
       <div
         style={{
           display: "flex",
-          flexWrap:"wrap",
+          flexWrap: "wrap",
           padding: "2rem 1rem",
           height: "100%",
         }}
@@ -107,7 +116,7 @@ className="service-image"
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={doctorConsultation}
               style={{
                 maxWidth: "334px",
@@ -148,11 +157,22 @@ className="service-image"
               </p>
               <p style={{ paddingBottom: "0.5rem" }}>
                 {" "}
-                <span>o Traditional and Modern Therapies:</span> Where appropriate, we may integrate proven or medications within a broader regenerative approach.
+                <span>o Traditional and Modern Therapies:</span> Where
+                appropriate, we may integrate proven or medications within a
+                broader regenerative approach.
               </p>
             </div>
-            <p><span>Our Commitment to Results:</span> {"We've"} seen significant improvements for our patients, with reduce inflammation, health skin, and enhanced overall well-being The timing of results will vary bused.</p>
-            <span>Experience the difference. Schedule a consultation to explore how our personalized approach can help you achieve healthier, more radiant skin</span>
+            <p>
+              <span>Our Commitment to Results:</span> {"We've"} seen significant
+              improvements for our patients, with reduce inflammation, health
+              skin, and enhanced overall well-being The timing of results will
+              vary bused.
+            </p>
+            <span>
+              Experience the difference. Schedule a consultation to explore how
+              our personalized approach can help you achieve healthier, more
+              radiant skin
+            </span>
           </div>
         </div>
       </div>

@@ -2,15 +2,31 @@ import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import doctorConsultation from "../../assets/conditions/bone-joints.jpg";
 import midsection from "../../assets/conditions/midsection-doctor.jpg";
 import bg from "../../assets/conditions/bg.png";
+import { Helmet } from "react-helmet-async";
 
 const Arthritis = () => {
   return (
     <div
       style={{
         padding: "2rem 0",
-        overflowX:"hidden"
+        overflowX: "hidden",
       }}
     >
+      <Helmet>
+        <title>
+          Rheumatoid Arthritis Treatment Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="rheumatoid arthritis treatment Bangkok, rheumatoid arthritis treatment clinic"
+        />
+
+        <meta
+          name="description"
+          content="Get the best rheumatoid arthritis treatment in Bangkok. Our expert team helps manage joint pain, stiffness, and fatigue. Begin your path to improved health."
+        />
+      </Helmet>
       <div style={{ display: "flex" }}>
         <div
           style={{
@@ -34,11 +50,11 @@ const Arthritis = () => {
           backgroundColor: "#e0e0e2",
           display: "flex",
           alignItems: "center",
-          justifyContent:"flex-end",
-          flexWrap:"wrap"
+          justifyContent: "flex-end",
+          flexWrap: "wrap",
         }}
       >
-        <div style={{maxWidth:"900px",width:"100%"}}>
+        <div style={{ maxWidth: "900px", width: "100%" }}>
           <p style={{ padding: "1rem 0" }}>
             <span>Rheumatoid Arthritis (RA):</span> Understanding the Disease
             and Our Integrative Treatment Approach
@@ -65,7 +81,7 @@ const Arthritis = () => {
             other factors may play a role.
           </p>
         </div>
-        <img
+         <img loading="lazy"
           src={doctorConsultation}
           style={{
             maxWidth: "400px",
@@ -74,9 +90,7 @@ const Arthritis = () => {
           }}
         />
       </div>
-      <div
-className="service"
-      >
+      <div className="service">
         {" "}
         <div style={{ maxWidth: "500px", width: "100%" }}>
           <div
@@ -93,7 +107,7 @@ className="service"
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={midsection}
               style={{
                 maxWidth: "312px",
@@ -104,9 +118,9 @@ className="service"
             />
           </div>
         </div>
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             right: 0,
@@ -115,41 +129,48 @@ className="service"
           }}
         />
         <div style={{ maxWidth: "660px", width: "100%" }}>
-        <span>Our East Meets West Approach to RA Treatment:</span>
-        <p>
-          {" "}
-          <span>1. Comprehensive Assessment:</span> Thorough evaluation to
-          understand the severity and progression of your RA, along with any
-          other health concerns.
-        </p>
-        <p>
-          {" "}
-          <span>2. Personalized Treatment Plan:</span> We combine the strengths
-          of medicine for a holistic approach, including:
-        </p>
-        <p style={{ marginLeft: "0.5rem" }}>
-          <span>o Western Medical Interventions:</span> Medications to manage
-          pain, inflammation, and potentially slow disease progression.
-        </p>
-        <p style={{ marginLeft: "0.5rem" }}>
-          <span>o Nutritional Support:</span> Anti-inflammatory diet guidance
-          and targeted supplementation to support joint health and overall
-          well-being.
-        </p>
-        <p style={{ marginLeft: "0.5rem" }}>
-          <span>o Thal Herbal Medicine:</span> Selected herbs for their
-          potential anti-inflammatory and pain relieving properties.
-        </p>
-        <p style={{ marginLeft: "0.5rem" }}>
-          <span>o Cannabis and Kratom Therapies (Under Guidance):</span>{" "}
-          Responsibly exploring the potential use of these plant-based options
-          for pain management and inflammation reduction.
-        </p>
-        <p style={{ paddingBottom: "0.5rem", marginLeft: "0.5rem" }}>
-          <span>o Lifestyle Optimization:</span> Stress management techniques, gentle exercise recommendations, and support for restful sleep.
-        </p>
-        <p style={{ paddingBottom: "0.5rem"}}><span>Beyond Symptom Management:</span> Supporting Long term Health</p>
-        <p>Our goal is not just temporary relief but to address the the underlying imbalances contributing to RA, potentially slowing disease progression and improving your overall quality of life</p>
+          <span>Our East Meets West Approach to RA Treatment:</span>
+          <p>
+            {" "}
+            <span>1. Comprehensive Assessment:</span> Thorough evaluation to
+            understand the severity and progression of your RA, along with any
+            other health concerns.
+          </p>
+          <p>
+            {" "}
+            <span>2. Personalized Treatment Plan:</span> We combine the
+            strengths of medicine for a holistic approach, including:
+          </p>
+          <p style={{ marginLeft: "0.5rem" }}>
+            <span>o Western Medical Interventions:</span> Medications to manage
+            pain, inflammation, and potentially slow disease progression.
+          </p>
+          <p style={{ marginLeft: "0.5rem" }}>
+            <span>o Nutritional Support:</span> Anti-inflammatory diet guidance
+            and targeted supplementation to support joint health and overall
+            well-being.
+          </p>
+          <p style={{ marginLeft: "0.5rem" }}>
+            <span>o Thal Herbal Medicine:</span> Selected herbs for their
+            potential anti-inflammatory and pain relieving properties.
+          </p>
+          <p style={{ marginLeft: "0.5rem" }}>
+            <span>o Cannabis and Kratom Therapies (Under Guidance):</span>{" "}
+            Responsibly exploring the potential use of these plant-based options
+            for pain management and inflammation reduction.
+          </p>
+          <p style={{ paddingBottom: "0.5rem", marginLeft: "0.5rem" }}>
+            <span>o Lifestyle Optimization:</span> Stress management techniques,
+            gentle exercise recommendations, and support for restful sleep.
+          </p>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            <span>Beyond Symptom Management:</span> Supporting Long term Health
+          </p>
+          <p>
+            Our goal is not just temporary relief but to address the the
+            underlying imbalances contributing to RA, potentially slowing
+            disease progression and improving your overall quality of life
+          </p>
         </div>
         <div
           style={{
@@ -165,5 +186,3 @@ className="service"
 };
 
 export default Arthritis;
-
-

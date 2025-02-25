@@ -6,6 +6,7 @@ import service1 from "../../assets/conditions/icons/sevice-pic-38.png";
 import service2 from "../../assets/conditions/icons/sevice-pic-35.png";
 import service3 from "../../assets/conditions/icons/sevice-pic-37.png";
 import service4 from "../../assets/conditions/icons/sevice-pic-36.png";
+import { Helmet } from "react-helmet-async";
 
 const NCDDisease = () => {
   const data = [
@@ -36,6 +37,19 @@ const NCDDisease = () => {
         padding: "2rem 0",
       }}
     >
+      <Helmet>
+        <title>NCDs Disease Treatment Clinic Bangkok, Thailand</title>
+
+        <meta
+          name="keywords"
+          content="NCDs Disease Treatment Clinic Bangkok, NCDs Disease Treatment Clinic Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Schedule a consultation at our NCDs (non-communicable) disease treatment clinic in Bangkok. Explore our integrative approach to optimize your long-term health. Book now."
+        />
+      </Helmet>
       <div style={{ display: "flex" }}>
         <div
           style={{
@@ -87,7 +101,7 @@ const NCDDisease = () => {
             disorders
           </p>
         </div>
-        <img
+         <img loading="lazy"
           src={happy}
           style={{
             maxWidth: "400px",
@@ -129,7 +143,7 @@ const NCDDisease = () => {
                 alignItems: "center",
               }}
             >
-              <img src={item.icon} style={{ width: "7rem" }} />
+               <img loading="lazy" src={item.icon} style={{ width: "7rem" }} />
               <span>{item.title}</span>
               <p style={{ fontSize: "12px" }}>{item.para}</p>
             </div>
@@ -161,7 +175,7 @@ const NCDDisease = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
+             <img loading="lazy"
               src={doctorConsultation}
               style={{
                 maxWidth: "312px",
@@ -172,9 +186,9 @@ const NCDDisease = () => {
             />
           </div>
         </div>
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             right: 0,

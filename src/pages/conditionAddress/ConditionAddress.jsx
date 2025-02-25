@@ -10,7 +10,7 @@ const ConditionAddress = () => {
       style={{ flexDirection: "column", padding: "2rem 0" }}
     >
       <div className="container center" style={{ flexDirection: "column" }}>
-        <img src={report} style={{ width: "100%" }} />
+         <img loading="lazy" src={report} style={{ width: "100%" }}  />
         <h2 style={{ padding: "2rem 0" }}>MEDICAL CONDITIONS ADDRESSED</h2>
         <div
           className="center"
@@ -26,14 +26,14 @@ const ConditionAddress = () => {
               key={index}
               style={{ padding: "0 1.5rem 1.5rem", textAlign: "center" }}
             >
-              <img src={item.image} style={{ width: "7rem" }} />
+               <img loading="lazy" src={item.image} style={{ width: "7rem" }}  />
               <h4>{item.title}</h4>
               <h4>{item?.title2}</h4>
             </Link>
           ))}
         </div>
       </div>
-      <img
+       <img loading="lazy"
         src={dotes}
          className="content-position"
         style={{
@@ -42,8 +42,9 @@ const ConditionAddress = () => {
           marginTop: "-20rem",
           marginLeft: "-4rem",
         }}
+         
       />
-      <img
+       <img loading="lazy"
         src={dotes}
          className="content-position"
         style={{
@@ -52,6 +53,7 @@ const ConditionAddress = () => {
           marginBottom: "-30rem",
           marginRight: "-3.8rem",
         }}
+         
       />
     </div>
   );

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import exploring from "../../assets/SERVICES/exploring.jpg";
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import { ourData, potentialFData } from "../servicesOffered/data";
@@ -5,8 +6,20 @@ import { ourData, potentialFData } from "../servicesOffered/data";
 const KartomTherapies = () => {
   return (
     <div>
-      {" "}
-      <div className="center" style={{ padding: "2rem 1rem",flexWrap:"wrap" }}>
+      <Helmet>
+        <title>Cannabis and kratom therapies Bangkok, Thailand</title>
+
+        <meta name="keywords" content="cannabis therapies, Kratom therapies" />
+
+        <meta
+          name="description"
+          content="Cannabis and kratom therapies in Bangkok available at our clinic. Safe, guided treatments by experienced professionals for holistic health benefits."
+        />
+      </Helmet>
+      <div
+        className="center"
+        style={{ padding: "2rem 1rem", flexWrap: "wrap" }}
+      >
         <div style={{ maxWidth: "500px", textAlign: "end" }}>
           <h2>
             EXPLORING EMERGING <br />
@@ -19,10 +32,10 @@ const KartomTherapies = () => {
             under the supervision of experienced healthcare professionals.
           </p>
         </div>
-        <img
+         <img loading="lazy"
           src={exploring}
           alt="/exploring"
-          style={{ maxWidth: "400px",width:"100%", marginLeft: "1rem" }}
+          style={{ maxWidth: "400px", width: "100%", marginLeft: "1rem" }}
         />
       </div>
       <div
@@ -45,7 +58,7 @@ const KartomTherapies = () => {
                 width: "100%",
                 display: "flex",
                 flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
-                flexWrap:"wrap"
+                flexWrap: "wrap",
               }}
             >
               <div
@@ -53,7 +66,7 @@ const KartomTherapies = () => {
                   width: "90%",
                   background: "#fff",
                   display: "flex",
-                  flexWrap:"wrap",
+                  flexWrap: "wrap",
                   marginBottom: "1rem",
                   padding: "1rem 1.5rem",
                   borderRadius: "1.2rem",
@@ -61,7 +74,7 @@ const KartomTherapies = () => {
                   flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
                 }}
               >
-                <img src={item.image} style={{ width: "7rem" }} />
+                 <img loading="lazy" src={item.image} style={{ width: "7rem" }} />
                 <div
                   style={{
                     maxWidth: "600px",
@@ -79,9 +92,9 @@ const KartomTherapies = () => {
         </div>
       </div>
       <div className="center" style={{ padding: "3rem 1rem" }}>
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -104,7 +117,7 @@ const KartomTherapies = () => {
           >
             {ourData.map((item, index) => (
               <div key={index} style={{ maxWidth: "380px" }}>
-                <img
+                 <img loading="lazy"
                   src={item.image}
                   style={{
                     width: "100%",

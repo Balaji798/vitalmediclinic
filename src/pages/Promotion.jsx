@@ -35,21 +35,25 @@ const Promotion = () => {
       />
       <div className="center">
         <div className="wrap" style={{ maxWidth: "1000px" }}>
-          <img
+           <img loading="lazy"
             src={one}
             style={{ maxWidth: "450px", width: "100%", marginBottom: "2rem" }}
+             
           />
-          <img
+           <img loading="lazy"
             src={two}
             style={{ maxWidth: "450px", width: "100%", marginBottom: "2rem" }}
+             
           />
-          <img
+           <img loading="lazy"
             src={three}
             style={{ maxWidth: "450px", width: "100%", marginBottom: "2rem" }}
+             
           />
-          <img
+           <img loading="lazy"
             src={four}
             style={{ maxWidth: "450px", width: "100%", marginBottom: "2rem" }}
+             
           />
         </div>
       </div>
@@ -77,7 +81,7 @@ const Promotion = () => {
           marginTop: "20rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
          className="content-position"
         style={{
@@ -87,6 +91,7 @@ const Promotion = () => {
           marginBottom: "-60rem",
           bottom: 0,
         }}
+         
       />
     </div>
   );

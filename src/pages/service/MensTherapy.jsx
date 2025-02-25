@@ -1,12 +1,21 @@
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
 import doctorConsultation from "../../assets/wellness/male-patient.jpg";
+import { Helmet } from "react-helmet-async";
 
 const MensTherapy = () => {
   return (
-    <div
-className="service"
-    >
+    <div className="service">
+      <Helmet>
+        <title>{"Men's"} Health Therapy Bangkok | Vital Medi Clinic</title>
+
+        <meta name="keywords" content="Men's Health Therapy Bangkok" />
+
+        <meta
+          name="description"
+          content="Get tailored men's health therapy in Bangkok. Address unique health challenges with our specialized treatments for better life quality."
+        />
+      </Helmet>
       <div
         style={{
           width: "15rem",
@@ -15,9 +24,9 @@ className="service"
           marginTop: "3.4rem",
         }}
       />
-      <img
+       <img loading="lazy"
         src={dotes}
-         className="content-position"
+        className="content-position"
         style={{
           width: "10rem",
           left: 0,
@@ -64,19 +73,24 @@ className="service"
           surgery, promoting tissue regeneration.
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
-          <span>• Stronger Immunity:</span> Bolster your {"body's"} defenses against
-          illness and infection. </p>
-          <p><span>• Boosted Energy and Focus:</span> Combat fatigue,
-          improve mental alertness, and enhance productivity.
+          <span>• Stronger Immunity:</span> Bolster your {"body's"} defenses
+          against illness and infection.{" "}
+        </p>
+        <p>
+          <span>• Boosted Energy and Focus:</span> Combat fatigue, improve
+          mental alertness, and enhance productivity.
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
-          <span>• Improved Sleep:</span> Experience deeper, more restorative sleep for better overall health.
+          <span>• Improved Sleep:</span> Experience deeper, more restorative
+          sleep for better overall health.
         </p>
         <p style={{ paddingBottom: "0.5rem" }}>
-          <span>• Optimized Body Composition:</span> Increase lean muscle mass and reduce body fat for a healthier physique.
+          <span>• Optimized Body Composition:</span> Increase lean muscle mass
+          and reduce body fat for a healthier physique.
         </p>
         <p style={{ fontWeight: "bold" }}>
-        Take control of your health and achieve your best self. Schedule your {"Men's"} Health Therapy consultation today!
+          Take control of your health and achieve your best self. Schedule your{" "}
+          {"Men's"} Health Therapy consultation today!
         </p>
       </div>
       <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -94,10 +108,7 @@ className="service"
             paddingTop: "2rem",
           }}
         >
-          <img
-            src={doctorConsultation}
-      className="service-image"
-          />
+           <img loading="lazy" src={doctorConsultation} className="service-image" />
         </div>
       </div>
     </div>

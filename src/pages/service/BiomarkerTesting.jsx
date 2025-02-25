@@ -4,6 +4,7 @@ import doctorConsultation from "../../assets/healthCheckUp/person.jpg";
 import service1 from "../../assets/SERVICES/sevice pic-24.png";
 import service2 from "../../assets/SERVICES/sevice pic-23.png";
 import service3 from "../../assets/SERVICES/sevice pic-22.png";
+import { Helmet } from "react-helmet-async";
 
 const BiomarkerTesting = () => {
   const data = [
@@ -25,9 +26,22 @@ const BiomarkerTesting = () => {
   ];
   return (
     <div>
-      <div
-        className="service"
-      >
+      <Helmet>
+        <title>
+          Cancer Biomarker Testing Bangkok, Thailand | Vital Medi Clinic
+        </title>
+
+        <meta
+          name="keywords"
+          content="Cancer Biomarker Testing, Cancer Biomarker Testing Bangkok, Cancer Biomarker Testing Thailand"
+        />
+
+        <meta
+          name="description"
+          content="Bangkok's leading center for cancer biomarker testing. Expert diagnostics to identify and monitor cancer biomarkers accurately."
+        />
+      </Helmet>
+      <div className="service">
         <div
           style={{
             width: "15rem",
@@ -36,9 +50,9 @@ const BiomarkerTesting = () => {
             marginTop: "3.4rem",
           }}
         />
-        <img
+         <img loading="lazy"
           src={dotes}
-           className="content-position"
+          className="content-position"
           style={{
             width: "10rem",
             left: 0,
@@ -104,10 +118,7 @@ const BiomarkerTesting = () => {
               paddingTop: "2rem",
             }}
           >
-            <img
-              src={doctorConsultation}
-className="service-image"
-            />
+             <img loading="lazy" src={doctorConsultation} className="service-image" />
           </div>
         </div>
       </div>
@@ -129,7 +140,7 @@ className="service-image"
             width: "100%",
             display: "flex",
             justifyContent: "space-between",
-            flexWrap:"wrap"
+            flexWrap: "wrap",
           }}
         >
           {data.map((item, index) => (
@@ -140,13 +151,15 @@ className="service-image"
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
-                maxWidth:"280px",
-                width:"100%"
+                maxWidth: "280px",
+                width: "100%",
               }}
             >
-              <img src={item.icon} style={{ width: "100px" }} />
+               <img loading="lazy" src={item.icon} style={{ width: "100px" }} />
               <span>{item.title}</span>
-              <p style={{ fontWeight: "14px",maxWidth:"250px" }}>{item.para}</p>
+              <p style={{ fontWeight: "14px", maxWidth: "250px" }}>
+                {item.para}
+              </p>
             </div>
           ))}
         </div>
