@@ -21,12 +21,19 @@ import about5 from "../../assets/icons/about-16.png";
 import about6 from "../../assets/icons/about-17.png";
 import about7 from "../../assets/about-us/about-09.jpg";
 import about8 from "../../assets/about-us/about-10.jpg";
-import about9 from "../../assets/about-us/about-08.jpg";
 import blueBack from "../../assets/HOMEPAGE/pic-clinic.jpg";
 import massage from "../../assets/about-us/massage.webp";
 import mellness from "../../assets/about-us/wellness.webp";
 import attm from "../../assets/about-us/attm-treatment.webp";
 import cannabis from "../../assets/about-us/cannabis.webp";
+import commitment from "../../assets/about-us/commitment.webp";
+import logo from "../../assets/logo.png";
+import earth from "../../assets/about-us/earth.webp";
+import wellness from "../../assets/about-us/wellness-plan.webp";
+import proactive from "../../assets/about-us/proactive.webp";
+import compassionate from "../../assets/about-us/compassionate.webp";
+import evidence from "../../assets/about-us/evidence.webp";
+import integrative from "../../assets/about-us/integrative.webp";
 import "./aboutUs.css";
 
 const AboutUs = () => {
@@ -136,6 +143,38 @@ const AboutUs = () => {
       image: attm,
     },
   ];
+  const data4 = [
+    {
+      title: "Personalized Wellness Plans",
+      title2: "",
+      para: "We believe in treating the individual, not just the condition. Our Doctors, with his extensive experience in preventive, anti-aging, and regenerative medicine, will personally assess your health history, lifestyle, and goals. This detailed evaluation allows us to create a unique plan tailored to your specific needs.",
+      image: wellness,
+    },
+    {
+      title: "Integrative Expertise",
+      title2: "",
+      para: "Our Doctors are training in both conventional and alternative medicine bridges the gap between ancient wisdom and modern science. He expertly combines Thai herbal medicine, the full spectrum of Applied Thai Traditional Medicine therapies, cutting-edge treatments like stem cell therapy, and personalized nutritional guidance to create a synergistic approach that maximizes your body's natural healing potential.",
+      image: integrative,
+    },
+    {
+      title: "Proactive Health Management ",
+      title2: "",
+      para: "Our comprehensive health check-ups go beyond standard screenings. We delve deeper into your unique biochemistry to identify potential risks early on, allowing us to develop proactive strategies to prevent disease and optimize your well-being for years to come.",
+      image: proactive,
+    },
+    {
+      title: "Evidence-Based and",
+      title2: "Innovative Therapies",
+      para: "We are committed to offering the most effective, scientifically-backed treatments available. Our team stays at the forefront of medical advancements, incorporating innovative therapies like IV nutrition and ozone therapy, while carefully researching emerging options like cannabis and kratom under strict medical supervision. We are equally committed to the time-tested effectiveness of Applied Thai Traditional Medicine, offering a wide range of therapies to address various health concerns.",
+      image: evidence,
+    },
+    {
+      title: "Compassionate,",
+      title2: "Patient-Centered Care",
+      para: "We believe in empowering you with knowledge and support throughout your health journey. Dr. CHAWAPON KIDHIRUNKUL and our team prioritize clear communication, patient education, and a collaborative approach to ensure you feel informed and confident in your treatment choices.",
+      image: compassionate,
+    },
+  ];
 
   return (
     <div>
@@ -154,20 +193,9 @@ const AboutUs = () => {
           }}
         >
           <h1 style={{ textAlign: "center", padding: "2rem 0" }}>AboutUs</h1>
-          <h2 style={{ fontSize: "35px" }}>WHO WE ARE ?</h2>
-          <p style={{ maxWidth: "500px", width: "100%" }}>
-            <span>Vital Medi Clinic</span> is a leading{" "}
-            <a
-              style={{ color: "blue", textDecoration: "underline" }}
-              href="https://vitalmediclinic.com/"
-            >
-              integrative medicine clinic
-            </a>{" "}
-            dedicated to optimizing your health and well-being, with a primary
-            focus on longevity. We combine the best of Eastern and Western
-            practices, seamlessly integrating ancient wisdom with modern science
-            to offer comprehensive and innovative therapies designed to extend
-            your vitality and enhance your quality of life for years to come.
+          <h2 style={{ fontSize: "35px" }}>WHO WE ARE</h2>
+          <p style={{ maxWidth: "700px", width: "100%" }}>
+            <span>Vital Medi Clinic</span> s a leading integrative medicine clinic dedicated to optimizing your health<br/> and well-being, with a primary focus on<span>longevity</span>and a deep respect for the healing power<br/> of <span>Applied Thai Traditional Medicine (ATTM).</span>We seamlessly combine the best of Eastern<br/> and Western practices, integrating ancient wisdom with modern science to offer<br/> comprehensive and innovative therapies designed to extend your vitality and enhance your<br/> quality of life for years to come.
           </p>
         </div>
       </div>
@@ -181,21 +209,14 @@ const AboutUs = () => {
         }}
       >
         <img src={write} style={{ objectFit: "contain", maxWidth: "600px" }} />
-        <p style={{ maxWidth: "1000px", paddingBottom: "0.5rem" }}>
+        <p style={{ maxWidth: "1000px", padding: "1rem 0px" }}>
           <span style={{ fontWeight: "bold" }}>
             Our team of experienced healthcare professionals
           </span>{" "}
-          includes physicians specializing in preventive care, anti-aging, and
-          regenerative medicine, along with holistic practitioners and
-          specialists in various fields. We work collaboratively to develop
-          personalized treatment plans that address your unique needs and goals,
-          with a focus on promoting long-term health and vitality.
+          includes physicians specializing in preventive care,<br/> anti-aging, and regenerative medicine, along with holistic practitioners and specialists in various fields, <br/>including expert <span>Thai Traditional Medicine practitioners.</span>
         </p>
         <p style={{ maxWidth: "1000px" }}>
-          In addition to our comprehensive health check-ups and personalized
-          wellness programs, we offer a range of cutting-edge therapies, such as
-          stem cell therapy and IV nutrition, that can help unlock your{" "}
-          {"body's"} full potential and slow down the aging process. Whether{" "}
+        We work collaboratively to develop personalized treatment plans that address your unique needs and<br/> goals, with a focus on promoting long-term health, vitality, and the art of traditional Thai healing.
         </p>
       </div>
       <div
@@ -203,17 +224,15 @@ const AboutUs = () => {
         style={{ backgroundImage: `url(${blueBack})` }}
       >
         <div className="center" style={{ padding: "0 1rem" }}>
-          <div style={{ maxWidth: "900px", width: "100%" }}>
+          <div style={{ maxWidth: "950px", width: "100%" }}>
             <h2 style={{ textAlign: "center", color: "#fff" }}>
               WHAT DO WE DO?
             </h2>
-            <p style={{ textAlign: "center", width: "100%", color: "#fff" }}>
-              Vital Medi Clinic: Your Partner in Holistic Health and Longevity
+            <p style={{ textAlign: "center", width: "100%", color: "#fff", fontWeight: 'bold' }}>
+            Vital Medi Clinic: Your Partner in Holistic Health and Longevity
             </p>
-            <p style={{ textAlign: "center", color: "#fff" }}>
-              We offer a comprehensive approach to wellness, focusing on four
-              key pillars to help you
-              <br /> optimal health and longevity:
+            <p style={{ textAlign: "center", width: "100%", color: "#fff", fontSize: '14px' }}>
+            We offer a comprehensive approach to wellness, focusing on four key pillars, enhanced by the ancient wisdom of ATTM, to help you achieve<br/> optimal health and longevity
             </p>
             <div
               style={{
@@ -310,7 +329,7 @@ const AboutUs = () => {
       </div>
       <div
         className="center"
-        style={{ backgroundColor: "#fff", padding: "0 1rem" }}
+        style={{ backgroundColor: "#fff", padding: "2rem  1rem 0" }}
       >
         <div style={{ maxWidth: "900px", width: "100%" }}>
           <p style={{ textAlign: "center" }}>
@@ -490,37 +509,53 @@ const AboutUs = () => {
             <span>Our Integrative Approach:</span>
             <br />
             At Vital Medi Clinic, we combine the best of Eastern and Western
-            medicine, integrating traditional Thai herbal remedies and <span>time-honored ATTM practices</span> with innovative medical technologies. We offer a variety of treatments, including IV Nutrition, PRP Therapy, <span> and a comprehensive suite of Thai Traditional Medicine therapies,</span> to support your {"body's"} natural healing processes and promote optimal health
+            medicine, integrating traditional Thai herbal remedies and{" "}
+            <span>time-honored ATTM practices</span> with innovative medical
+            technologies. We offer a variety of treatments, including IV
+            Nutrition, PRP Therapy,{" "}
+            <span>
+              {" "}
+              and a comprehensive suite of Thai Traditional Medicine therapies,
+            </span>{" "}
+            to support your {"body's"} natural healing processes and promote
+            optimal health
           </div>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
-              alignItems: 'flex-end',
-              textAlign: 'right',
-              paddingTop: '50px',
+              alignItems: "flex-end",
+              textAlign: "right",
+              paddingTop: "50px",
             }}
           >
             <span>Your Journey to a Healthier, Longer Life:</span>
             <p>
-            Our mission is to empower you to take control of your health and
-            well-being. We believe that by focusing on prevention, personalized
-            treatment, a holistic approach to wellness, <span> and the integration of Applied Thai Traditional Medicine,</span> We can help you achieve your goals and live a longer, more fulfilling life.
+              Our mission is to empower you to take control of your health and
+              well-being. We believe that by focusing on prevention,
+              personalized treatment, a holistic approach to wellness,{" "}
+              <span>
+                {" "}
+                and the integration of Applied Thai Traditional Medicine,
+              </span>{" "}
+              We can help you achieve your goals and live a longer, more
+              fulfilling life.
             </p>
           </div>
         </div>
       </div>
       <div
         className="center"
-        style={{ backgroundColor: "#e9e9e7", padding: "0 1rem" }}
+        style={{ backgroundColor: "#e9e9e7", padding: "2rem 0 1rem" }}
       >
         <div style={{ maxWidth: "900px", width: "100%" }}>
-          <h2 style={{ textAlign: "center" }}>OUR PHILOSOPHY & CORE VALUES:</h2>
-          <p style={{ textAlign: "center", width: "100%" }}>
-            A HOLISTIC PATH TO LIFELONG VITALITY & LONGEVITY
+          <h2>OUR PHILOSOPHY & CORE VALUES:</h2>
+          <p>
+            A HOLISTIC PATH TO LIFELONG VITALITY & LONGEVITY, ROOTED IN THAI
+            TRADITION
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p style={{ padding: "1rem 0" }}>
             At Vital Medi Clinic, we believe that true wellness is a lifelong
             journey, not a destination. Our approach to healthy and healing is
             rooted in the following core principles:
@@ -558,8 +593,40 @@ const AboutUs = () => {
         </div>
       </div>
       <div
+        className="backgroundImage center"
         style={{
-          backgroundImage: `url(${about9})`,
+          backgroundImage: `url(${commitment})`,
+          backgroundSize: "cover",
+          color: "#fff",
+          flexDirection: "column",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "35px" }}>OUR COMMITMENT</h2>
+        <p style={{ fontWeight: "lighter" }}>
+          At Vital Clinic, we are more than just a healthcare provider.
+          <br />
+          We are your partners in health, dedicated to helping you achieve
+          optimal well-being and longevity. <br /> We are committed to providing
+          you with the highest quality care, <br />
+          utilizing a holistic and personalized approach that empowers you to
+          live your best life.
+        </p>
+        <div
+          style={{
+            maxWidth: "500px",
+            width: "100%",
+            height: "2px",
+            borderRadius: "2px",
+            backgroundColor: "#fff",
+            margin: "2rem 0",
+          }}
+        />
+        <img loading="lazy" src={logo} className="logo" />
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${earth})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           maxWidth: "1600px",
@@ -570,54 +637,51 @@ const AboutUs = () => {
           padding: "3rem 1rem",
         }}
       >
-        <div style={{ maxWidth: "1000px", width: "100%" }}>
-          <div style={{ maxWidth: "800px" }}>
-            <h4>HOW DO WE DO THAT?</h4>
-            <span>How We Approach Your Health Journey</span>
-            <p>
-              At Vital Medi Clinic, we are more than just a medical facility; we
-              are your partners in a personalized journey towards lifelong
-              wellness. Our approach is rooted in the following:
-            </p>
-            <p style={{ paddingTop: "2rem" }}>
-              <span>1. Personalized Wellness Plans:</span>We believe in treating
-              the individual, not just the condition. Our Doctors, with his
-              extensive experience in preventive, anti-aging, and regenerative
-              medicine, will personally assess your health history,lifestyle,
-              and goals. This detailed evaluation allows us to create a unique
-              plan tailored to your specific needs.
-            </p>
-            <p style={{ paddingTop: "0.5rem" }}>
-              <span>2. Integrative Expertise:</span>Our Doctors are training in
-              both conventional and alternative medicine bridges the gap between
-              ancient wisdom and modern science. He expertly combines Thai
-              herbal medicine, cutting-edge therapies like stem cell therapy,
-              and personalized nutritional guidance to create a synergistic
-              approach that maximizes your {"body's"} natural healing potential.
-            </p>
-            <p style={{ paddingTop: "0.5rem" }}>
-              <span>3. Proactive Health Management:</span>Our comprehensive
-              health check-ups go beyond standard screenings. We delve deeper
-              into your unique biochemistry to identify potential risks early
-              on, allowing us to develop proactive strategies to prevent disease
-              and optimize your well-being for years to come.
-            </p>
-            <p style={{ paddingTop: "0.5rem" }}>
-              <span>4. Evidence-Based and Innovative Therapies:</span>We are
-              committed to offering the most effective, scientifically-backed
-              treatments available. Our team stays at the forefront of medical
-              advancements, incorporating innovative therapies like IV nutrition
-              and ozone therapy, while carefully researching emerging options
-              like cannabis and kratom under strict medical supervision.
-            </p>
-            <p style={{ paddingTop: "0.5rem" }}>
-              <span>5. Compassionate, Patient-Centered Care:</span>We believe in
-              empowering you with knowledge and support throughout your health
-              journey. Dr. ({"Doctor's"} Namej and our team prioritize clear
-              communication, patient education, and a collaborative approach to
-              ensure you feel informed and confident in your treatment choices.
-            </p>
-          </div>
+        <div
+          className="center"
+          style={{
+            maxWidth: "1000px",
+            width: "100%",
+            flexDirection: "column",
+            backgroundColor: "#fff",
+            padding: "2rem",
+            borderRadius: "40px",
+          }}
+        >
+          <h2>
+            HOW WE APPROACH <br /> YOUR HEALTH JOURNEY
+          </h2>
+          <p>
+            At Vital Medi Clinic, we are more than just a medical facility; we
+            are your partners in a <br /> personalized journey lifelong
+            wellness. Our approach is rooted in the following:
+          </p>
+          {data4.map((item, index) => (
+            <div
+              key={index}
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
+                alignItems: "center",
+                paddingBottom: "3rem",
+              }}
+            >
+              <img src={item.image} style={{ maxWidth: "430px" }} />
+              <div
+                style={{
+                  paddingLeft: index % 2 !== 0 ? "0px" : "30px",
+                  paddingRight: index % 2 !== 0 ? "30px" : "0px",
+                  maxWidth: "450px",
+                  textAlign: index % 2 !== 0 ? "right" : "left",
+                }}
+              >
+                <h4>{item.title}</h4>
+                <h4>{item.title2}</h4>
+                <p>{item.para}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div
@@ -637,10 +701,10 @@ const AboutUs = () => {
           <p>
             <span>Your Path to Optimal Well-being Starts Here:</span>
             <br />
-            By combining Vital Medi {"Clinic's"} Doctors expertise with our
-            integrative philosophy and commitment to personalized care, Vital
+            By combining Vital Medi Clinic’s Doctors expertise with our
+            integrative philosophy and commitment to personalized care,Vital
             Medi Clinic provides a unique path to achieving your health and
-            longevity goals.
+            longevity goals
           </p>
           <p>
             <span>Call to Action:</span>
@@ -650,76 +714,25 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="center" style={{ backgroundImage: `url(${doctor5})` }}>
+      <div className="center" style={{ backgroundImage: `url(${doctor5})`, flexDirection: 'column' }}>
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "950px",
             width: "100%",
             padding: "4rem 1rem",
           }}
         >
-          <h1 style={{ textAlign: "center" }}>OUR DISTINCTIVE APPROACH</h1>
-          <h2 style={{ fontWeight: 100, textAlign: "center", fontSize: 35 }}>
-            (How Are We Different From Others)
+          <h2 style={{ textAlign: "center" }}>OUR DISTINCTIVE APPROACH</h2>
+          <h2 style={{ fontWeight: 100, textAlign: "center", fontSize: 34 }}>
+            Pioneering Integrative Medicine For A Longer, Healthier Life <br />
+            (Key Point Of Differentiated)
           </h2>
-          <div
-            style={{
-              background: "#fff",
-              width: "100%",
-              marginTop: "2rem",
-              padding: "1rem 1.5rem",
-              borderRadius: "1.2rem",
-              display: "flex",
-              flexWrap: "wrap",
-            }}
-          >
-            <img
-              loading="lazy"
-              src={location}
-              style={{ width: "10rem", marginRight: "1rem" }}
-            />
-            <div style={{ maxWidth: "600px" }}>
-              <h4>
-                HARNESSING ANCIENT WISDOM & MODERN SCIENCE EASTERN_WESTERN
-                INTEGRATION
-              </h4>
-              <p>
-                Vital Medi Clinic uniquely combines Eastern medical philosophies
-                and practices with Western medical advancements to offer a
-                holistic approach that addresses the root causes of health
-                issues while incorporating evidence-based treatments from both
-                traditions.
-              </p>
-            </div>
-          </div>
-          <div
-            style={{
-              background: "#fff",
-              width: "100%",
-              marginTop: "2rem",
-              padding: "1rem 1.5rem",
-              borderRadius: "1.2rem",
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "flex-end",
-              textAlign: "end",
-            }}
-          >
-            <div style={{ maxWidth: "600px" }}>
-              <h4>PERSONALIZED CARE, TAILORED SOLUTIONS</h4>
-              <p>
-                Each client receives a customized treatment plan designed around
-                their individual health needs, goais, and preferences,
-                incorporating the most beneficial blend of Eastern and Western
-                therapies
-              </p>
-            </div>
-            <img
-              loading="lazy"
-              src={person}
-              style={{ width: "10rem", marginLeft: "1rem" }}
-            />
-          </div>
+          <p style={{ width: "100%", margin: "2rem 0" }}>
+            At Vital Medi Clinic, we stand apart in the field of integrative
+            medicine through our unwavering commitment to longevity,
+            personalized care, and innovative therapies. Here’s what sets us
+            apart:
+          </p>
           <div
             style={{
               background: "#fff",
@@ -737,12 +750,13 @@ const AboutUs = () => {
               style={{ width: "10rem", marginRight: "1rem" }}
             />
             <div style={{ maxWidth: "600px" }}>
-              <h4>SIGNATURE THERAPIES & MODALITIES</h4>
+              <h4>LONGEVITY AS A CORNERSTONE</h4>
               <p>
-                Thai Herbal Medicine Expertise: We harness the centuries-old
-                wisdom and medicinal properties of Thai herbal remedies,
-                carefully integrating them into our treatment protocols for
-                enhanced wellness and vitality
+                We go beyond simply treating symptoms; we prioritize extending
+                your healthspan and enhancing your vitality for years to come.
+                Our approach centers on proactive prevention, early detection,
+                and personalized interventions that address the root causes of
+                aging and disease.
               </p>
             </div>
           </div>
@@ -754,24 +768,24 @@ const AboutUs = () => {
               padding: "1rem 1.5rem",
               borderRadius: "1.2rem",
               display: "flex",
-              justifyContent: "flex-end",
               flexWrap: "wrap",
+              justifyContent: "flex-end",
               textAlign: "end",
             }}
           >
             <div style={{ maxWidth: "600px" }}>
-              <h4>EXPLORING CANNABIS & KRATOM THERAPIES</h4>
+              <h4>EXPERTISE IN INTEGRATIVE MEDICINE</h4>
               <p>
-                Our clinic offers therapeutic interventions utilieing cannabis
-                and kratom, leveraging their patential benefits in pain
-                management, sleep support, maod regulation, stress relief, and
-                overall well-being under the guidance of experienced healthcare
-                professionals
+                Our team of experienced physicians and holistic practitioners
+                possesses a deep understanding of both Eastern and Western
+                medical traditions. We seamlessly blend ancient wisdom with
+                cutting-edge science to provide comprehensive care that
+                optimizes your well-being at every stage of life.
               </p>
             </div>
             <img
               loading="lazy"
-              src={leaf}
+              src={injunction}
               style={{ width: "10rem", marginLeft: "1rem" }}
             />
           </div>
@@ -784,37 +798,105 @@ const AboutUs = () => {
               borderRadius: "1.2rem",
               display: "flex",
               flexWrap: "wrap",
+              alignItems: "center",
             }}
           >
             <img
               loading="lazy"
-              src={injunction}
-              style={{ width: "10rem", height: "10rem", marginRight: "1rem" }}
+              src={leaf}
+              style={{ width: "10rem", height: "9rem", marginRight: "1rem" }}
             />
             <div style={{ maxWidth: "600px" }}>
-              <h4>ADVANCED WESTERN MODALITIES</h4>
+              <h4>PERSONALIZED LONGEVITY PLANS</h4>
               <p>
-                Our clinic integrates a range of cutting-edge Western medical
-                techniques to accelerate healing, optimize health, and support
-                your {"body's"} innate regenerative abilities. These include:
+                We recognize that your journey to longevity is unique. Our
+                expert team takes the time to listen to your goals, assess your
+                individual needs, and develop a customized plan that combines
+                the most effective therapies for you, including:
               </p>
-              <ul style={{ marginLeft: "2rem" }}>
+              <ul style={{ marginLeft: "40px" }}>
                 <li>
-                  <span>IV Nutrient Therapy:</span> Intravenous (IV) delivery of
-                  essential vitamins, minerals, and antioxidants ensures maximum
-                  absorption and rapid cellular replenishment for enhanced
-                  energy, immune function, and overall vitality.
+                  <span>Thai Herbal Medicine:</span>Harnessing the power of
+                  traditional Thai remedies to promote balance and vitality.
                 </li>
                 <li>
-                  <span>Stem Cell Therapy:</span> We utilize the latest
-                  regenerative medicine techniques, harnessing the potential of
-                  stem cells to promote tissue repair, reduce inflammation, and
-                  support healing across a wide range of health conditions.
+                  <span>Cutting-Edge Therapies:</span>Utilizing advanced
+                  treatments like stem cell therapy, IV nutrition, and ozone
+                  therapy to rejuvenate your body and slow down the aging
+                  process.
+                </li>
+                <li>
+                  <span>Cannabis-Based Therapies (where applicable):</span>
+                  Exploring the potential benefits of cannabis under medical
+                  supervision for pain management, mood regulation, and overall
+                  well-being
+                </li>
+                <li>
+                  <span>Comprehensive Health Check-ups:</span>Utilizing advanced
+                  diagnostics to uncover hidden imbalances and identify
+                  potential risks early on, allowing for targeted interventions
+                  that promote longevity.
                 </li>
               </ul>
             </div>
           </div>
+          <div
+            style={{
+              background: "#fff",
+              width: "100%",
+              marginTop: "2rem",
+              padding: "1rem 1.5rem",
+              borderRadius: "1.2rem",
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+            }}
+          >
+            <img
+              loading="lazy"
+              src={person}
+              style={{ width: "10rem", marginRight: "1rem" }}
+            />
+            <div style={{ maxWidth: "600px" }}>
+              <h4>PATIENT EMPOWERMENT</h4>
+              <p>
+                We believe that knowledge is power. We empower you with
+                education, resources, and ongoing support, so you can make
+                informed decisions about your health and actively participate in
+                your journey toward a longer, healthier life.
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              background: "#fff",
+              width: "100%",
+              marginTop: "2rem",
+              padding: "1rem 1.5rem",
+              borderRadius: "1.2rem",
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "flex-end",
+              textAlign: "end",
+            }}
+          >
+            <div style={{ maxWidth: "600px" }}>
+              <h4>
+              COMMITMENT TO INNOVATION
+              </h4>
+              <p>
+              We constantly strive to stay at the forefront of medical advancements, researching and incorporating the latest evidence-based therapies to provide you with the most effective solutions for achieving your longevity goals.
+              </p>
+            </div>
+            <img
+            loading="lazy"
+            src={location}
+            style={{ width: "10rem", marginLeft: "1rem" }}
+          />
+          </div>
         </div>
+        <span>Vital Medi Clinic is not just a clinic; it’s a community dedicated to helping you live a longer, healthier, and more fulfilling life. </span>
+        <p style={{marginBottom: '2rem'}}>Our unique blend of expertise, personalized care, and innovative therapies sets us apart as leaders in integrative medicine and longevity.</p>
       </div>
     </div>
   );
