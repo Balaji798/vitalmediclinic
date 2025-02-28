@@ -192,7 +192,7 @@ const AboutUs = () => {
             paddingBottom: "5rem",
           }}
         >
-          <h1 style={{ textAlign: "center", padding: "2rem 0" }}>AboutUs</h1>
+          <h1 style={{ textAlign: "center", padding: "2rem 0" }}>ABOUT US</h1>
           <h2 style={{ fontSize: "35px" }}>WHO WE ARE</h2>
           <p style={{ maxWidth: "700px", width: "100%" }}>
             <span>Vital Medi Clinic</span> s a leading integrative medicine clinic dedicated to optimizing your health<br/> and well-being, with a primary focus on<span>longevity</span>and a deep respect for the healing power<br/> of <span>Applied Thai Traditional Medicine (ATTM).</span>We seamlessly combine the best of Eastern<br/> and Western practices, integrating ancient wisdom with modern science to offer<br/> comprehensive and innovative therapies designed to extend your vitality and enhance your<br/> quality of life for years to come.
