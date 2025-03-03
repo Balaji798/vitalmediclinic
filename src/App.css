@@ -66,24 +66,25 @@ body {
 }
 /* p{font-family: Avenir;} */
 .banner {
-  background-image: url("./assets/hero.webp");
+  background-image: url("./assets/HOMEPAGE/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   object-fit: cover;
-  height: 34rem;
+  height: 44rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   text-align: center;
+  color: #fff;
 }
 
 .content-position {
   position: absolute;
 }
 .banner_home {
-  background-image: url("./assets/HOMEPAGE/doctor-check.jpg");
+  background-image: url("./assets/HOMEPAGE/massage.webp");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -99,10 +100,9 @@ h1 {
   font-size: 4rem;
 }
 .banner_second {
-  background-image: url("./assets/about-us.jpg");
+  background-image: url("./assets/HOMEPAGE/massage.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  justify-content: flex-start;
   padding: 2rem 0 0;
   height: 65rem;
   display: flex;
@@ -125,7 +125,7 @@ h1 {
 
 .specialist {
   background-image: url("./assets/specialist.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 25rem;
@@ -143,12 +143,10 @@ h2 {
 .our-service {
   width: 100%;
   padding: 2rem 0 4rem;
-  /* position: absolute;
-  bottom: -100rem; */
-  margin-top: 7.8rem;
+  position: absolute;
+  bottom: -100rem;
   left: 0;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
+  border-radius: 45px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -199,26 +197,28 @@ span {
   justify-content: space-between;
 }
 .content {
-  height: 77%;
+  height: 55%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  color: #fff;
 }
 .content > p {
   max-width: 1030px;
   text-align: center;
 }
 .PROMOTION {
+  max-width: 1200px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  height: 40rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .service {

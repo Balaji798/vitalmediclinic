@@ -37,7 +37,7 @@ const Navbar = ({setOpenNav, openNav}) => {
         <div className="search_date">
           <div className="search">
             <TbSearch />
-            <input style={{ outline: "none", border: "none" }} />
+            <input style={{ outline: "none", border: "none",  width: 100 }}  placeholder="Search"/>
           </div>
           <Link to="/appointments">
              <img loading="lazy" src={calendar} style={{ width: "2rem" }}  />

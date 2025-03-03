@@ -1,13 +1,14 @@
 nav {
   top: 0rem;
   /* background-color: #005652; */
-  background: #0a3c57;
+  background: linear-gradient(#0a3c57, transparent);
   width: 100%;
   position: fixed;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem 2rem;
 }
 
 .nav-btn {
@@ -26,7 +27,6 @@ nav {
   font-size: 14px !important;
 }
 .navContainer {
-  max-width: 1200px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -209,9 +209,11 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  padding: 2px;
+  padding: 4px 2px;
   margin-right: 10px;
   border-radius: 5px;
+  background-color: #fff;
+  width: 130px;
 }
 @media screen and (max-width: 600px) {
   nav {

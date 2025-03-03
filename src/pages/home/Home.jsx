@@ -3,12 +3,15 @@ import hand from "../../assets/service/hand.png";
 import pot from "../../assets/service/pot.png";
 import cannabis from "../../assets/service/cannabis.png";
 import heart from "../../assets/service/heart.png";
-import ImageSlider from "../../components/imageSlider/ImageSlider";
 import DoctorSlider from "../../components/doctorSlider/DoctorSlider";
-import promotion from "../../assets/promotion1.jpg";
-import windowImage from "../../assets/windowImage.jpg";
 import vitalLogo from "../../assets/vital-logo.png";
-import group from "../../assets/group.jpg";
+import woman from "../../assets/HOMEPAGE/woman.webp";
+import attm from "../../assets/HOMEPAGE/ATTM.webp";
+import min_60 from '../../assets/HOMEPAGE/60min.webp';
+import min_90 from '../../assets/HOMEPAGE/90min.webp';
+import min_120 from '../../assets/HOMEPAGE/120min.webp';
+import relax from "../../assets/HOMEPAGE/relax.webp";
+import group from "../../assets/HOMEPAGE/group.webp";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 const data = [
@@ -33,6 +36,7 @@ const data = [
     image: cannabis,
   },
 ];
+ const data2 = [min_60, min_90, min_120]
 
 const Home = () => {
   return (
@@ -54,8 +58,20 @@ const Home = () => {
         />
       </Helmet>
       <div className="banner">
-        <div style={{ maxWidth: "1100px", width: "100%",display:"flex",flexDirection:"column",alignItems:"flex-start" }}>
-           <img loading="lazy"
+        <div
+          style={{
+            maxWidth: "1100px",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            justifyContent: "center",
+            maxHeight: "500px",
+            height: "100%",
+          }}
+        >
+          <img
+            loading="lazy"
             src={vitalLogo}
             style={{ objectFit: "contain", maxWidth: "29rem", width: "100%" }}
             alt="logo"
@@ -63,88 +79,182 @@ const Home = () => {
           <h2 style={{ paddingBottom: "10px" }}>
             #1 Integrative Medical Approach
           </h2>
-          <h2 style={{ fontWeight: "bold",fontSize:30 }}>
+          <h2 style={{ fontWeight: "bold", fontSize: 40 }}>
             THE MEDICAL CROSSROAD
           </h2>
-          <h2 style={{ fontWeight: "bold", paddingBottom: "20px",fontSize:30 }}>BETWEEN EAST & WEST</h2>
-          <Link to="/about-us"><button>READ MORE</button></Link>
+          <h2
+            style={{ fontWeight: "bold", paddingBottom: "20px", fontSize: 40 }}
+          >
+            BETWEEN EAST & WEST
+          </h2>
+          <Link to="/about-us">
+            <button>READ MORE</button>
+          </Link>
         </div>
       </div>
-      <div
-        className="banner_home"
-        style={{ maxHeight: "30rem", alignItems: "flex-end" }}
-      >
-      <div className="bluer"/>
+      <div className="center">
+        <img
+          src={woman}
+          style={{
+            position: "absolute",
+            maxWidth: "500px",
+            left: "10%",
+            marginTop: "3rem",
+          }}
+        />
         <div
           style={{
             maxWidth: "800px",
             width: "100%",
-            textAlign: "left",
-            padding:"0 10px",
-            zIndex:1
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            padding: "8rem 10px 0",
+            height: "30rem",
           }}
-          className="content-para"
         >
-          <h2
+          <div
             style={{
-              borderBottom: "2px solid",
-              maxWidth: "200px",
+              border: "4px solid",
+              borderRadius: "20px",
+              padding: "2rem",
             }}
           >
-            Vital Medi Clinic
-          </h2>
-          <p style={{ maxWidth: "400px" }}>
-            <span style={{ fontWeight: 600 }}>Vital Medi Clinic</span> is a
-            leading integrative medicine clinic dedicated to optimizing your
-            health and well-being, with a primary focus on longevity. We combine
-            the best of Eastern and Western practices, seamlessly integrating
-            ancient wisdom with modern science to offer comprehensive and
-            innovative therapies designed to extend your vitality and enhance
-            your quality of life for years to come.
-          </p>
+            <div
+              style={{
+                height: "220px",
+                position: "absolute",
+                backgroundColor: "rgb(255, 255, 255)",
+                width: "35px",
+                left: "44%",
+                marginTop: "-40px",
+              }}
+            />
+            <h3
+              style={{
+                textAlign: "left",
+                maxWidth: "400px",
+                width: "100%",
+              }}
+            >
+              Vital Medi Clinic
+            </h3>
+            <p style={{ maxWidth: "400px" }}>
+              <span style={{ fontWeight: 600 }}>Vital Medi Clinic</span> is a
+              leading integrative medicine clinic dedicated to optimizing your
+              health and well-being, with a primary focus on longevity. We
+              combine the best of Eastern and Western practices, seamlessly
+              integrating ancient wisdom with modern science to offer
+              comprehensive and innovative therapies designed to extend your
+              vitality and enhance your quality of life for years to come.
+            </p>
+            <div
+              style={{
+                height: "240px",
+                position: "absolute",
+                backgroundColor: "rgb(255, 255, 255)",
+                width: "40px",
+                left: "73.5%",
+                marginTop: "-190px",
+              }}
+            />
+          </div>
         </div>
       </div>
       <div className="banner_second">
         <div className="content">
           <h2>ABOUT US</h2>
-          <p style={{padding:"0px"}}>
-            Vital Medi Clinic : Pioneering integrative medicine in Bangkok, we focus on enhancing your healthcare and <br/> promoting longevity through a blend of Eastern and Western therapies,<br/>
-            including Thai Traditional Medicine and Cannabis treatment.<br/>Our personalized approach optimizing your physical, mental, and emotional well-being for a vibrant, fulfilling life.
+          <p style={{ padding: "0px" }}>
+          Our team of experienced healthcare professionals includes physicians specializing in preventive care, anti-aging, and regenerative medicine, along with holistic practitioners and specialists in various fields, <br /> including expert <span>Thai Traditional Medicine practitioners.</span>
+            <br />
+            We work collaboratively to develop personalized treatment plans that address your unique needs and <br/> goals, with a focus on promoting long-term health, vitality, and the art of traditional Thai healing.
           </p>
-        </div>
-        <div className="our-service">
-          <h2>OUR SERVICE</h2>
-          <div>
-            {data.map((item, index) => (
-              <div key={index}>
-                 <img loading="lazy"
-                  src={item.image}
-                  style={{ maxWidth: "10rem", objectFit: "cover" }}
-                />
-                <p>{item.title}</p>
-              </div>
-            ))}
+          <button
+            style={{
+              backgroundColor: "#fff",
+              color: "#093B56",
+              fontWeight: "bold",
+              fontSize: '20px',
+              marginTop: '20px'
+            }}
+          >
+            DISCOVER MORE
+          </button>
+          <div className="our-service">
+            <h2>OUR SERVICE</h2>
+            <div>
+              {data.map((item, index) => (
+                <div key={index}>
+                  <img
+                    loading="lazy"
+                    src={item.image}
+                    style={{ maxWidth: "10rem", objectFit: "cover" }}
+                  />
+                  <p>{item.title}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
       <div
-        className="PROMOTION"
+        className="center"
         style={{
-          backgroundImage: `url(${promotion})`,
+          backgroundColor: "#D2AF8F",
+          padding: "4rem",
+          flexDirection: 'column',
+          textAlign: 'center'
         }}
       >
-        <h2
+        <div
+          className="PROMOTION"
           style={{
-            letterSpacing: "10px",
-            fontWeight: "bold",
-            fontSize: "30px",
+            backgroundImage: `url(${attm})`,
+            flexDirection: 'column',
+             color: '#fff'
           }}
         >
-          PROMOTION
-        </h2>
+          <h1
+            style={{
+              letterSpacing: "10px",
+              fontWeight: "bold",
+              fontSize: "40px",
+              color: '#D2AF8F'
+            }}
+          >
+          ATTM TREATMENTS <br/>AT VITAL MEDI CLINIC
+          </h1>
+          <p>Our skilled and certified ATTM practitioners offer a range of traditional therapies</p>
+          <button
+          style={{
+            backgroundColor: "rgba(210, 175, 143, 0.3)",
+            fontWeight: "bold",
+            fontSize: '16px',
+            marginTop: '20px',
+            borderRadius: '20px',
+          }}
+        >
+          DISCOVER MORE
+        </button>
+        </div>
+        <h2 style={{ color: '#fff', padding: '20px 0'}}>TRADITIONAL THAI MASSAGE <br/>PROMOTIONS</h2>
+        <div className="wrap">
+        {data2. map((item) => (
+          <img src={item} style={{ objectFit: 'contain', maxWidth: '400px'}} key={item}/>
+        ))}
+        </div>
+        <button
+        style={{
+          backgroundColor: "#9B8169",
+          fontWeight: "bold",
+          fontSize: '16px',
+          marginTop: '20px',
+          borderRadius: '20px',
+        }}
+      >
+      BOOKING NOW
+      </button>
       </div>
-
-      <ImageSlider />
       <div className="specialist">
         <h2>CONSULT SPECIALIST</h2>
         <button>CONTACT US</button>
@@ -152,12 +262,13 @@ const Home = () => {
       <div
         className="center"
         style={{
-          backgroundImage: `url(${windowImage})`,
+          backgroundImage: `url(${relax})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           maxWidth: "1600px",
           objectFit: "cover",
           padding: "5rem 0",
+          color: '#fff',
         }}
       >
         {" "}
@@ -200,27 +311,18 @@ const Home = () => {
           maxWidth: "1600px",
           objectFit: "cover",
           padding: "5rem 0",
+          flexDirection: 'column',
+          color:'#fff'
         }}
       >
-        {" "}
-        <div
-          style={{
-            maxWidth: "1000px",
-            width: "100%",
-            textAlign: "left",
-            padding: "0 10px",
-          }}
-        >
           <h2
             style={{
               borderBottom: "2px solid",
-              width: "100%",
-              maxWidth: "420px",
             }}
           >
             INTEGRATIVE MEDICINE CLINIC
           </h2>
-          <p style={{ maxWidth: "420px" }}>
+          <p style={{ maxWidth: "700px", textAlign: 'center' }}>
             <span style={{ fontWeight: 600 }}>
               In addition to our comprehensive health check-ups and personalized
               wellness programs, we offer a range of cutting-edge therapies,
@@ -232,7 +334,6 @@ const Home = () => {
             Medi Clinic is committed to empowering you on your journey to a
             longer, healthier life.
           </p>
-        </div>
       </div>
     </div>
   );

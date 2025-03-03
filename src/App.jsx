@@ -58,7 +58,6 @@ function App() {
       <Router scrollRestoration="auto">
       <Navbar setOpenNav={setOpenNav} openNav={openNav}/>
       <SecondeNave setOpenNav={setOpenNav} openNav={openNav} />
-        <div style={{ paddingTop: "2rem" }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -104,7 +103,6 @@ function App() {
             <Route path="/service/prenatal-massage" element={<PrenatalMassage/>}/>
             <Route path="/service/body-works-wellness" element={<Wellness/>}/>
           </Routes>
-        </div>
         <Footer />
       </Router>
     </HelmetProvider>
