@@ -262,7 +262,7 @@ const AboutUs = () => {
                     loading="lazy"
                     src={item.image}
                     style={{
-                      width: "430px",
+                      width: "100%",
                       objectFit: "cover",
                       height: "16rem",
                     }}
@@ -353,7 +353,7 @@ const AboutUs = () => {
                 paddingBottom: "3rem",
               }}
             >
-              <img src={item.image} style={{ maxWidth: "430px" }} />
+              <img src={item.image} style={{ maxWidth: "430px", width:'100%' }} />
               <div
                 style={{
                   paddingLeft: index !== 1 ? "30px" : "0px",
@@ -406,7 +406,7 @@ const AboutUs = () => {
               }}
               className="center"
             >
-              <p style={{ maxWidth: "560px" }}>
+              <p style={{ maxWidth: "560px",padding:'10px' }}>
                 Whether {"you're"} seeking to manage a chronic condition,
                 prevent future health issues, explore the benefits of Thai
                 Traditional Medicine, or simply feel your best at everry age,
@@ -547,7 +547,7 @@ const AboutUs = () => {
       </div>
       <div
         className="center"
-        style={{ backgroundColor: "#e9e9e7", padding: "2rem 0 1rem" }}
+        style={{ backgroundColor: "#e9e9e7", padding: "2rem 10px 1rem" }}
       >
         <div style={{ maxWidth: "900px", width: "100%" }}>
           <h2>OUR PHILOSOPHY & CORE VALUES:</h2>
@@ -644,7 +644,7 @@ const AboutUs = () => {
             width: "100%",
             flexDirection: "column",
             backgroundColor: "#fff",
-            padding: "2rem",
+            padding: "2rem 10px",
             borderRadius: "40px",
           }}
         >
@@ -667,7 +667,7 @@ const AboutUs = () => {
                 paddingBottom: "3rem",
               }}
             >
-              <img src={item.image} style={{ maxWidth: "430px" }} />
+              <img src={item.image} style={{ maxWidth: "430px", width:'100%' }} />
               <div
                 style={{
                   paddingLeft: index % 2 !== 0 ? "0px" : "30px",

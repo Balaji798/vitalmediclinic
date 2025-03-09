@@ -192,7 +192,7 @@ span {
   display: flex;
   max-width: 1200px;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 0rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -256,13 +256,13 @@ span {
   height: 28.2rem;
   margin-top: -1.5rem;
 }
-.margin-style{
+.margin-style {
   margin-left: 4rem;
 }
-.marginRight{
+.marginRight {
   margin-right: 4rem;
 }
-.bluer{
+.bluer {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -270,50 +270,92 @@ span {
   opacity: 0;
   left: 0;
 }
+.discover {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8rem 10px 0;
+  height: 30rem;
+}
+.woman {
+  position: absolute;
+  max-width: 500px;
+  left: 10%;
+  margin-top: 3rem;
+}
+.line-1 {
+  height: 220px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 35px;
+  left: 44%;
+  margin-top: -40px;
+}
+.line-2 {
+  height: 240px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  left: 73.5%;
+  margin-top: -190px;
+}
+.discover-more{
+  padding: 4rem;
+}
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 1.2rem;
   }
   .our-service {
-    position: relative;
-    bottom: 0;
-    margin-top: 3.5rem;
+    bottom: 30;
+    margin-bottom: 14.5rem;
     padding-bottom: 0px;
   }
   .our-service > div {
     justify-content: center;
   }
-  .banner{
+  .banner {
     background-image: url("./assets/hero-mobile.jpg");
 
     padding-top: 1.5rem;
   }
-  .bluer{
+  .bluer {
     opacity: 0.5;
     height: 30rem;
     z-index: 0;
   }
-  .banner_second,
-  .banner {
-    height: 30rem;
-    padding: 0 10px;
+  .banner{
+    height: auto;
+    padding: 4rem 10px 2rem;
   }
-  .content-para>p,.content-para>h2{
-    color:#fff
+  .banner_second{
+    background-size: cover;
+    height: auto;
+    padding: 10px 10px 2rem;
+  }
+  .content-para > p,
+  .content-para > h2 {
+    color: #fff;
   }
   .banner_second {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .content{
+  .content {
     padding-top: 20px;
   }
   .content > p {
     padding: 0 2rem;
     font-size: 12px !important;
   }
+  .discover-more{
+    padding: 4rem 10px;
+  }
   .PROMOTION {
-    margin-top: 30rem;
+    border-radius: 20px;
+    margin-top: 35rem;
   }
   .contact-tag {
     font-size: 14px;
@@ -337,13 +379,37 @@ span {
   .content-position {
     display: none;
   }
-  .doctor-img{
+  .doctor-img {
     margin-left: 0;
   }
-  .margin-style{
+  .margin-style {
     margin-left: 10px;
   }
-  .marginRight{
+  .marginRight {
     margin-right: 10px;
+  }
+  .discover {
+    max-width: 400px;
+    padding: 10px 0px ;
+    height: auto;
+  }
+  .specialist{
+    background-size: cover;
+    margin-top: 0px;
+  }
+  .woman {
+    position: static;
+    object-fit: cover;
+    max-width: 400px;
+    width: 100%;
+    left: 0%;
+  }
+  .line-1 {
+    left: 0%;
+    margin-top: 60px;
+  }
+  .line-2 {
+    left: 91%;
+    margin-top: -285px;
   }
 }
