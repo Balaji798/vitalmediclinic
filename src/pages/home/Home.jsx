@@ -1,6 +1,5 @@
 import search from "../../assets/service/search.png";
 import hand from "../../assets/service/hand.png";
-import pot from "../../assets/service/pot.png";
 import cannabis from "../../assets/service/cannabis.png";
 import heart from "../../assets/service/heart.png";
 import DoctorSlider from "../../components/doctorSlider/DoctorSlider";
@@ -20,19 +19,15 @@ const data = [
     image: search,
   },
   {
-    title: "Health Checkup",
+    title: "Wellness Program",
     image: heart,
   },
   {
-    title: "Health Checkup",
+    title: "Medical Conditions",
     image: hand,
   },
   {
-    title: "Health Checkup",
-    image: pot,
-  },
-  {
-    title: "Health Checkup",
+    title: "Cannabis & Thai Herbal Medicine",
     image: cannabis,
   },
 ];
@@ -153,16 +148,16 @@ const Home = () => {
           </button>
         </div>
         <div className="our-service">
-          <h2>OUR SERVICE</h2>
-          <div>
+          <span style={{fontSize: '30px'}}>OUR SERVICE</span>
+          <div style={{ paddingTop: '2rem'}}>
             {data.map((item, index) => (
-              <div key={index}>
+              <div key={index} style={{textAlign: 'center'}}>
                 <img
                   loading="lazy"
                   src={item.image}
                   style={{ maxWidth: "10rem", objectFit: "cover" }}
                 />
-                <p>{item.title}</p>
+                {index === 3 ? <p>Cannabis <br/>& Thai Herbal Medicine</p>:<p>{item.title}</p>}
               </div>
             ))}
           </div>

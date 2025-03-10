@@ -21,7 +21,7 @@ import about5 from "../../assets/icons/about-16.png";
 import about6 from "../../assets/icons/about-17.png";
 import about7 from "../../assets/about-us/about-09.jpg";
 import about8 from "../../assets/about-us/about-10.jpg";
-import blueBack from "../../assets/HOMEPAGE/pic-clinic.jpg";
+import blueBack from "../../assets/about-us/about-us-BG.webp";
 import massage from "../../assets/about-us/massage.webp";
 import mellness from "../../assets/about-us/wellness.webp";
 import attm from "../../assets/about-us/attm-treatment.webp";

@@ -190,7 +190,7 @@ span {
 
 .our-service > div {
   display: flex;
-  max-width: 1200px;
+  max-width: 900px;
   width: 100%;
   margin-top: 0rem;
   flex-wrap: wrap;
@@ -310,11 +310,12 @@ span {
   }
   .our-service {
     bottom: 30;
-    margin-bottom: 14.5rem;
+    margin-bottom: 21rem;
     padding-bottom: 0px;
   }
   .our-service > div {
-    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 30px;
   }
   .banner {
     background-image: url("./assets/hero-mobile.jpg");
