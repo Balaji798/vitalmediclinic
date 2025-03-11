@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const SecondeNave = ({ openNav, setOpenNav }) => {
   const [menusIndex, setMenusIndex] = useState(-1);
   const [secondIndex, setSecondIndex] = useState(-1);
+  const [thirdIndex, setThirdIndex] = useState(-1);
   return (
     <>
       <div
@@ -19,7 +20,9 @@ const SecondeNave = ({ openNav, setOpenNav }) => {
             className="back-button"
             style={{ background: "transparent" }}
             onClick={() => {
-              if (secondIndex >= 0) {
+              if(thirdIndex >= 0) {
+                setThirdIndex(-1)
+              }else if (secondIndex >= 0) {
                 setSecondIndex(-1);
               } else {
                 setMenusIndex(-1);
@@ -30,7 +33,25 @@ const SecondeNave = ({ openNav, setOpenNav }) => {
             {"<"}Back
           </div>
         )}
-        {secondIndex >= 0 ? (
+        {thirdIndex >= 0 ?          <ul>
+          {navData[menusIndex]?.options[secondIndex]?.options[thirdIndex]?.options?.map(
+            (item, index) => (
+              <li key={index}>
+                <Link
+                  to={item.link}
+                  onClick={() => {
+                    setOpenNav(!openNav);
+                    setThirdIndex(-1)
+                    setMenusIndex(menusIndex);
+                  }}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            )
+          )}
+        </ul> :
+        secondIndex >= 0 ? (
           <ul>
             {navData[menusIndex]?.options[secondIndex].options.map(
               (item, index) => (
@@ -39,12 +60,19 @@ const SecondeNave = ({ openNav, setOpenNav }) => {
                     to={item.link}
                     onClick={() => {
                       setOpenNav(!openNav);
-                      setSecondIndex(-1)
+                      setThirdIndex(-1)
                       setMenusIndex(menusIndex);
                     }}
                   >
                     {item.title}
                   </Link>
+                  {item?.options?.length > 0 && (
+                    <MdArrowForwardIos
+                      onClick={() => {
+                        setThirdIndex(index);
+                      }}
+                    />
+                  )}
                 </li>
               )
             )}

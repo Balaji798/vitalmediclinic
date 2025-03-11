@@ -218,6 +218,7 @@ nav {
 @media screen and (max-width: 600px) {
   nav {
     padding: 0 1rem;
+    background-color: #0a3c57;
   }
   .navbar a {
     color: #000;

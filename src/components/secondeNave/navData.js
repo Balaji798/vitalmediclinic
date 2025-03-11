@@ -10,7 +10,7 @@ export const navData = [
     options: [
       {
         title: "1. HEALTH CHECKUPS",
-        link:"/service/health-check-up",
+        link: "/service/health-check-up",
         options: [
           {
             title: "HEALTH CHECK MEN & WOMEN",
@@ -47,54 +47,74 @@ export const navData = [
           {
             title: "TELOMERE LENGTH ANALYSIS",
             link: "/service/health-check-up/length-analysis",
-          }
+          },
         ],
       },
       {
         title: "2. WELLNESS PROGRAMS",
-        link:"/service/wellness-program",
+        link: "/service/wellness-program",
         options: [
-          {
-            title: "PLACENTA THERAPY",
-            link: "/service/wellness/placenta-therapy",
-          },
-          {
-            title: "HEALTH THERAPY FOR MEN",
-            link: "/service/wellness/men-health-therapy",
-          },
-          {
-            title: "HEALTH THERAPY FOR WOMEN",
-            link: "/service/wellness/women-health-therapy",
-          },
           {
             title: "IV NUTRITION THERAPY",
             link: "/service/wellness/iv-nutrition-therapy",
-          },
-          {
-            title: "OZONE THERAPY",
-            link: "/service/wellness/ozone-therapy",
+            options: [
+              {
+                title: "VITAL AFTER PARTY IV DRIP",
+                link: "/wellness/iv-nutrition-therapy/after-party",
+              },
+              {
+                title: "VITAL MYER’ IV DRIP",
+                link: "/wellness/iv-nutrition-therapy/myers-drip",
+              },
+              {
+                title: "VITAL WHITE BOOSTER+ IV DRIP",
+              },
+              {
+                title: "VITAL NMN BOOSTER+ IV DRIP",
+              },
+              {
+                title: "VITAL IMMUNE BOOSTER IV DRIP",
+              },
+              {
+                title: "VITAL WEIGHT LOSS CONTROL IV DRIP",
+              },
+              {
+                title: "VITAL WHITE RADIANCE IV DRIP",
+              },
+              {
+                title: "VITAL ALPHA-LIPOIC ACID IV DRIP",
+              },
+              {
+                title: "VITAL CURCUMIN IV DRIP",
+              },
+              {
+                title: "VITAL RESVERATROL IV DRIP",
+              },
+              {
+                title: "VITAL DETOXIFY (CHELATION) IV DRIP",
+              },
+              {
+                title: "VITAL PLAQUE CLEANSE IV DRIP",
+              },
+            ],
           },
           {
             title: "STEM CELL THERAPY",
-            link: "/service/wellness/stem-therapy",
+            link: "/wellness/stem-therapy",
           },
           {
             title: "NK CELL THERAPY",
-            link: "/service/wellness/nk-cell-therapy",
+            link: "/wellness/nk-cell-therapy",
           },
           {
-            title:"PRENATAL MASSAGE",
-            link:"/service/prenatal-massage"
+            title: "PRENATAL MASSAGE",
+            link: "/prenatal-massage",
           },
-          {
-            title:"BODY WORKS & WELLNESS",
-            link:"/service/body-works-wellness"
-          }
         ],
       },
       {
         title: "3. MEDICAL CONDITIONS",
-        link:"/service/medical-condition",
+        link: "/service/medical-condition",
         options: [
           {
             title: "PAIN MANAGEMENT",
@@ -136,18 +156,18 @@ export const navData = [
       },
       {
         title: "4. THAI HERBAL MEDICINE INTEGRATION",
-        link:"/service/herbal-medicean",
+        link: "/service/herbal-medicean",
         options: [],
       },
       {
         title: "5. CANNABIS & KRATOM TREATMENT",
-        link:"/service/cannabis-and-kartom-therapies",
+        link: "/service/cannabis-and-kartom-therapies",
       },
     ],
   },
   {
     title: "PACKAGE",
-    link:"/package",
+    link: "/package",
     options: [
       {
         title: "EXTRACTION",
@@ -173,32 +193,29 @@ export const navData = [
   },
   {
     title: "DOCTOR",
-    link:"/doctor",
+    link: "/doctor",
     options: [
       {
         title: "DR. CHAWAPON KIDHIRUNKUL",
-        link:"/doctor/dr.-chawapon-kidhirunkul"
+        link: "/doctor/dr.-chawapon-kidhirunkul",
       },
       {
         title: "DR. PHONGPHAKORN SONTANARAT",
-        link:"/doctor/dr.-phongphakorn-sontanarat"
+        link: "/doctor/dr.-phongphakorn-sontanarat",
       },
       {
         title: "DR. NITHIWAT SRIKANCHANAWAT",
-        link:"/doctor/dr.-nithiwat-srikanchanawat"
+        link: "/doctor/dr.-nithiwat-srikanchanawat",
       },
       {
         title: "DR. ΚΑΝΤΑΡΟNG NUNCHAI",
-        link:"/doctor/dr.-kantapong-nunchai"
+        link: "/doctor/dr.-kantapong-nunchai",
       },
     ],
   },
   {
     title: "CONTACT US",
-    link:"/contact-us",
-    options: [
-   
-    ],
+    link: "/contact-us",
+    options: [],
   },
-
 ];

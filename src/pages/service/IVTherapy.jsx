@@ -29,7 +29,8 @@ const IVTherapy = () => {
             marginTop: "3.4rem",
           }}
         />
-         <img loading="lazy"
+        <img
+          loading="lazy"
           src={dotes}
           className="content-position"
           style={{
@@ -57,41 +58,41 @@ const IVTherapy = () => {
             system, ensuring maximum absorption and rapid availability for
             immediate cellular use.
           </p>
-          <span>Potential Benefits of IV Nutrition Infusions:</span>
-          <p style={{ paddingTop: "1rem" }}>
-            <span>• Boosted Cellular Energy:</span> Replenish vital nutrients
-            essential for energy production, helping you overcome fatigue and
-            optimize performance.
-          </p>
+          <h3>Potential Benefits of IV Nutrition Infusions:</h3>
+          <span>• Boosted Cellular Energy:</span>
           <p>
-            <span>• Enhanced Immunity:</span> Provide your immune system with
-            essential building blocks to strengthen its defenses against
-            illness.
-          </p>{" "}
+            Replenish vital nutrients essential for energy production, helping
+            you overcome fatigue and optimize performance.
+          </p>
+          <span>• Enhanced Immunity:</span>
           <p>
-            <span>• Detoxification Support:</span> Deliver antioxidants and
-            nutrients that aid your {"body's"} natural detoxification processes.
+            Provide your immune system with essential building blocks to
+            strengthen its defenses against illness.
           </p>
-          <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>• Reduced Inflammation:</span> Supply nutrients with
-            anti-inflammatory properties that may alleviate pain and promote
-            healing.
+          <span>• Detoxification Support:</span>
+          <p>
+            Deliver antioxidants and nutrients that aid your {"body's"} natural
+            detoxification processes.
           </p>
+          <span>• Reduced Inflammation:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>• Metabolic Optimization:</span> Support healthy metabolism
-            for improved energy levels and potential weight management.
+            Supply nutrients with anti-inflammatory properties that may
+            alleviate pain and promote healing.
           </p>
+          <span>• Metabolic Optimization:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>• Cognitive Boost:</span> Nourish your brain with essential
-            nutrients for improved focus, memory, and mental clarity.
+            Support healthy metabolism for improved energy levels and potential
+            weight management.
           </p>
+          <span>• Cognitive Boost:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>• Radiant Skin:</span> Deliver nutrients that promote healthy
-            collagen production, hydration, and a youthful glow.
+            Nourish your brain with essential nutrients for improved focus,
+            memory, and mental clarity.
+          </p>
+          <span>• Radiant Skin:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Deliver nutrients that promote healthy collagen production,
+            hydration, and a youthful glow.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -109,7 +110,11 @@ const IVTherapy = () => {
               paddingTop: "2rem",
             }}
           >
-             <img loading="lazy" src={doctorConsultation} className="service-image" />
+            <img
+              loading="lazy"
+              src={doctorConsultation}
+              className="service-image"
+            />
           </div>
         </div>
       </div>
@@ -127,22 +132,35 @@ const IVTherapy = () => {
           padding: "4rem 1rem",
         }}
       >
-        <p
+        <div
           style={{
-            paddingBottom: "0.5rem",
-            maxWidth: "400px",
-            fontSize: "14px",
+            maxWidth: "1100px",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            alignItems: 'flex-end'
           }}
         >
-          {" "}
-          <span>• Personalized For Your Needs:</span> Our IV Nutrition Therapy
-          infusions are tailored to your specific health goals and concerns,
-          ensuring you receive the optimal blend of nutrients.
-        </p>
-        <p style={{ fontWeight: "bold", maxWidth: "400px", fontSize: "14px" }}>
-          Experience the difference. Schedule your IV Nutrition Therapy
-          consultation today and revitalize your health from within!
-        </p>
+          <p
+            style={{
+              paddingBottom: "0.5rem",
+              maxWidth: "420px",
+              fontSize: "14px",
+            }}
+          >
+            {" "}
+            <span>• Personalized For Your Needs:</span> Our IV Nutrition Therapy
+            infusions are tailored to your specific health goals and concerns,
+            ensuring you receive the optimal blend of nutrients.
+          </p>
+          <p
+            style={{ fontWeight: "bold", maxWidth: "420px", fontSize: "14px" }}
+          >
+            Experience the difference. Schedule your IV Nutrition Therapy
+            consultation today and revitalize your health from within!
+          </p>
+        </div>
       </div>
     </div>
   );
