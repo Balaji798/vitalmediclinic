@@ -28,7 +28,7 @@ import ToxicityTesting from "./pages/service/ToxicityTesting";
 import IVTherapy from "./pages/service/IVTherapy";
 import MyersDrip from "./pages/service/MyersDrip";
 import NKTherapy from "./pages/service/NKTherapy";
-import OzoneTherapy from "./pages/service/OzoneTherapy";
+import WhiteBooster from "./pages/service/WhiteBooster";
 import AfterParty from "./pages/service/AfterParty";
 import StemTherapy from "./pages/service/StemTherapy";
 import WomenTherapy from "./pages/service/WomenTherapy";
@@ -48,8 +48,16 @@ import ConditionAddress from "./pages/conditionAddress/ConditionAddress";
 import HerbalMedicean from "./pages/herbalMedicean/HerbalMedicean";
 import KartomTherapies from "./pages/kartomTherapies/KartomTherapies";
 import PrenatalMassage from "./pages/service/PrenatalMassage";
-import Wellness from "./pages/service/Wellness";
+import NMNBooster from "./pages/service/NMNBooster";
 import TherapeuticTreatment from "./pages/service/TherapeuticTreatment";
+import ImmuneBooster from "./pages/service/ImmuneBooster";
+import WeightLoss from "./pages/service/WeightLoss";
+import WhiteRadiance from "./pages/service/WhiteRadiance";
+import AlphaLipoic from "./pages/service/AlphaLipoic";
+import Curcumin from "./pages/service/Curcumin";
+import Rsveratrol from "./pages/service/Rsveratrol";
+import Detoxify from "./pages/service/Detoxify";
+import PlaqueCleanse from "./pages/service/PlaqueCleanse";
 
 function App() {
   const [openNav, setOpenNav] = useState(false);
@@ -125,8 +133,8 @@ function App() {
             element={<IVTherapy />}
           />
           <Route
-            path="/service/wellness/ozone-therapy"
-            element={<OzoneTherapy />}
+            path="/service/wellness/iv-nutrition-therapy/white-booster"
+            element={<WhiteBooster />}
           />
           <Route
             path="/service/wellness/stem-therapy"
@@ -194,7 +202,15 @@ function App() {
             path="/service/prenatal-massage"
             element={<PrenatalMassage />}
           />
-          <Route path="/service/body-works-wellness" element={<Wellness />} />
+          <Route path="/service/wellness/iv-nutrition-therapy/nmn-booster" element={<NMNBooster />} />
+          <Route path="/service/wellness/iv-nutrition-therapy/immune-booster" element={<ImmuneBooster/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/weight-loss" element={<WeightLoss/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/white-radiance" element={<WhiteRadiance/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/alpha-lipoic-acid" element={<AlphaLipoic/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/curcumin" element={<Curcumin/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/rsveratrol" element={<Rsveratrol/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/detoxify" element={<Detoxify/>}/>
+          <Route path="/service/wellness/iv-nutrition-therapy/plaque-cleanse" element={<PlaqueCleanse/>}/>
         </Routes>
         <Footer />
       </Router>

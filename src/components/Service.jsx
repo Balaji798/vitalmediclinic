@@ -48,62 +48,60 @@ const Service = () => {
       title: "2. WELLNESS PROGRAMS",
       link: "/service/wellness-program",
       options: [
-        // {
-        //   title: "HEALTH THERAPY FOR MEN",
-        //   link: "/wellness/men-health-therapy",
-        // },
-        // {
-        //   title: "HEALTH THERAPY FOR WOMEN",
-        //   link: "/wellness/women-health-therapy",
-        // },
         {
           title: "IV NUTRITION THERAPY",
           link: "/wellness/iv-nutrition-therapy",
           subMenu: [
             {
               title: "VITAL AFTER PARTY IV DRIP",
-              link: '/wellness/iv-nutrition-therapy/after-party'
+              link: "/wellness/iv-nutrition-therapy/after-party",
             },
             {
               title: "VITAL MYER’ IV DRIP",
-              link: '/wellness/iv-nutrition-therapy/myers-drip'
+              link: "/wellness/iv-nutrition-therapy/myers-drip",
             },
             {
               title: "VITAL WHITE BOOSTER+ IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/white-booster",
             },
             {
               title: "VITAL NMN BOOSTER+ IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/nmn-booster",
             },
             {
               title: "VITAL IMMUNE BOOSTER IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/immune-booster",
             },
             {
               title: "VITAL WEIGHT LOSS CONTROL IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/weight-loss",
             },
             {
               title: "VITAL WHITE RADIANCE IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/white-radiance",
             },
             {
               title: "VITAL ALPHA-LIPOIC ACID IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/alpha-lipoic-acid",
             },
             {
               title: "VITAL CURCUMIN IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/curcumin",
             },
             {
               title: "VITAL RESVERATROL IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/rsveratrol",
             },
             {
               title: "VITAL DETOXIFY (CHELATION) IV DRIP",
+              link: "/wellness/iv-nutrition-therapy/detoxify",
             },
             {
               title: "VITAL PLAQUE CLEANSE IV DRIP",
+              link: '/wellness/iv-nutrition-therapy/plaque-cleanse'
             },
           ],
         },
-        // {
-        //   title: "OZONE THERAPY",
-        //   link: "/wellness/ozone-therapy",
-        // },
         {
           title: "STEM CELL THERAPY",
           link: "/wellness/stem-therapy",
@@ -116,14 +114,6 @@ const Service = () => {
           title: "PRENATAL MASSAGE",
           link: "/prenatal-massage",
         },
-        // {
-        //   title:"BODY WORKS & WELLNESS",
-        //   link:"/body-works-wellness"
-        // },
-        // {
-        //   title:"WEIGHT MANAGEMENT",
-        //   link:"/wellness/weight-management"
-        // },
       ],
     },
     {
