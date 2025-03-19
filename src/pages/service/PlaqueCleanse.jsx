@@ -1,8 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/plaque-cleanse.webp";
+import bg from "../../assets/conditions/bg.png";
+import womanDoctor from "../../assets/wellness/plaque-cleanse-2.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
+import plaqueBg from "../../assets/wellness/plaque-cleanse-bg.webp";
+import heart from "../../assets/wellness/heart.webp";
 import { Helmet } from "react-helmet-async";
 
 const PlaqueCleanse = () => {
@@ -48,32 +52,65 @@ const PlaqueCleanse = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+            VITAL PLAQUE CLEANSE IV DRIP
           </h2>
-          <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
-          </span>
-          <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+          <h3>
+            Vital Plaque Cleanse IV Drip: A Controversial Approach to
+            Cardiovascular Health
+          </h3>
+          <h3 style={{ textIndent: "20px" }}>
+            What Causes Plaque Buildup in Arteries?
+          </h3>
+          <p style={{ paddingBottom: "1rem", textIndent: "20px" }}>
+            Plaque, the kind that causes atherosclerosis and is a major concern
+            for cardiovascular health, comes from a complex process involving
+            several factors, but the primary culprit is <span>cholesterol</span>
+            , specifically{" "}
+            <span>low-density lipoprotein (LDL) cholesterol</span>, often called
+            "bad" cholesterol.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <h3>Here's a simplified breakdown of how plaque forms:</h3>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            <span>• LDL Cholesterol Accumulation:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+              When there's too much LDL cholesterol in your blood, it can start
+              to accumulate within the walls of your arteries.
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
+          <span>• Artery Wall Damage:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+            Factors like high blood pressure, smoking, high blood sugar, and
+            inflammation can damage the inner lining of the arteries
+            (endothelium), making it easier for LDL cholesterol to penetrate the
+            artery wall.
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Oxidation and Inflammation:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+            Once inside the artery wall, LDL cholesterol can become oxidized,
+            triggering an inflammatory response.
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Immune Cell Response:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+            The body's immune system sends white blood cells (macrophages) to
+            the site to engulf the oxidized LDL. These macrophages become
+            engorged with cholesterol, transforming into "foam cells."
+          </p>
+          <span>• Plaque Formation:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            The accumulation of foam cells, along with other substances like
+            smooth muscle cells, calcium, and cellular debris, forms a fatty
+            deposit called plaque
+          </p>
+          <span>• Plaque Growth and Hardening:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Over time, plaque can grow larger and harden, narrowing the artery
+            and restricting blood flow. This is called atherosclerosis.
+          </p>
+          <span>• Plaque Rupture:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            In some cases, the plaque can become unstable and rupture, leading
+            to the formation of a blood clot that can block the artery, causing
+            a heart attack or stroke.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -101,33 +138,159 @@ const PlaqueCleanse = () => {
       </div>
       <div
         style={{
-          maxWidth: "100%",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "1rem 0px 2rem",
+          //justifyContent: "space-between",
+          flexWrap: "wrap",
+          padding: "2rem 1rem",
+          height: "100%",
+          backgroundColor: "#F2F2F2",
         }}
       >
-        {" "}
+        <div style={{ maxWidth: "500px", width: "100%", marginRight: "2rem" }}>
+          <div
+            className="backgroundImage"
+            style={{
+              backgroundImage: `url(${bg})`,
+              width: "100%",
+              maxWidth: "500px",
+              display: "flex",
+              justifyContent: "center",
+              height: "28rem",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              paddingTop: "2rem",
+            }}
+          >
+            <img
+              loading="lazy"
+              src={womanDoctor}
+              style={{
+                maxWidth: "312px",
+                marginLeft: "7.4rem",
+                objectFit: "cover",
+                height: "22rem",
+              }}
+            />
+          </div>
+        </div>
+        <div style={{ maxWidth: "660px", width: "100%" }}>
+          <h3 style={{ fontWeight: "bold" }}>
+            In essence, plaque is a buildup of:
+          </h3>
+          <ul
+            style={{
+              fontWeight: "bold",
+              paddingLeft: "17px",
+              paddingBottom: "1rem",
+            }}
+          >
+            <li>Cholesterol (primarily LDL)</li>
+            <li>Fats</li>
+            <li>Calcium</li>
+            <li>Cellular waste products</li>
+            <li>Fibrin (a protein involved in blood clotting)</li>
+          </ul>
+          <h3>Factors that contribute to plaque formation:</h3>
+          <p style={{ paddingTop: "1rem" }}>
+            <span>•</span> The massage therapist should be trained in prenatal
+            massage techniques. This means that they will know how to avoid
+            pressure points and positions that could be harmful to the baby.
+          </p>
+          <p>
+            <span>•</span> The massage should be gentle and light. The therapist
+            should not use deep pressure or massage areas that are prone to
+            swelling, such as the ankles and feet.
+          </p>{" "}
+          <p>
+            <span>•</span> The pregnant woman should be positioned comfortably.
+            The therapist may use pillows or bolsters to support the {"woman's"}{" "}
+            back, belly, and legs.
+          </p>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            {" "}
+            <span>•</span> The massage should be shorter than a regular massage.
+            Most pregnancy massages last about 30 minutes.
+          </p>
+          <span>How to choose a massage therapist for pregnancy?</span>
+          <p>
+            When choosing a massage therapist for pregnancy, it is important to
+            find someone who is experienced and qualified. You can ask your
+            doctor for recommendations, or you can search online for massage
+            therapists in your area who specialize in prenatal massage.
+          </p>
+        </div>
+      </div>
+      <div
+        className="center"
+        style={{
+          flexDirection: "column",
+          padding: "2rem 0rem",
+          textAlign: "center",
+        }}
+      >
         <div
           style={{
-            padding: "1rem",
+            backgroundImage: `url(${plaqueBg})`,
+            maxWidth: "800px",
+            width: "100%",
             textAlign: "center",
-            backgroundColor: "#093b56",
             color: "#fff",
-            borderRadius: "20px",
-            maxWidth: "950px",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            padding: "1rem 0rem",
           }}
         >
-          <h4>Why IV Delivery?</h4>
+          <h2>The "Vital Plaque Cleanse IV Drip"</h2>
           <span>
-            Intravenous (IV) delivery of NMN allows for direct absorption into
-            the bloodstream,
-            <br /> bypassing the digestive system.
-            <br /> This method may enhance bioavailability and ensure that a
-            higher concentration of NMN reaches your cells
-            <br /> compared to oral supplementation.
+            is an intravenous therapy as a way to cleanse arteries of plaque
+            buildup.
+            <br /> This approach typically involves the use of chelating agents.
           </span>
+        </div>
+        <h1 style={{ padding: "1rem 0", fontSize: "42px", lineHeight: "45px" }}>
+          SUPPORT YOUR HEART HEALTH <br />
+          WITH VITAL MEDI CLINIC
+        </h1>
+        <p>
+          At Vital Medi Clinic, we're committed to helping you maintain optimal
+          cardiovascular health.
+          <br /> We offer a range of services and therapies designed to support
+          healthy circulation, blood
+          <br /> pressure, and overall well-being. Our experienced medical
+          professionals can help you create <br />a personalized plan that may
+          include:
+        </p>
+        <div className="center" style={{ flexWrap: "wrap", padding: "10px 0" }}>
+          <img src={heart} style={{ maxWidth: "550px" }} />
+          <div
+            style={{
+              textAlign: "left",
+              maxWidth: "550px",
+              paddingLeft: "10px",
+            }}
+          >
+            <span>• Comprehensive Cardiovascular Assessments:</span>{" "}
+            <p>
+              In-depth evaluations to assess your heart health and identify
+              potential risk factors.
+            </p>
+            <span>• Personalized Lifestyle Guidance:</span>{" "}
+            <p>
+              Expert advice on diet, exercise, and stress management to support
+              a healthy heart.
+            </p>
+            <span>• Intravenous (IV) Therapies:</span>
+            <p>
+              Customized IV drips containing essential vitamins, minerals, and
+              antioxidants to support overall health and well-being. (Note:
+              Avoid making specific claims about plaque removal.)
+            </p>
+            <span>• Other Evidence-Based Treatments:</span>
+            <p>
+              Explore our range of therapies designed to promote cardiovascular
+              wellness.
+            </p>
+          </div>
         </div>
       </div>
       <div
@@ -175,6 +338,6 @@ const PlaqueCleanse = () => {
       </div>
     </div>
   );
-}
+};
 
-export default PlaqueCleanse
+export default PlaqueCleanse;

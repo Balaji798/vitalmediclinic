@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/detoxify.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
 import { Helmet } from "react-helmet-async";
 

@@ -119,7 +119,6 @@ const PrenatalMassage = () => {
           height: "100%",
         }}
       >
-        {" "}
         <div style={{ maxWidth: "500px", width: "100%", marginRight: "2rem" }}>
           <div
             className="backgroundImage"

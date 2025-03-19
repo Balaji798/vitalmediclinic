@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/resveratrol.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
 import { Helmet } from "react-helmet-async";
 
@@ -48,32 +48,70 @@ const Rsveratrol = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+            VITAL RESVERATROL IV DRIP
           </h2>
-          <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
-          </span>
-          <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+          <h3>
+            Vital Resveratrol IV Drip: Unlocking the Potential of a Powerful
+            Antioxidant
+          </h3>
+          <p style={{ paddingBottom: "1rem", textIndent: "20px" }}>
+            The "Vital Resveratrol IV Drip" is a specialized intravenous therapy
+            designed to deliver a concentrated dose of resveratrol directly into
+            your bloodstream. Resveratrol is a naturally occurring polyphenol
+            found in red wine, grapes, berries, and peanuts, and is renowned for
+            its potent antioxidant and potential anti-aging properties. This IV
+            drip aims to maximize the bioavailability of resveratrol,
+            potentially offering enhanced therapeutic benefits for overall
+            health and well-being.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <h3>Potential Benefits of Resveratrol:</h3>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            <span>• Powerful Antioxidant Activity:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+              Resveratrol is a potent antioxidant that helps protect cells from
+              damage caused by free radicals, which are unstable molecules that
+              contribute to aging and various diseases.
             </p>
           </p>
           <span>• Increased Antioxidant Protection:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+            Antioxidants help neutralize harmful free radicals that can damage
+            cells and weaken the immune system.
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Cardiovascular Support:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+            Studies suggest that resveratrol may improve cardiovascular health
+            by promoting healthy blood flow, reducing inflammation, and
+            improving cholesterol levels
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Anti-Inflammatory Effects:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+            Resveratrol has demonstrated anti-inflammatory properties, which may
+            be beneficial for conditions associated with chronic inflammation.
+          </p>
+          <span>• Neuroprotective Properties:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Some research indicates that resveratrol may have neuroprotective
+            effects, potentially benefiting cognitive function and protecting
+            against age-related neurodegenerative diseases.
+          </p>
+          <span>• Metabolic Health:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Resveratrol may improve insulin sensitivity and glucose metabolism,
+            potentially benefiting individuals with metabolic disorders.
+          </p>
+          <span>• Anti-Aging Potential:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Due to its antioxidant and anti-inflammatory properties, as well as
+            its potential effects on cellular pathways associated with aging,
+            resveratrol is being investigated for its potential anti-aging
+            benefits.
+          </p>
+          <span>• Longevity:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Resveratrol has been shown to activate certain pathways, like
+            sirtuins, which are linked to increased lifespan in some animal
+            models.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -121,12 +159,9 @@ const Rsveratrol = () => {
         >
           <h4>Why IV Delivery?</h4>
           <span>
-            Intravenous (IV) delivery of NMN allows for direct absorption into
-            the bloodstream,
-            <br /> bypassing the digestive system.
-            <br /> This method may enhance bioavailability and ensure that a
-            higher concentration of NMN reaches your cells
-            <br /> compared to oral supplementation.
+          Resveratrol has limited bioavailability when taken orally, meaning that a significant portion may not be
+            <br /> absorbed into the bloodstream. Intravenous (IV) administration bypasses the digestive system, delivering
+            <br /> resveratrol directly into the bloodstream for potentially greater absorption and therapeutic effects
           </span>
         </div>
       </div>
@@ -175,6 +210,6 @@ const Rsveratrol = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Rsveratrol
+export default Rsveratrol;

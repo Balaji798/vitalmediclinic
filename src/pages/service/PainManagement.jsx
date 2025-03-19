@@ -58,7 +58,8 @@ const PainManagement = () => {
             marginTop: "3.4rem",
           }}
         />
-         <img loading="lazy"
+        <img
+          loading="lazy"
           src={dotes}
           className="content-position"
           style={{
@@ -157,7 +158,7 @@ const PainManagement = () => {
               paddingTop: "2rem",
             }}
           >
-             <img loading="lazy" src={active} className="service-image" />
+            <img loading="lazy" src={active} className="service-image" />
           </div>
         </div>
       </div>
@@ -178,7 +179,8 @@ const PainManagement = () => {
               paddingTop: "2rem",
             }}
           >
-             <img loading="lazy"
+            <img
+              loading="lazy"
               src={woman}
               style={{
                 maxWidth: "312px",
@@ -189,7 +191,8 @@ const PainManagement = () => {
             />
           </div>
         </div>
-         <img loading="lazy"
+        <img
+          loading="lazy"
           src={dotes}
           className="content-position"
           style={{
@@ -272,9 +275,9 @@ const PainManagement = () => {
                   padding: "0.5rem 1.5rem",
                   borderRadius: "10px",
                 }}
-                className={index % 2 === 0?"marginRight":"margin-style"}
+                className={index % 2 === 0 ? "marginRight" : "margin-style"}
               >
-                 <img loading="lazy" src={item.icon} style={{ width: "6rem" }} />
+                <img loading="lazy" src={item.icon} style={{ width: "6rem" }} />
                 <div
                   style={{
                     padding: "0 0.5rem",
