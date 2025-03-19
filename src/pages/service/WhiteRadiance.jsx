@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/white-radiance.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
 import { Helmet } from "react-helmet-async";
 
@@ -48,32 +48,33 @@ const WhiteRadiance = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+          VITAL WHITE RADIANCE IV DRIP
           </h2>
-          <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
-          </span>
           <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+          The "Vital White Radiance IV Drip" is a specialized intravenous therapy designed to promote a brighter, more even-toned complexion and enhance your skin's natural radiance. This carefully formulated drip delivers a potent blend of antioxidants and skin-nourishing ingredients directly into your bloodstream, aiming to address hyperpigmentation, reduce oxidative stress, and promote a healthy, luminous glow from within.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <span>Potential Benefits and Mechanisms:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            <span>• Skin Brightening:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+            Certain ingredients may help to inhibit melanin production, the pigment responsible for skin coloration, leading to a brighter and more even skin tone
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
+          <span>• Reduction of Hyperpigmentation:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+          The drip may help to lighten dark spots, age spots, and other forms of hyperpigmentation.
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Antioxidant Protection</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+          Antioxidants combat free radical damage, which can contribute to premature aging and skin dullness.
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Collagen Support:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+          Some ingredients may promote collagen synthesis, contributing to skin elasticity and firmness.
+          </p>
+          <span>•  Improved Skin Hydration:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          IV fluids help to hydrate the skin from within, promoting a plump and healthy appearance.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>

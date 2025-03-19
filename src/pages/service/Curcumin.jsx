@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/curcumin.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
 import { Helmet } from "react-helmet-async";
 
@@ -48,32 +48,44 @@ const Curcumin = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+          VITAL CURCUMIN IV DRIP
           </h2>
           <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
+          Vital Curcumin IV Drip: Harnessing the Anti-Inflammatory Power of Turmeric
           </span>
           <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+          The "Vital Curcumin IV Drip" is a specialized intravenous therapy that delivers a concentrated dose of curcumin, the primary active compound in turmeric, directly into your bloodstream. Turmeric has been used for centuries in traditional medicine for its potent anti-inflammatory and antioxidant properties. 1 This IV drip aims to maximize the bioavailability of curcumin, potentially offering enhanced therapeutic benefits for a variety of conditions.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <span>Benefits of Curcumin:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            <span>• Powerful Anti-Inflammatory Effects:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+            Curcumin is renowned for its ability to modulate inflammatory pathways in the body. Chronic inflammation is linked to numerous diseases, including heart disease, arthritis, and certain cancers.
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
+          <span>• Antioxidant Properties:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+          Curcumin acts as a potent antioxidant, scavenging harmful free radicals that can damage cells and contribute to aging and disease. 
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Joint Pain Relief:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+          Due to its anti-inflammatory properties, curcumin may help alleviate joint pain and stiffness associated with conditions like osteoarthritis and rheumatoid arthritis.
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Brain Health:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+          Some studies suggest that curcumin may have neuroprotective effects, potentially benefiting cognitive function and protecting against age-related neurodegenerative diseases.
+          </p>
+          <span>• Mood Support:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          Curcumin may have positive effects on mood and may be beneficial for individuals with depression or anxiety.
+          </p>
+          <span>• Digestive Health:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          Curcumin may support digestive health by reducing inflammation in the gut.
+          </p>
+          <span>• Cardiovascular Support:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          Curcumin may contribute to cardiovascular health by improving blood vessel function and reducing inflammation.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -121,12 +133,9 @@ const Curcumin = () => {
         >
           <h4>Why IV Delivery?</h4>
           <span>
-            Intravenous (IV) delivery of NMN allows for direct absorption into
-            the bloodstream,
-            <br /> bypassing the digestive system.
-            <br /> This method may enhance bioavailability and ensure that a
-            higher concentration of NMN reaches your cells
-            <br /> compared to oral supplementation.
+          Curcumin is known to have poor bioavailability when taken orally, meaning that only a small amount is
+            <br /> absorbed into the bloodstream. Intravenous (IV) administration bypasses the digestive system, delivering
+            <br /> curcumin directly into the bloodstream for potentially greater absorption and therapeutic effects.
           </span>
         </div>
       </div>

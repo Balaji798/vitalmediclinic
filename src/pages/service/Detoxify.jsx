@@ -48,32 +48,61 @@ const Detoxify = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+            VITAL DETOXIFY (CHELATION) IV DRIP
           </h2>
-          <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
-          </span>
+          <h3>
+            Vital Detoxify (Chelation) IV Drip: <br />
+            Supporting Your Body's Natural Detoxification Processes
+          </h3>
           <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+            The "Vital Detoxify (Chelation) IV Drip" is an intravenous therapy
+            that involves the administration of chelating agents, substances
+            that bind to heavy metals in the bloodstream. Chelation therapy is
+            primarily used to treat heavy metal poisoning, a serious medical
+            condition. In some alternative medicine settings, it's also promoted
+            for other conditions, although{" "}
+            <span>
+              scientific evidence supporting its effectiveness for these uses is
+              limited and controversial.
+            </span>{" "}
+            This drip aims to support the body's natural detoxification
+            processes under strict medical supervision.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <h3>What is Chelation Therapy?</h3>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            Chelation therapy involves the use of chelating agents that bind to
+            heavy metals, such as lead, mercury, arsenic, and cadmium, forming
+            compounds that can be excreted from the body through urine.
+          </p>
+          <h3>Approved Medical Uses of Chelation Therapy:</h3>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Heavy Metal Poisoning:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+              Chelation therapy is an established and effective treatment for
+              acute heavy metal poisoning.
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
+          <h3>Controversial and Unproven Uses:</h3>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+            Some alternative medicine practitioners promote chelation therapy
+            for conditions like:
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Cardiovascular Disease:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+          Some proponents believe chelation therapy can remove calcium deposits from arteries, although this is not supported by mainstream medical organizations. The NIH sponsored the TACT trial, which has mixed results in using chelation to treat heart disease. It is an ongoing debate in the medical community. 
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Autism Spectrum Disorder:</span>
+          <p style={{ paddingBottom: "1rem" }}>
+          There is no scientific evidence to support the use of chelation therapy for autism.
+          </p>
+          <h3>Potential Benefits (Primarily in the context of heavy metal poisoning):</h3>
+          <span>• Removal of Heavy Metals:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+          Chelating agents can effectively bind to and remove heavy metals from the body.
+          </p>
+          <span>• Reduced Toxicity:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          By removing heavy metals, chelation therapy can reduce the toxic effects associated with heavy metal exposure.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -99,6 +128,7 @@ const Detoxify = () => {
           </div>
         </div>
       </div>
+      
       <div
         style={{
           maxWidth: "100%",
@@ -121,12 +151,9 @@ const Detoxify = () => {
         >
           <h4>Why IV Delivery?</h4>
           <span>
-            Intravenous (IV) delivery of NMN allows for direct absorption into
-            the bloodstream,
-            <br /> bypassing the digestive system.
-            <br /> This method may enhance bioavailability and ensure that a
-            higher concentration of NMN reaches your cells
-            <br /> compared to oral supplementation.
+          Resveratrol has limited bioavailability when taken orally, meaning that a significant portion may not be
+            <br /> absorbed into the bloodstream. Intravenous (IV) administration bypasses the digestive system, delivering
+            <br /> resveratrol directly into the bloodstream for potentially greater absorption and therapeutic effects
           </span>
         </div>
       </div>
@@ -175,6 +202,6 @@ const Detoxify = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Detoxify
+export default Detoxify;

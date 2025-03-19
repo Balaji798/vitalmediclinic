@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/nad-booster.webp";
+import doctorConsultation from "../../assets/wellness/alpha-lipoic.webp";
 import therapy from "../../assets/wellness/sevice-pic-42.jpg";
 import { Helmet } from "react-helmet-async";
 
@@ -48,32 +48,40 @@ const AlphaLipoic = () => {
             IV NUTRITION THERAPY
           </h2>
           <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            VITAL IMMUNE BOOSTER IV DRIP
+          VITAL ALPHA-LIPOIC ACID IV DRIP
           </h2>
           <span>
-            Vital Immune Booster IV Drip: Fortify Your Body's Natural Defenses
+          Vital Alpha-Lipoic Acid IV Drip: Unleash the Power of a Potent Antioxidant
           </span>
           <p style={{ paddingBottom: "1rem" }}>
-          The "Vital Immune Booster IV Drip" is a specially formulated intravenous therapy designed to deliver a potent blend of vitamins, minerals, and antioxidants directly into your bloodstream. This targeted approach aims to support and strengthen your immune system, helping your body fight off infections and maintain optimal health.
+          The "Vital Alpha-Lipoic Acid IV Drip" is a specialized intravenous therapy designed to deliver a concentrated dose of Alpha-Lipoic Acid (ALA) directly into your bloodstream. ALA is a powerful antioxidant naturally produced by the body and found in certain foods. It plays a vital role in cellular energy production and offers a wide range of potential health benefits. This IV drip aims to replenish your body's ALA levels, potentially enhancing its antioxidant capacity and supporting overall well-being.
           </p>
-          <span>Potential Benefits of an Immune-Boosting IV Drip:</span>
+          <span>Potential Benefits of Alpha-Lipoic Acid (ALA):</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            <span>• Enhanced Immune Function:</span>
+            <span>• Powerful Antioxidant Protection:</span>
             <p>
-            The drip may help bolster your immune system's ability to defend against pathogens, such as viruses and bacteria.
+            ALA is a unique antioxidant that is both water- and fat-soluble, allowing it to work throughout the body to neutralize harmful free radicals. It also helps regenerate other antioxidants, such as vitamin C and glutathione, enhancing their effectiveness.
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
+          <span>• Blood Sugar Support:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          Antioxidants help neutralize harmful free radicals that can damage cells and weaken the immune system.
+          ALA may improve insulin sensitivity and glucose uptake, potentially benefiting individuals with blood sugar imbalances
           </p>
-          <span>• Faster Recovery:</span>
+          <span>• Nerve Health:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          By providing essential nutrients directly, the drip may help speed up recovery from illness or fatigue.
+          Some studies suggest that ALA may help protect nerve cells from damage and improve symptoms of neuropathy, particularly diabetic neuropathy. 
           </p>
-          <span>• Improved Overall Well-being:</span>
+          <span>• Liver Support:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-          A well-functioning immune system is crucial for overall health and vitality.
+          ALA may support liver function and detoxification processes.
+          </p>
+          <span>• Skin Health:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          As an antioxidant, ALA may help protect the skin from damage caused by UV radiation and environmental pollutants.
+          </p>
+          <span>• Potential Anti-Aging Effects:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          By combating oxidative stress and supporting cellular function, ALA may contribute to healthy aging.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -121,12 +129,9 @@ const AlphaLipoic = () => {
         >
           <h4>Why IV Delivery?</h4>
           <span>
-            Intravenous (IV) delivery of NMN allows for direct absorption into
-            the bloodstream,
-            <br /> bypassing the digestive system.
-            <br /> This method may enhance bioavailability and ensure that a
-            higher concentration of NMN reaches your cells
-            <br /> compared to oral supplementation.
+          Intravenous (IV) administration of ALA allows for direct delivery into the bloodstream, bypassing the
+            <br /> digestive system. This may lead to higher bioavailability and potentially greater therapeutic effects
+            <br /> compared to oral supplementation, especially at higher dosages.
           </span>
         </div>
       </div>
