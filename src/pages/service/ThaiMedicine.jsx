@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import dotes from "../../assets/SERVICES/servic-pic-18.png";
+import dotes from "../../assets/SERVICES/bg.webp";
 import ATTM1 from "../../assets/ATTM-1.webp";
 import ATTM2 from "../../assets/ATTM-2.webp";
 import ATTM3 from "../../assets/ATTM-3.jpg";
@@ -57,23 +57,12 @@ const ThaiMedicine = () => {
         />
       </Helmet>
       <div className="service">
-        <div
-          style={{
-            width: "15rem",
-            height: "10px",
-            background: "#0a3c57",
-            marginTop: "3.4rem",
-          }}
-        />
         <img
           loading="lazy"
           src={dotes}
-          className="content-position"
           style={{
-            width: "10rem",
             left: 0,
-            marginLeft: "-3rem",
-            marginTop: "10rem",
+            marginLeft: "0rem",
           }}
         />
         <div style={{ maxWidth: "660px", width: "100%" }}>
