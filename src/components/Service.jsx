@@ -111,8 +111,8 @@ const Service = () => {
           link: "/wellness/nk-cell-therapy",
         },
         {
-          title: "PRENATAL MASSAGE",
-          link: "/prenatal-massage",
+          title: "PRP Therapy",
+          link: "/prp-therapy",
         },
       ],
     },

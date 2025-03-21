@@ -58,10 +58,10 @@ const PlaqueCleanse = () => {
             Vital Plaque Cleanse IV Drip: A Controversial Approach to
             Cardiovascular Health
           </h3>
-          <h3 style={{ textIndent: "20px" }}>
+          <h3>
             What Causes Plaque Buildup in Arteries?
           </h3>
-          <p style={{ paddingBottom: "1rem", textIndent: "20px" }}>
+          <p style={{ paddingBottom: "1rem" }}>
             Plaque, the kind that causes atherosclerosis and is a major concern
             for cardiovascular health, comes from a complex process involving
             several factors, but the primary culprit is <span>cholesterol</span>

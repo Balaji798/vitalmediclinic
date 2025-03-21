@@ -58,6 +58,7 @@ import Curcumin from "./pages/service/Curcumin";
 import Rsveratrol from "./pages/service/Rsveratrol";
 import Detoxify from "./pages/service/Detoxify";
 import PlaqueCleanse from "./pages/service/PlaqueCleanse";
+import ThaiMedicine from "./pages/service/ThaiMedicine";
 
 function App() {
   const [openNav, setOpenNav] = useState(false);
@@ -195,22 +196,53 @@ function App() {
             element={<TherapeuticTreatment />}
           />
           <Route
+            path="/service/herbal-medicean/thai-traditional-medicine"
+            element={<ThaiMedicine />}
+          />
+          <Route
             path="/service/cannabis-and-kartom-therapies"
             element={<KartomTherapies />}
           />
           <Route
-            path="/service/prenatal-massage"
+            path="/service/prp-therapy"
             element={<PrenatalMassage />}
           />
-          <Route path="/service/wellness/iv-nutrition-therapy/nmn-booster" element={<NMNBooster />} />
-          <Route path="/service/wellness/iv-nutrition-therapy/immune-booster" element={<ImmuneBooster/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/weight-loss" element={<WeightLoss/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/white-radiance" element={<WhiteRadiance/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/alpha-lipoic-acid" element={<AlphaLipoic/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/curcumin" element={<Curcumin/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/rsveratrol" element={<Rsveratrol/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/detoxify" element={<Detoxify/>}/>
-          <Route path="/service/wellness/iv-nutrition-therapy/plaque-cleanse" element={<PlaqueCleanse/>}/>
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/nmn-booster"
+            element={<NMNBooster />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/immune-booster"
+            element={<ImmuneBooster />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/weight-loss"
+            element={<WeightLoss />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/white-radiance"
+            element={<WhiteRadiance />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/alpha-lipoic-acid"
+            element={<AlphaLipoic />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/curcumin"
+            element={<Curcumin />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/rsveratrol"
+            element={<Rsveratrol />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/detoxify"
+            element={<Detoxify />}
+          />
+          <Route
+            path="/service/wellness/iv-nutrition-therapy/plaque-cleanse"
+            element={<PlaqueCleanse />}
+          />
         </Routes>
         <Footer />
       </Router>

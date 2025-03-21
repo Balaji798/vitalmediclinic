@@ -54,7 +54,7 @@ const Rsveratrol = () => {
             Vital Resveratrol IV Drip: Unlocking the Potential of a Powerful
             Antioxidant
           </h3>
-          <p style={{ paddingBottom: "1rem", textIndent: "20px" }}>
+          <p style={{ paddingBottom: "1rem" }}>
             The "Vital Resveratrol IV Drip" is a specialized intravenous therapy
             designed to deliver a concentrated dose of resveratrol directly into
             your bloodstream. Resveratrol is a naturally occurring polyphenol

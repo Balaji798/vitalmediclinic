@@ -71,7 +71,7 @@ const StemTherapy = () => {
           <p>
             <span>• Injury Recovery:</span> Stem cells may accelerate healing
             after sports injuries, surgeries, or other forms of physical trauma.
-          </p>{" "}
+          </p>
           <p>
             <span>• Anti-Aging and Rejuvenation:</span> Stem cell therapy is
             being explored for its potential to support tissue health, reduce

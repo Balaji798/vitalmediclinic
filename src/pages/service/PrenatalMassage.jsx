@@ -1,9 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import dotes from "../../assets/SERVICES/servic-pic-18.png";
 import bgImage from "../../assets/SERVICES/bgImage.png";
-import doctorConsultation from "../../assets/wellness/massage.jpg";
-import womanBg from "../../assets/wellness/woman-bg.jpg";
+import doctorConsultation from "../../assets/wellness/prp-therapy-1.png";
 import bg from "../../assets/conditions/bg.png";
-import womanDoctor from "../../assets/wellness/woman-doctor.jpg";
+import womanDoctor from "../../assets/wellness/prp-therapy-2.png";
 import { Helmet } from "react-helmet-async";
 
 const PrenatalMassage = () => {
@@ -31,7 +31,8 @@ const PrenatalMassage = () => {
             marginTop: "3.4rem",
           }}
         />
-         <img loading="lazy"
+        <img
+          loading="lazy"
           src={dotes}
           className="content-position"
           style={{
@@ -45,50 +46,48 @@ const PrenatalMassage = () => {
           <h2 style={{ color: "#d9e1e4", fontWeight: "bold" }}>
             WELLNESS PROGRAM
           </h2>
-          <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>
-            PRENATAL MASSAGE
-          </h2>
-          <span style={{ padding: "1rem 0" }}>
-            Soothe Your Pregnancy Aches and Pains with a Massage from Vital Medi
-            Clinic!
-          </span>
-          <p style={{ padding: "1rem 0" }}>
-            <span>Vital Medi Clinic</span> offers a special relaxation massage
-            service designed specifically for pregnant women to help them feel
-            comfortable physically and mentally.
+          <h2 style={{ fontWeight: "bold", fontSize: "2rem" }}>PRP THERAPY</h2>
+          <h3>
+            PRP Therapy: Harnessing Your Body's Healing Power A Controversial
+            Approach to Cardiovascular Health
+          </h3>
+          <p style={{ paddingBottom: "1rem" }}>
+            PRP Therapy, or Platelet-Rich Plasma Therapy, is a regenerative
+            treatment that utilizes your body's own natural healing abilities to
+            promote tissue repair and rejuvenation. This innovative therapy
+            involves concentrating platelets from your blood and then injecting
+            them into the targeted area, releasing growth factors that stimulate
+            healing and regeneration.
           </p>
-          <span>Can pregnant women get massages? Is it safe?</span>
+          <h3>What is Platelet-Rich Plasma (PRP)?</h3>
           <p style={{ padding: "1rem 0" }}>
-            Many pregnant women experience aches and pains due to their changing
-            bodies and the weight of their growing baby. This can lead to back
-            pain, leg pain, swelling, and headaches. Massage can be a safe and
-            effective way to relieve these symptoms and improve overall
-            well-being.
+            Platelets are tiny blood cells that play a crucial role in blood
+            clotting. They also contain a high concentration of growth factors,
+            which are proteins that regulate cell growth, proliferation, and
+            differentiation. These growth factors are essential for tissue
+            repair and regeneration.
           </p>
-          <span>How can massage benefit pregnant women?</span>
+          <h3>How Does PRP Therapy Work?</h3>
           <p style={{ paddingTop: "1rem" }}>
-            <span>• Relieves pain and discomfort:</span> Massage can help to
-            relax muscles, improve circulation, and reduce inflammation, which
-            can all help to ease pain and discomfort.
+            <span>1. Blood Draw:</span> A small amount of blood is drawn from
+            your arm, similar to a routine blood test.
           </p>
           <p>
-            <span>• Reduces swelling:</span> Massage can help to improve
-            lymphatic drainage, which can help to reduce swelling in the legs,
-            ankles, and feet.
-          </p>{" "}
-          <p>
-            <span>• Improves sleep:</span> Massage can help to promote
-            relaxation and reduce stress, which can lead to better sleep.
+            <span>2. Centrifugation:</span> The blood is then placed in a
+            centrifuge, a machine that spins the blood at high speeds to
+            separate its components. This process concentrates the platelets,
+            creating platelet-rich plasma (PRP).
           </p>
           <p>
-            {" "}
-            <span>• Reduces stress and anxiety:</span> Massage can help to
-            release endorphins, which have mood-boosting effects.
+            <span>3. Injection:</span> The concentrated PRP is then carefully
+            injected into the injured or targeted area under the guidance of a
+            medical professional. In some cases, ultrasound imaging may be used
+            to ensure precise placement.
           </p>
           <p>
-            <span style={{ fontWeight: 800 }}>• Improves circulation:</span>{" "}
-            Massage can help to improve blood flow throughout the body, which
-            can help to deliver nutrients and oxygen to the baby.
+            <span>4. Growth Factor Release:</span> Once injected, the platelets
+            release a high concentration of growth factors, which stimulate the
+            body's natural healing response.
           </p>
         </div>
         <div style={{ maxWidth: "500px", width: "100%" }}>
@@ -106,7 +105,11 @@ const PrenatalMassage = () => {
               paddingTop: "2rem",
             }}
           >
-             <img loading="lazy" src={doctorConsultation} className="service-image" />
+            <img
+              loading="lazy"
+              src={doctorConsultation}
+              className="service-image"
+            />
           </div>
         </div>
       </div>
@@ -114,6 +117,7 @@ const PrenatalMassage = () => {
         style={{
           display: "flex",
           //justifyContent: "space-between",
+          backgroundColor: "#F2F2F2",
           flexWrap: "wrap",
           padding: "0rem 1rem 2rem",
           height: "100%",
@@ -134,11 +138,12 @@ const PrenatalMassage = () => {
               paddingTop: "2rem",
             }}
           >
-             <img loading="lazy"
+            <img
+              loading="lazy"
               src={womanDoctor}
               style={{
                 maxWidth: "312px",
-                marginLeft: "8.2rem",
+                marginLeft: "7.5rem",
                 objectFit: "cover",
                 height: "22rem",
               }}
@@ -147,73 +152,56 @@ const PrenatalMassage = () => {
         </div>
         <div style={{ maxWidth: "660px", width: "100%" }}>
           <h3 style={{ fontWeight: "bold" }}>
-            What is different about a pregnancy massage?
+            Potential Applications of PRP Therapy:
           </h3>
-          <p style={{ padding: "1rem 0" }}>
-            A pregnancy massage should be different from a regular massage in
-            several ways:
-          </p>
-          <span>Common types include:</span>
-          <p style={{ paddingTop: "1rem" }}>
-            <span>•</span> The massage therapist should be trained in prenatal
-            massage techniques. This means that they will know how to avoid
-            pressure points and positions that could be harmful to the baby.
-          </p>
-          <p>
-            <span>•</span> The massage should be gentle and light. The therapist
-            should not use deep pressure or massage areas that are prone to
-            swelling, such as the ankles and feet.
-          </p>{" "}
-          <p>
-            <span>•</span> The pregnant woman should be positioned comfortably.
-            The therapist may use pillows or bolsters to support the {"woman's"}{" "}
-            back, belly, and legs.
+          <h4>
+            PRP therapy is being used and researched for <br />a variety of
+            conditions, including:
+          </h4>
+          <span style={{ fontSize: "14px" }}>• Musculoskeletal Injuries:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            • Tendonitis: (e.g., tennis elbow, Achilles tendonitis)
           </p>
           <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>•</span> The massage should be shorter than a regular massage.
-            Most pregnancy massages last about 30 minutes.
+            • Ligament Sprains and Tears: (e.g., ACL tears)
           </p>
-          <span>How to choose a massage therapist for pregnancy?</span>
-          <p>
-            When choosing a massage therapist for pregnancy, it is important to
-            find someone who is experienced and qualified. You can ask your
-            doctor for recommendations, or you can search online for massage
-            therapists in your area who specialize in prenatal massage.
+          <p style={{ paddingBottom: "0.5rem" }}>
+            • Osteoarthritis: (e.g., knee arthritis, hip arthritis)
           </p>
-        </div>
-      </div>
-      <div
-        style={{
-          backgroundImage: `url(${womanBg})`,
-          display: "flex",
-          justifyContent: "flex-start",
-          flexDirection: "column",
-          width: "100%",
-          backgroundSize: "cover",
-          alignItems: "center",
-          padding: "4rem 1rem",
-        }}
-      >
-        {" "}
-        <div style={{ maxWidth: "1200px", width: "100%", textAlign: "left" }}>
-          <p style={{ paddingBottom: "0.5rem", maxWidth: "500px" }}>
-            Experience the ultimate relaxation and comfort during this special
-            time with our specially tailored massages designed to alleviate
-            pregnancy-related discomfort and promote overall well-being for both
-            mom and baby.
+          <p style={{ paddingBottom: "0.5rem" }}>• Muscle Strains and Tears</p>
+          <p style={{ paddingBottom: "0.5rem" }}>• Rotator Cuff Tears</p>
+          <span>• Cosmetic Procedures:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            • Hair Restoration: PRP can be injected into the scalp to stimulate
+            hair growth.
           </p>
-          <p style={{ paddingBottom: "0.5rem", maxWidth: "500px" }}>
-            Our skilled and caring massage therapists are trained in prenatal
-            techniques to ensure a safe and soothing experience for every
-            mom-to-be. From relieving back pain and reducing swelling to easing
-            muscle tension and improving sleep quality, our prenatal massages
-            offer a multitude of benefits for you and your growing baby.
+          <p style={{ paddingBottom: "0.5rem" }}>
+            • Facial Rejuvenation ("Vampire Facial"): PRP can be used to improve
+            skin texture, reduce wrinkles, and promote collagen production.
           </p>
-          <p style={{ maxWidth: "500px" }}>
-            Treat yourself to a moment of tranquility and pampering with our
-            prenatal massage services. You deserve to feel your absolute best as
-            you prepare for the arrival of your little one.
+          <p style={{ paddingBottom: "0.5rem" }}>
+            <span>• Wound Healing:</span> PRP may help accelerate wound healing,
+            particularly in chronic or difficult-to-heal wounds.
+          </p>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Other Applications:</span> PRP is also being explored for
+            other uses, such as in dentistry and ophthalmology.
+          </p>
+          <h3>Potential Benefits of PRP Therapy:</h3>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Accelerated Healing:</span> PRP may speed up the healing process by delivering a concentrated dose of growth factors to the injured area.
+          </p>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Reduced Pain and Inflammation:</span> PRP may help reduce pain and inflammation associated with various conditions.
+          </p>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Improved Function:</span> PRP may improve joint function and mobility in cases of osteoarthritis or other musculoskeletal injuries.
+          </p>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Minimally Invasive:</span> PRP therapy is a relatively minimally invasive procedure.
+          </p>
+          <p style={{ paddingBottom: "1rem" }}>
+            <span>• Uses Your Body's Own Cells:</span> Since PRP uses your own blood, the risk of allergic reactions or rejection is minimal.
           </p>
         </div>
       </div>
