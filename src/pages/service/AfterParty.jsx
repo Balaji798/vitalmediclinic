@@ -83,7 +83,7 @@ const AfterParty = () => {
             The drip may include a blend of essential vitamins, such as B
             vitamins (including B12 and B- complex), vitamin C, and others.
             These vitamins play crucial roles in
-            <span>energy metabolism, immune function,</span> and overall
+            <span> energy metabolism, immune function,</span> and overall
             well-being.
           </p>
           <span>• Liver Support:</span>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import search from "../../assets/service/search.png";
 import hand from "../../assets/service/hand.png";
 import cannabis from "../../assets/service/cannabis.png";
@@ -12,7 +13,7 @@ import min_120 from "../../assets/HOMEPAGE/120min.webp";
 import relax from "../../assets/HOMEPAGE/relax.webp";
 import group from "../../assets/HOMEPAGE/group.webp";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const data = [
   {
     title: "Health Checkup",
@@ -34,6 +35,7 @@ const data = [
 const data2 = [min_60, min_90, min_120];
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="" style={{ width: "100%" }}>
       <Helmet>
@@ -110,8 +112,10 @@ const Home = () => {
             <p style={{ maxWidth: "400px" }}>
               <span style={{ fontWeight: 600 }}>Vital Medi Clinic</span> is a
               leading integrative medicine clinic dedicated to optimizing your
-              health and well-being, with a primary focus on longevity. We
-              combine the best of Eastern and Western practices, seamlessly
+              health and well-being, with a primary focus on{" "}
+              <span>longevity</span> and a deep respect for the healing power of{" "}
+              <span>Applied Thai Traditional Medicine (ATTM).</span> We
+              seamlessly combine the best of Eastern and Western practices,
               integrating ancient wisdom with modern science to offer
               comprehensive and innovative therapies designed to extend your
               vitality and enhance your quality of life for years to come.
@@ -148,16 +152,22 @@ const Home = () => {
           </button>
         </div>
         <div className="our-service">
-          <span style={{fontSize: '30px'}}>OUR SERVICE</span>
-          <div style={{ paddingTop: '2rem'}}>
+          <span style={{ fontSize: "30px" }}>OUR SERVICE</span>
+          <div style={{ paddingTop: "2rem" }}>
             {data.map((item, index) => (
-              <div key={index} style={{textAlign: 'center'}}>
+              <div key={index} style={{ textAlign: "center" }}>
                 <img
                   loading="lazy"
                   src={item.image}
                   style={{ maxWidth: "10rem", objectFit: "cover" }}
                 />
-                {index === 3 ? <p>Cannabis <br/>& Thai Herbal Medicine</p>:<p>{item.title}</p>}
+                {index === 3 ? (
+                  <p>
+                    Cannabis <br />& Thai Herbal Medicine
+                  </p>
+                ) : (
+                  <p>{item.title}</p>
+                )}
               </div>
             ))}
           </div>
@@ -220,6 +230,7 @@ const Home = () => {
           ))}
         </div>
         <button
+          onClick={() => navigate("/appointments")}
           style={{
             backgroundColor: "#9B8169",
             fontWeight: "bold",
@@ -233,7 +244,7 @@ const Home = () => {
       </div>
       <div className="specialist">
         <h2>CONSULT SPECIALIST</h2>
-        <button>CONTACT US</button>
+        <button onClick={() => navigate("/appointments")}>CONTACT US</button>
       </div>
       <div
         className="center"
@@ -298,18 +309,23 @@ const Home = () => {
         >
           INTEGRATIVE MEDICINE CLINIC
         </h2>
-        <p style={{ maxWidth: "700px", textAlign: "center" }}>
+        <div style={{ maxWidth: "700px", textAlign: "center" }}>
           <span style={{ fontWeight: 600 }}>
             In addition to our comprehensive health check-ups and personalized
-            wellness programs, we offer a range of cutting-edge therapies, such
-            as stem cell therapy and IV nutrition, that can help unlock your{" "}
-            {"body's"} full potential and slow down the aging process.
+            wellness programs,
+            <br /> we offer a range of cutting-edge therapies, such as stem cell
+            therapy and IV nutrition, that
+            <br /> can help unlock your {"body's"} full potential and slow down
+            the aging process.
           </span>
-          Whether {"you're"} seeking to manage a chronic condition, prevent
-          future health issues, or simply fell your best at every age, Vital
-          Medi Clinic is committed to empowering you on your journey to a
-          longer, healthier life.
-        </p>
+          <p>
+            Whether you're seeking to manage a chronic condition, prevent future
+            health issues, or simply
+            <br /> feel your best at every age, Vital Medi Clinic is committed
+            to empowering you on your journey
+            <br /> to a longer, healthier life.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -73,11 +73,6 @@ const Rsveratrol = () => {
               contribute to aging and various diseases.
             </p>
           </p>
-          <span>• Increased Antioxidant Protection:</span>
-          <p style={{ paddingBottom: "0.5rem" }}>
-            Antioxidants help neutralize harmful free radicals that can damage
-            cells and weaken the immune system.
-          </p>
           <span>• Cardiovascular Support:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
             Studies suggest that resveratrol may improve cardiovascular health

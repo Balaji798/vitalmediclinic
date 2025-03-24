@@ -63,6 +63,7 @@ const ThaiMedicine = () => {
           style={{
             left: 0,
             marginLeft: "0rem",
+            objectFit: 'contain'
           }}
         />
         <div style={{ maxWidth: "660px", width: "100%" }}>
@@ -137,7 +138,7 @@ const ThaiMedicine = () => {
               display: "flex",
               justifyContent: "center",
               height: "28rem",
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               paddingTop: "2rem",
             }}

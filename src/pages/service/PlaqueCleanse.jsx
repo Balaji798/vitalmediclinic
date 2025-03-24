@@ -58,9 +58,7 @@ const PlaqueCleanse = () => {
             Vital Plaque Cleanse IV Drip: A Controversial Approach to
             Cardiovascular Health
           </h3>
-          <h3>
-            What Causes Plaque Buildup in Arteries?
-          </h3>
+          <h3>What Causes Plaque Buildup in Arteries?</h3>
           <p style={{ paddingBottom: "1rem" }}>
             Plaque, the kind that causes atherosclerosis and is a major concern
             for cardiovascular health, comes from a complex process involving
@@ -191,32 +189,56 @@ const PlaqueCleanse = () => {
             <li>Fibrin (a protein involved in blood clotting)</li>
           </ul>
           <h3>Factors that contribute to plaque formation:</h3>
-          <p style={{ paddingTop: "1rem" }}>
-            <span>•</span> The massage therapist should be trained in prenatal
-            massage techniques. This means that they will know how to avoid
-            pressure points and positions that could be harmful to the baby.
-          </p>
-          <p>
-            <span>•</span> The massage should be gentle and light. The therapist
-            should not use deep pressure or massage areas that are prone to
-            swelling, such as the ankles and feet.
-          </p>{" "}
-          <p>
-            <span>•</span> The pregnant woman should be positioned comfortably.
-            The therapist may use pillows or bolsters to support the {"woman's"}{" "}
-            back, belly, and legs.
-          </p>
+          <span>• High LDL cholesterol:</span>
           <p style={{ paddingBottom: "0.5rem" }}>
-            {" "}
-            <span>•</span> The massage should be shorter than a regular massage.
-            Most pregnancy massages last about 30 minutes.
+            The primary driver of plaque buildup.
           </p>
-          <span>How to choose a massage therapist for pregnancy?</span>
-          <p>
-            When choosing a massage therapist for pregnancy, it is important to
-            find someone who is experienced and qualified. You can ask your
-            doctor for recommendations, or you can search online for massage
-            therapists in your area who specialize in prenatal massage.
+          <span>• Low HDL cholesterol:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            High-density lipoprotein (HDL) cholesterol, or "good" cholesterol,
+            helps remove LDL from the bloodstream. Low HDL levels can increase
+            the risk of plaque formation.
+          </p>
+          <span>• High blood pressure:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Damages artery walls, making them more susceptible to plaque
+            buildup.
+          </p>
+          <span>• Smoking:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Damages blood vessels and increases LDL cholesterol.
+          </p>
+          <span>• Diabetes:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            High blood sugar levels can damage blood vessels and increase
+            inflammation.
+          </p>
+          <span>• Family history of heart disease:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Genetics can play a role in cholesterol levels and overall
+            cardiovascular risk.
+          </p>
+          <span>• Obesity:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Excess weight is linked to higher LDL cholesterol and other risk
+            factors.
+          </p>
+          <span>• Unhealthy diet:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            A diet high in saturated and trans fats can raise LDL cholesterol.
+          </p>
+          <span>• Lack of physical activity:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            Exercise helps raise HDL cholesterol and improve overall
+            cardiovascular health.
+          </p>
+          <span>• Age:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+            The risk of atherosclerosis increases with age
+          </p>
+          <span>• Inflammation:</span>
+          <p style={{ paddingBottom: "0.5rem" }}>
+          Chronic inflammation plays a significant role in the development of atherosclerosis.
           </p>
         </div>
       </div>
