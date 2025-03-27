@@ -68,9 +68,10 @@ nav {
   font-family: sans-serif;
 }
 
-.dropdown > .different > span {
+.dropdown > .different > a {
   font-size: 16px;
   font-weight: 500;
+  color: #fff !important;
 }
 
 /* Style 3: Just animate the :after element's width from 0 to 100% */

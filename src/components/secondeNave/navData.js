@@ -58,57 +58,67 @@ export const navData = [
             title: "IV NUTRITION THERAPY",
             link: "/service/wellness/iv-nutrition-therapy",
             options: [
-              {
-                title: "VITAL AFTER PARTY IV DRIP",
-                link: "/wellness/iv-nutrition-therapy/after-party",
-              },
-              {
-                title: "VITAL MYER’ IV DRIP",
-                link: "/wellness/iv-nutrition-therapy/myers-drip",
-              },
-              {
-                title: "VITAL WHITE BOOSTER+ IV DRIP",
-              },
-              {
-                title: "VITAL NMN BOOSTER+ IV DRIP",
-              },
-              {
-                title: "VITAL IMMUNE BOOSTER IV DRIP",
-              },
-              {
-                title: "VITAL WEIGHT LOSS CONTROL IV DRIP",
-              },
-              {
-                title: "VITAL WHITE RADIANCE IV DRIP",
-              },
-              {
-                title: "VITAL ALPHA-LIPOIC ACID IV DRIP",
-              },
-              {
-                title: "VITAL CURCUMIN IV DRIP",
-              },
-              {
-                title: "VITAL RESVERATROL IV DRIP",
-              },
-              {
-                title: "VITAL DETOXIFY (CHELATION) IV DRIP",
-              },
-              {
-                title: "VITAL PLAQUE CLEANSE IV DRIP",
-              },
+             {
+              title: "VITAL AFTER PARTY IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/after-party",
+            },
+            {
+              title: "VITAL MYER’ IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/myers-drip",
+            },
+            {
+              title: "VITAL WHITE BOOSTER+ IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/white-booster",
+            },
+            {
+              title: "VITAL NMN BOOSTER+ IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/nmn-booster",
+            },
+            {
+              title: "VITAL IMMUNE BOOSTER IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/immune-booster",
+            },
+            {
+              title: "VITAL WEIGHT LOSS CONTROL IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/weight-loss",
+            },
+            {
+              title: "VITAL WHITE RADIANCE IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/white-radiance",
+            },
+            {
+              title: "VITAL ALPHA-LIPOIC ACID IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/alpha-lipoic-acid",
+            },
+            {
+              title: "VITAL CURCUMIN IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/curcumin",
+            },
+            {
+              title: "VITAL RESVERATROL IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/rsveratrol",
+            },
+            {
+              title: "VITAL DETOXIFY (CHELATION) IV DRIP",
+              link: "/service/wellness/iv-nutrition-therapy/detoxify",
+            },
+            {
+              title: "VITAL PLAQUE CLEANSE IV DRIP",
+              link: '/service/wellness/iv-nutrition-therapy/plaque-cleanse'
+            },
             ],
           },
           {
             title: "STEM CELL THERAPY",
-            link: "/wellness/stem-therapy",
+            link: "/service/wellness/stem-therapy",
           },
           {
             title: "NK CELL THERAPY",
-            link: "/wellness/nk-cell-therapy",
+            link: "/service/wellness/nk-cell-therapy",
           },
           {
-            title: "PRENATAL MASSAGE",
-            link: "/prenatal-massage",
+            title: "PRP Therapy",
+            link: "/service/prp-therapy",
           },
         ],
       },
@@ -157,11 +167,20 @@ export const navData = [
       {
         title: "4. THAI HERBAL MEDICINE INTEGRATION",
         link: "/service/herbal-medicean",
-        options: [],
-      },
-      {
-        title: "5. CANNABIS & KRATOM TREATMENT",
-        link: "/service/cannabis-and-kartom-therapies",
+        options: [
+          {
+            title: "APPLIED THAI TRADITIONAL MEDICINE",
+            link: "/service/herbal-medicean/thai-traditional-medicine",
+          },
+          {
+            title: "THAI TRADITIONAL THERAPEUTIC TREATMENT",
+            link: "/service/herbal-medicean/therapeutic-treatment",
+          },
+          {
+            title: "CANCER TREATMENT",
+            link: "/service/herbal-medicean/cancer-treatment",
+          },
+        ],
       },
     ],
   },

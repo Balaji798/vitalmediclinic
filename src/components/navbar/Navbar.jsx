@@ -6,7 +6,6 @@ import Packages from "../Packages";
 import Doctor from "../Doctor";
 import ContactUs from "../ContactUs";
 import Service from "../Service";
-import { TbSearch } from "react-icons/tb";
 import calendar from "../../assets/calendar.png";
 
 // eslint-disable-next-line react/prop-types
@@ -35,10 +34,6 @@ const Navbar = ({setOpenNav, openNav}) => {
           <ContactUs />
         </div>
         <div className="search_date">
-          <div className="search">
-            <TbSearch />
-            <input style={{ outline: "none", border: "none",  width: 100 }}  placeholder="Search"/>
-          </div>
           <Link to="/appointments">
              <img loading="lazy" src={calendar} style={{ width: "2rem" }}  />
           </Link>

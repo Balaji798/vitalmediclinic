@@ -11,12 +11,11 @@ const AboutUs = () => {
         <div className="dropdown-content">
           <div
             style={{
-              maxWidth: "300px",
+              maxWidth: "310px",
               width: "100%",
               padding: "0 10px",
             }}
           >
-            {" "}
             <Link
               to="/about-us"
               className="title"

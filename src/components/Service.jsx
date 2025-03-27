@@ -120,14 +120,6 @@ const Service = () => {
       title: "3. MEDICAL CONDITIONS",
       link: "/service/medical-condition",
       options: [
-        // {
-        //   title: "PAIN MANAGEMENT",
-        //   link: "/medical-condition/pain-management",
-        // },
-        // {
-        //   title: "SKIN DISORDER",
-        //   link: "/medical-condition/skin-disorder",
-        // },
         {
           title: "SLEEP DISORDER",
           link: "/medical-condition/sleep-disorder",
@@ -140,30 +132,10 @@ const Service = () => {
           title: "OFFICE SYNDROME",
           link: "/medical-condition/office-syndrome",
         },
-        // {
-        //   title: "NEUROLOGICAL DISORDER",
-        //   link: "/medical-condition/neurological-disorder",
-        // },
         {
           title: "IMMUNE DISORDER",
           link: "/medical-condition/immune-disorder",
         },
-        // {
-        //   title: "RHEUMATIOD ARTHRITIS",
-        //   link: "/medical-condition/rheumatad-arthritis",
-        // },
-        // {
-        //   title: "NCDS DISEASE",
-        //   link: "/medical-condition/ncds-disease",
-        // },
-        // {
-        //   title: "CANCER TREATMENT",
-        //   link: "/medical-condition/cancer-treatment",
-        // },
-        // {
-        //   title: "ALZHEIMER'S DISEASE",
-        //   link: "/medical-condition/alzheimer-disease",
-        // },
       ],
     },
     {
@@ -174,10 +146,6 @@ const Service = () => {
           title: "APPLIED THAI TRADITIONAL MEDICINE",
           link: "/herbal-medicean/thai-traditional-medicine",
         },
-        // {
-        //   title: "THAI HERBAL FORMULAS",
-        //   link: "/herbal-medicean/thai-herbal-formulas",
-        // },
         {
           title: "THAI TRADITIONAL THERAPEUTIC TREATMENT",
           link: "/herbal-medicean/therapeutic-treatment",

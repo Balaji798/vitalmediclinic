@@ -246,7 +246,7 @@ const PlaqueCleanse = () => {
         className="center"
         style={{
           flexDirection: "column",
-          padding: "2rem 0rem",
+          padding: "2rem 10px",
           textAlign: "center",
         }}
       >
@@ -257,9 +257,10 @@ const PlaqueCleanse = () => {
             width: "100%",
             textAlign: "center",
             color: "#fff",
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            padding: "1rem 0rem",
+            padding: "1rem 10px",
+            borderRadius: '2rem'
           }}
         >
           <h2>The "Vital Plaque Cleanse IV Drip"</h2>
@@ -282,12 +283,12 @@ const PlaqueCleanse = () => {
           professionals can help you create <br />a personalized plan that may
           include:
         </p>
-        <div className="center" style={{ flexWrap: "wrap", padding: "10px 0" }}>
+        <div className="center" style={{ flexWrap: "wrap", padding: "10px" }}>
           <img src={heart} style={{ maxWidth: "550px" }} />
           <div
             style={{
               textAlign: "left",
-              maxWidth: "550px",
+              maxWidth:window.innerWidth <= 1024 ? "400px" : "550px",
               paddingLeft: "10px",
             }}
           >

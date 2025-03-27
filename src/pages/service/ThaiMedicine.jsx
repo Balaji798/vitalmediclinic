@@ -56,14 +56,15 @@ const ThaiMedicine = () => {
           content="Experience Thai traditional massage in Bangkok. Unique therapy combining acupressure and yoga-like positions for complete body balance."
         />
       </Helmet>
-      <div className="service">
+      <div className="service" style={{ flexDirection: window.innerWidth <= 1024 ? "column-reverse" : "row",}}>
         <img
           loading="lazy"
           src={dotes}
           style={{
             left: 0,
             marginLeft: "0rem",
-            objectFit: 'contain'
+            objectFit: "contain",
+            display: window.innerWidth <= 1024 ? "none" : "block",
           }}
         />
         <div style={{ maxWidth: "660px", width: "100%" }}>
@@ -162,8 +163,14 @@ const ThaiMedicine = () => {
           Our skilled and certified ATTM practitioners offer a range of
           traditional therapies, including:
         </p>
-        <div className="center" style={{ gap: "20px", padding: "1rem 0px" }}>
-          <img src={ATTM2} style={{ maxWidth: "550px" }} />
+        <div
+          className="center"
+          style={{ gap: "20px", padding: "1rem 0px", flexWrap: "wrap" }}
+        >
+          <img
+            src={ATTM2}
+            style={{ maxWidth: "550px", width: "100%", objectFit: "contain" }}
+          />
           <div
             style={{
               maxWidth: "450px",
@@ -238,13 +245,17 @@ const ThaiMedicine = () => {
           padding: "2rem 10px",
         }}
       >
-        <div className="center" style={{ gap: "20px", padding: "1rem 0px" }}>
+        <div
+          className="center"
+          style={{ gap: "20px", padding: "1rem 0px", flexWrap: "wrap" }}
+        >
           <div
             style={{
               maxWidth: "450px",
               width: "100%",
               fontSize: "14px",
               textAlign: "right",
+              padding: "0px 20px 0 0",
             }}
           >
             <h3
@@ -342,7 +353,7 @@ const ThaiMedicine = () => {
                 textAlign: "center",
                 backgroundColor: "#fff",
                 borderRadius: "39px",
-                overflow: 'hidden'
+                overflow: "hidden",
               }}
             >
               <img
